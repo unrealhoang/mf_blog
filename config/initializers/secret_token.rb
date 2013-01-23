@@ -4,4 +4,4 @@
 # If you change this key, all old signed cookies will become invalid!
 # Make sure the secret is at least 30 characters and all random,
 # no regular words or you'll be exposed to dictionary attacks.
-MfBlog::Application.config.secret_token = '20b8856a7f00d376bed9a75d6cb0b48bc78bc66bfd2d31e494604b44573fc278ba28738c1d321ad07ec5d42c8065f5ee97f6097839b35c5fe557ad43d3d766d2'
+MfBlog::Application.config.secret_token = '90da3d0a57ed32eb7975e8d5ac67059e8455f3f69814d1eb885abc81fd90673215a3d638f31278bd9a0ae1be995835a40e667fc5c3fd0b2727302638c0486fd9'
