@@ -1,0 +1,374 @@
+
+
+Started GET "/" for 192.168.184.1 at 2013-01-23 22:30:38 +0700
+
+ActiveRecord::ConnectionNotEstablished (ActiveRecord::ConnectionNotEstablished):
+  activerecord (3.2.7) lib/active_record/connection_adapters/abstract/connection_pool.rb:404:in `retrieve_connection'
+  activerecord (3.2.7) lib/active_record/connection_adapters/abstract/connection_specification.rb:170:in `retrieve_connection'
+  activerecord (3.2.7) lib/active_record/connection_adapters/abstract/connection_specification.rb:144:in `connection'
+  activerecord (3.2.7) lib/active_record/query_cache.rb:67:in `rescue in call'
+  activerecord (3.2.7) lib/active_record/query_cache.rb:61:in `call'
+  activerecord (3.2.7) lib/active_record/connection_adapters/abstract/connection_pool.rb:473:in `call'
+  actionpack (3.2.7) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+  activesupport (3.2.7) lib/active_support/callbacks.rb:405:in `_run__249554598__call__258368555__callbacks'
+  activesupport (3.2.7) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.7) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.7) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.7) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.7) lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  actionpack (3.2.7) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  actionpack (3.2.7) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.7) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.7) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.7) lib/rails/rack/logger.rb:16:in `call'
+  quiet_assets (1.0.1) lib/quiet_assets.rb:20:in `call_with_quiet_assets'
+  actionpack (3.2.7) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.7) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.7) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.7) lib/rails/engine.rb:479:in `call'
+  railties (3.2.7) lib/rails/application.rb:220:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.7) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /home/queen/.rvm/rubies/ruby-1.9.3-p286/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /home/queen/.rvm/rubies/ruby-1.9.3-p286/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /home/queen/.rvm/rubies/ruby-1.9.3-p286/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /home/queen/.rvm/gems/ruby-1.9.3-p286/gems/actionpack-3.2.7/lib/action_dispatch/middleware/templates/rescues/_trace.erb (5.2ms)
+  Rendered /home/queen/.rvm/gems/ruby-1.9.3-p286/gems/actionpack-3.2.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (7.0ms)
+  Rendered /home/queen/.rvm/gems/ruby-1.9.3-p286/gems/actionpack-3.2.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (27.3ms)
+
+
+Started GET "/" for 192.168.184.1 at 2013-01-23 22:50:45 +0700
+
+ActiveRecord::ConnectionNotEstablished (ActiveRecord::ConnectionNotEstablished):
+  activerecord (3.2.7) lib/active_record/connection_adapters/abstract/connection_pool.rb:404:in `retrieve_connection'
+  activerecord (3.2.7) lib/active_record/connection_adapters/abstract/connection_specification.rb:170:in `retrieve_connection'
+  activerecord (3.2.7) lib/active_record/connection_adapters/abstract/connection_specification.rb:144:in `connection'
+  activerecord (3.2.7) lib/active_record/query_cache.rb:67:in `rescue in call'
+  activerecord (3.2.7) lib/active_record/query_cache.rb:61:in `call'
+  activerecord (3.2.7) lib/active_record/connection_adapters/abstract/connection_pool.rb:473:in `call'
+  actionpack (3.2.7) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+  activesupport (3.2.7) lib/active_support/callbacks.rb:405:in `_run__249554598__call__258368555__callbacks'
+  activesupport (3.2.7) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.7) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.7) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.7) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.7) lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  actionpack (3.2.7) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  actionpack (3.2.7) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.7) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.7) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.7) lib/rails/rack/logger.rb:16:in `call'
+  quiet_assets (1.0.1) lib/quiet_assets.rb:20:in `call_with_quiet_assets'
+  actionpack (3.2.7) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.7) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.7) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.7) lib/rails/engine.rb:479:in `call'
+  railties (3.2.7) lib/rails/application.rb:220:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.7) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /home/queen/.rvm/rubies/ruby-1.9.3-p286/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /home/queen/.rvm/rubies/ruby-1.9.3-p286/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /home/queen/.rvm/rubies/ruby-1.9.3-p286/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /home/queen/.rvm/gems/ruby-1.9.3-p286/gems/actionpack-3.2.7/lib/action_dispatch/middleware/templates/rescues/_trace.erb (5.4ms)
+  Rendered /home/queen/.rvm/gems/ruby-1.9.3-p286/gems/actionpack-3.2.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (21.2ms)
+  Rendered /home/queen/.rvm/gems/ruby-1.9.3-p286/gems/actionpack-3.2.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (150.5ms)
+
+
+Started GET "/" for 192.168.184.1 at 2013-01-23 22:51:19 +0700
+
+ActiveRecord::ConnectionNotEstablished (ActiveRecord::ConnectionNotEstablished):
+  activerecord (3.2.7) lib/active_record/connection_adapters/abstract/connection_pool.rb:404:in `retrieve_connection'
+  activerecord (3.2.7) lib/active_record/connection_adapters/abstract/connection_specification.rb:170:in `retrieve_connection'
+  activerecord (3.2.7) lib/active_record/connection_adapters/abstract/connection_specification.rb:144:in `connection'
+  activerecord (3.2.7) lib/active_record/query_cache.rb:67:in `rescue in call'
+  activerecord (3.2.7) lib/active_record/query_cache.rb:61:in `call'
+  activerecord (3.2.7) lib/active_record/connection_adapters/abstract/connection_pool.rb:473:in `call'
+  actionpack (3.2.7) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+  activesupport (3.2.7) lib/active_support/callbacks.rb:405:in `_run__249554598__call__258368555__callbacks'
+  activesupport (3.2.7) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.7) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.7) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.7) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.7) lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  actionpack (3.2.7) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  actionpack (3.2.7) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.7) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.7) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.7) lib/rails/rack/logger.rb:16:in `call'
+  quiet_assets (1.0.1) lib/quiet_assets.rb:20:in `call_with_quiet_assets'
+  actionpack (3.2.7) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.7) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.7) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.7) lib/rails/engine.rb:479:in `call'
+  railties (3.2.7) lib/rails/application.rb:220:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.7) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /home/queen/.rvm/rubies/ruby-1.9.3-p286/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /home/queen/.rvm/rubies/ruby-1.9.3-p286/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /home/queen/.rvm/rubies/ruby-1.9.3-p286/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /home/queen/.rvm/gems/ruby-1.9.3-p286/gems/actionpack-3.2.7/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1294.4ms)
+  Rendered /home/queen/.rvm/gems/ruby-1.9.3-p286/gems/actionpack-3.2.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (3.4ms)
+  Rendered /home/queen/.rvm/gems/ruby-1.9.3-p286/gems/actionpack-3.2.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (1315.8ms)
+Connecting to database specified by database.yml
+  [1m[36m (37.9ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+  [1m[35mPK and serial sequence (257.9ms)[0m   SELECT attr.attname, seq.relname
+ FROM pg_class seq,
+ pg_attribute attr,
+ pg_depend dep,
+ pg_namespace name,
+ pg_constraint cons
+ WHERE seq.oid = dep.objid
+ AND seq.relkind = 'S'
+ AND attr.attrelid = dep.refobjid
+ AND attr.attnum = dep.refobjsubid
+ AND attr.attrelid = cons.conrelid
+ AND attr.attnum = cons.conkey[1]
+ AND cons.contype = 'p'
+ AND dep.refobjid = '"photos"'::regclass
+
+  [1m[36m (105.3ms)[0m  [1m SELECT distinct i.relname, d.indisunique, d.indkey, pg_get_indexdef(d.indexrelid), t.oid
+ FROM pg_class t
+ INNER JOIN pg_index d ON t.oid = d.indrelid
+ INNER JOIN pg_class i ON d.indexrelid = i.oid
+ WHERE i.relkind = 'i'
+ AND d.indisprimary = 'f'
+ AND t.relname = 'photos'
+ AND i.relnamespace IN (SELECT oid FROM pg_namespace WHERE nspname = ANY (current_schemas(false)) )
+ ORDER BY i.relname
+[0m
+  [1m[35mColumns for index index_photos_on_place_id on photos (0.9ms)[0m   SELECT a.attnum, a.attname
+ FROM pg_attribute a
+ WHERE a.attrelid = 16405
+ AND a.attnum IN (2)
+
+  [1m[36mPK and serial sequence (4.6ms)[0m  [1m SELECT attr.attname, seq.relname
+ FROM pg_class seq,
+ pg_attribute attr,
+ pg_depend dep,
+ pg_namespace name,
+ pg_constraint cons
+ WHERE seq.oid = dep.objid
+ AND seq.relkind = 'S'
+ AND attr.attrelid = dep.refobjid
+ AND attr.attnum = dep.refobjsubid
+ AND attr.attrelid = cons.conrelid
+ AND attr.attnum = cons.conkey[1]
+ AND cons.contype = 'p'
+ AND dep.refobjid = '"places"'::regclass
+[0m
+  [1m[35m (2.9ms)[0m   SELECT distinct i.relname, d.indisunique, d.indkey, pg_get_indexdef(d.indexrelid), t.oid
+ FROM pg_class t
+ INNER JOIN pg_index d ON t.oid = d.indrelid
+ INNER JOIN pg_class i ON d.indexrelid = i.oid
+ WHERE i.relkind = 'i'
+ AND d.indisprimary = 'f'
+ AND t.relname = 'places'
+ AND i.relnamespace IN (SELECT oid FROM pg_namespace WHERE nspname = ANY (current_schemas(false)) )
+ ORDER BY i.relname
+
+
+
+Started GET "/" for 192.168.184.1 at 2013-01-23 22:54:13 +0700
+
+ActiveRecord::ConnectionNotEstablished (ActiveRecord::ConnectionNotEstablished):
+  activerecord (3.2.7) lib/active_record/connection_adapters/abstract/connection_pool.rb:404:in `retrieve_connection'
+  activerecord (3.2.7) lib/active_record/connection_adapters/abstract/connection_specification.rb:170:in `retrieve_connection'
+  activerecord (3.2.7) lib/active_record/connection_adapters/abstract/connection_specification.rb:144:in `connection'
+  activerecord (3.2.7) lib/active_record/query_cache.rb:67:in `rescue in call'
+  activerecord (3.2.7) lib/active_record/query_cache.rb:61:in `call'
+  activerecord (3.2.7) lib/active_record/connection_adapters/abstract/connection_pool.rb:473:in `call'
+  actionpack (3.2.7) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+  activesupport (3.2.7) lib/active_support/callbacks.rb:405:in `_run__249554598__call__258368555__callbacks'
+  activesupport (3.2.7) lib/active_support/callbacks.rb:405:in `__run_callback'
+  activesupport (3.2.7) lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+  activesupport (3.2.7) lib/active_support/callbacks.rb:81:in `run_callbacks'
+  actionpack (3.2.7) lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+  actionpack (3.2.7) lib/action_dispatch/middleware/reloader.rb:65:in `call'
+  actionpack (3.2.7) lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+  actionpack (3.2.7) lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+  actionpack (3.2.7) lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+  railties (3.2.7) lib/rails/rack/logger.rb:26:in `call_app'
+  railties (3.2.7) lib/rails/rack/logger.rb:16:in `call'
+  quiet_assets (1.0.1) lib/quiet_assets.rb:20:in `call_with_quiet_assets'
+  actionpack (3.2.7) lib/action_dispatch/middleware/request_id.rb:22:in `call'
+  rack (1.4.1) lib/rack/methodoverride.rb:21:in `call'
+  rack (1.4.1) lib/rack/runtime.rb:17:in `call'
+  activesupport (3.2.7) lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+  rack (1.4.1) lib/rack/lock.rb:15:in `call'
+  actionpack (3.2.7) lib/action_dispatch/middleware/static.rb:62:in `call'
+  railties (3.2.7) lib/rails/engine.rb:479:in `call'
+  railties (3.2.7) lib/rails/application.rb:220:in `call'
+  rack (1.4.1) lib/rack/content_length.rb:14:in `call'
+  railties (3.2.7) lib/rails/rack/log_tailer.rb:17:in `call'
+  rack (1.4.1) lib/rack/handler/webrick.rb:59:in `service'
+  /home/queen/.rvm/rubies/ruby-1.9.3-p286/lib/ruby/1.9.1/webrick/httpserver.rb:138:in `service'
+  /home/queen/.rvm/rubies/ruby-1.9.3-p286/lib/ruby/1.9.1/webrick/httpserver.rb:94:in `run'
+  /home/queen/.rvm/rubies/ruby-1.9.3-p286/lib/ruby/1.9.1/webrick/server.rb:191:in `block in start_thread'
+
+
+  Rendered /home/queen/.rvm/gems/ruby-1.9.3-p286/gems/actionpack-3.2.7/lib/action_dispatch/middleware/templates/rescues/_trace.erb (6.3ms)
+  Rendered /home/queen/.rvm/gems/ruby-1.9.3-p286/gems/actionpack-3.2.7/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (2.6ms)
+  Rendered /home/queen/.rvm/gems/ruby-1.9.3-p286/gems/actionpack-3.2.7/lib/action_dispatch/middleware/templates/rescues/diagnostics.erb within rescues/layout (25.9ms)
+
+
+Started GET "/" for 192.168.184.1 at 2013-01-23 22:54:38 +0700
+Connecting to database specified by database.yml
+Processing by HomeController#index as HTML
+  Rendered home/index.html.haml within layouts/application (1.8ms)
+Compiled bootstrap_and_overrides.css  (8110ms)  (pid 8102)
+Compiled home.css  (31ms)  (pid 8102)
+Compiled application.css  (8710ms)  (pid 8102)
+Compiled jquery.js  (50ms)  (pid 8102)
+Compiled jquery_ujs.js  (0ms)  (pid 8102)
+Compiled twitter/bootstrap/bootstrap-transition.js  (0ms)  (pid 8102)
+Compiled twitter/bootstrap/bootstrap-alert.js  (0ms)  (pid 8102)
+Compiled twitter/bootstrap/bootstrap-modal.js  (0ms)  (pid 8102)
+Compiled twitter/bootstrap/bootstrap-dropdown.js  (0ms)  (pid 8102)
+Compiled twitter/bootstrap/bootstrap-scrollspy.js  (0ms)  (pid 8102)
+Compiled twitter/bootstrap/bootstrap-tab.js  (0ms)  (pid 8102)
+Compiled twitter/bootstrap/bootstrap-tooltip.js  (0ms)  (pid 8102)
+Compiled twitter/bootstrap/bootstrap-popover.js  (0ms)  (pid 8102)
+Compiled twitter/bootstrap/bootstrap-button.js  (0ms)  (pid 8102)
+Compiled twitter/bootstrap/bootstrap-collapse.js  (0ms)  (pid 8102)
+Compiled twitter/bootstrap/bootstrap-carousel.js  (0ms)  (pid 8102)
+Compiled twitter/bootstrap/bootstrap-typeahead.js  (1ms)  (pid 8102)
+Compiled twitter/bootstrap/bootstrap-affix.js  (0ms)  (pid 8102)
+Compiled twitter/bootstrap.js  (1084ms)  (pid 8102)
+Compiled bootstrap.js  (1156ms)  (pid 8102)
+Compiled home.js  (1ms)  (pid 8102)
+Compiled application.js  (2945ms)  (pid 8102)
+  Rendered layouts/_navigation.html.haml (2.2ms)
+  Rendered layouts/_messages.html.haml (3.3ms)
+Completed 200 OK in 12945ms (Views: 12944.3ms | ActiveRecord: 0.0ms)
+Connecting to database specified by database.yml
+  [1m[36m (304.4ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" character varying(255) NOT NULL) [0m
+  [1m[35m (187.2ms)[0m   SELECT distinct i.relname, d.indisunique, d.indkey, pg_get_indexdef(d.indexrelid), t.oid
+ FROM pg_class t
+ INNER JOIN pg_index d ON t.oid = d.indrelid
+ INNER JOIN pg_class i ON d.indexrelid = i.oid
+ WHERE i.relkind = 'i'
+ AND d.indisprimary = 'f'
+ AND t.relname = 'schema_migrations'
+ AND i.relnamespace IN (SELECT oid FROM pg_namespace WHERE nspname = ANY (current_schemas(false)) )
+ ORDER BY i.relname
+
+  [1m[36m (44.2ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35m (0.9ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+  [1m[36m (18.3ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations" [0m
+Migrating to CreateTags (20130124143834)
+  [1m[35m (0.6ms)[0m  BEGIN
+  [1m[36m (379.1ms)[0m  [1mCREATE TABLE "tags" ("id" serial primary key, "name" character varying(255), "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL) [0m
+  [1m[35m (18.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('20130124143834')
+  [1m[36m (1.3ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.6ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations" 
+  [1m[36mPK and serial sequence (76.8ms)[0m  [1m SELECT attr.attname, seq.relname
+ FROM pg_class seq,
+ pg_attribute attr,
+ pg_depend dep,
+ pg_namespace name,
+ pg_constraint cons
+ WHERE seq.oid = dep.objid
+ AND seq.relkind = 'S'
+ AND attr.attrelid = dep.refobjid
+ AND attr.attnum = dep.refobjsubid
+ AND attr.attrelid = cons.conrelid
+ AND attr.attnum = cons.conkey[1]
+ AND cons.contype = 'p'
+ AND dep.refobjid = '"tags"'::regclass
+[0m
+  [1m[35m (23.9ms)[0m   SELECT distinct i.relname, d.indisunique, d.indkey, pg_get_indexdef(d.indexrelid), t.oid
+ FROM pg_class t
+ INNER JOIN pg_index d ON t.oid = d.indrelid
+ INNER JOIN pg_class i ON d.indexrelid = i.oid
+ WHERE i.relkind = 'i'
+ AND d.indisprimary = 'f'
+ AND t.relname = 'tags'
+ AND i.relnamespace IN (SELECT oid FROM pg_namespace WHERE nspname = ANY (current_schemas(false)) )
+ ORDER BY i.relname
+
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+Connecting to database specified by database.yml
+
+
+Started GET "/" for 192.168.184.1 at 2013-01-24 21:50:29 +0700
+Connecting to database specified by database.yml
+Processing by HomeController#index as HTML
+  Rendered home/index.html.haml within layouts/application (2.3ms)
+Compiled scaffolds.css  (43ms)  (pid 2525)
+Compiled tags.css  (19ms)  (pid 2525)
+Compiled application.css  (555ms)  (pid 2525)
+Compiled tags.js  (170ms)  (pid 2525)
+Compiled application.js  (420ms)  (pid 2525)
+  Rendered layouts/_navigation.html.haml (2.4ms)
+  Rendered layouts/_messages.html.haml (3.2ms)
+Completed 200 OK in 4529ms (Views: 4527.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/tags" for 192.168.184.1 at 2013-01-24 21:50:45 +0700
+Processing by TagsController#index as HTML
+  [1m[36mTag Load (0.7ms)[0m  [1mSELECT "tags".* FROM "tags" [0m
+  Rendered tags/index.html.haml within layouts/application (2081.8ms)
+  Rendered layouts/_navigation.html.haml (0.6ms)
+  Rendered layouts/_messages.html.haml (0.3ms)
+Completed 200 OK in 2783ms (Views: 2491.3ms | ActiveRecord: 33.2ms)
+
+
+Started GET "/tags/new" for 192.168.184.1 at 2013-01-24 21:50:51 +0700
+Processing by TagsController#new as HTML
+  Rendered tags/_form.html.haml (10.6ms)
+  Rendered tags/new.html.haml within layouts/application (65.8ms)
+  Rendered layouts/_navigation.html.haml (1.8ms)
+  Rendered layouts/_messages.html.haml (0.3ms)
+Completed 200 OK in 517ms (Views: 508.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/tags" for 192.168.184.1 at 2013-01-24 21:50:59 +0700
+Processing by TagsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"4K+8NK1EFr+3wXQ6LLsK+XIse5BP5AD04wQBfYJVQNI=", "tag"=>{"name"=>"hacngu"}, "commit"=>"Create Tag"}
+  [1m[35m (0.3ms)[0m  BEGIN
+  [1m[36mSQL (108.9ms)[0m  [1mINSERT INTO "tags" ("created_at", "name", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["created_at", Thu, 24 Jan 2013 14:50:59 UTC +00:00], ["name", "hacngu"], ["updated_at", Thu, 24 Jan 2013 14:50:59 UTC +00:00]]
+  [1m[35m (1.5ms)[0m  COMMIT
+Redirected to http://192.168.184.128:3000/tags/1
+Completed 302 Found in 120ms (ActiveRecord: 110.8ms)
+
+
+Started GET "/tags/1" for 192.168.184.1 at 2013-01-24 21:50:59 +0700
+Processing by TagsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mTag Load (1.8ms)[0m  [1mSELECT "tags".* FROM "tags" WHERE "tags"."id" = $1 LIMIT 1[0m  [["id", "1"]]
+  Rendered tags/show.html.haml within layouts/application (8.4ms)
+  Rendered layouts/_navigation.html.haml (0.8ms)
+  Rendered layouts/_messages.html.haml (0.6ms)
+Completed 200 OK in 451ms (Views: 445.2ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/tags" for 192.168.184.1 at 2013-01-24 21:51:07 +0700
+Processing by TagsController#index as HTML
+  [1m[35mTag Load (0.7ms)[0m  SELECT "tags".* FROM "tags" 
+  Rendered tags/index.html.haml within layouts/application (41.2ms)
+  Rendered layouts/_navigation.html.haml (0.6ms)
+  Rendered layouts/_messages.html.haml (0.3ms)
+Completed 200 OK in 445ms (Views: 441.8ms | ActiveRecord: 0.7ms)
