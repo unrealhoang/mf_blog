@@ -25,6 +25,9 @@ class PostsController < ApplicationController
   # GET /posts/new.json
   def new
     @post = Post.new
+    @categories = Category.all
+    @authors = Profile.all
+    @tags = Tag.all
 
     respond_to do |format|
       format.html # new.html.erb
@@ -35,6 +38,8 @@ class PostsController < ApplicationController
   # GET /posts/1/edit
   def edit
     @post = Post.find(params[:id])
+    @categories = Category.all
+    @authors = Profile.all
   end
 
   # POST /posts

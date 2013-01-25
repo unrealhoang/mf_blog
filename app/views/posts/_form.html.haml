@@ -10,11 +10,15 @@
   .control-group
     = f.label :author_id, :class => 'control-label'
     .controls
-      = f.number_field :author_id, :class => 'number_field'
+      = f.collection_select :author_id, @authors, :id, :username
   .control-group
     = f.label :category_id, :class => 'control-label'
     .controls
-      = f.number_field :category_id, :class => 'number_field'
+      = f.collection_select :category_id, @categories, :id, :name
+  .control-group
+    = f.label :tag_id, :class => 'control-label'
+    .controls
+      = text_field_tag :tags, nil, :class => 'text_field', 'data-provide' => 'typeahead', 'data-items' => '4', 'data-source' => '["startup","training","new business","new idea"]'
   .form-actions
     = f.submit nil, :class => 'btn btn-primary'
     = link_to t('.cancel', :default => t("helpers.links.cancel")), posts_path, :class => 'btn'
