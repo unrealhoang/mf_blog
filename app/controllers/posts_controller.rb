@@ -40,12 +40,17 @@ class PostsController < ApplicationController
     @post = Post.find(params[:id])
     @categories = Category.all
     @authors = Profile.all
+    @tags = Tag.all
   end
 
   # POST /posts
   # POST /posts.json
   def create
     @post = Post.new(params[:post])
+    tags = params[:tags].split(',')
+    tags.each do |t|
+      @post.tags << Tag.find(t)
+    end
 
     respond_to do |format|
       if @post.save
@@ -63,6 +68,11 @@ class PostsController < ApplicationController
   def update
     @post = Post.find(params[:id])
 
+    @post.tags.clear
+    tags = params[:tags].split(',')
+    tags.each do |t|
+      @post.tags << Tag.find(t)
+    end
     respond_to do |format|
       if @post.update_attributes(params[:post])
         format.html { redirect_to @post, notice: 'Post was successfully updated.' }
