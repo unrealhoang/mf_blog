@@ -1,0 +1,75 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+AddCategoryToPost	db/migrate/20130125144920_add_category_to_post.rb	/^class AddCategoryToPost < ActiveRecord::Migration$/;"	c
+Application	config/application.rb	/^  class Application < Rails::Application$/;"	c	class:MfBlog
+ApplicationController	app/controllers/application_controller.rb	/^class ApplicationController < ActionController::Base$/;"	c
+ApplicationHelper	app/helpers/application_helper.rb	/^module ApplicationHelper$/;"	m
+CategoriesController	app/controllers/categories_controller.rb	/^class CategoriesController < ApplicationController$/;"	c
+CategoriesHelper	app/helpers/categories_helper.rb	/^module CategoriesHelper$/;"	m
+Category	app/models/category.rb	/^class Category < ActiveRecord::Base$/;"	c
+CreateCategories	db/migrate/20130125085143_create_categories.rb	/^class CreateCategories < ActiveRecord::Migration$/;"	c
+CreatePosts	db/migrate/20130125141512_create_posts.rb	/^class CreatePosts < ActiveRecord::Migration$/;"	c
+CreatePostsTags	db/migrate/20130127082006_create_posts_tags.rb	/^class CreatePostsTags < ActiveRecord::Migration$/;"	c
+CreateProfiles	db/migrate/20130125143640_create_profiles.rb	/^class CreateProfiles < ActiveRecord::Migration$/;"	c
+CreateTags	db/migrate/20130124143834_create_tags.rb	/^class CreateTags < ActiveRecord::Migration$/;"	c
+EmailHelpers	features/step_definitions/email_steps.rb	/^module EmailHelpers$/;"	m
+HomeController	app/controllers/home_controller.rb	/^class HomeController < ApplicationController$/;"	c
+HomeHelper	app/helpers/home_helper.rb	/^module HomeHelper$/;"	m
+MfBlog	config/application.rb	/^module MfBlog$/;"	m
+Post	app/models/post.rb	/^class Post < ActiveRecord::Base$/;"	c
+PostsController	app/controllers/posts_controller.rb	/^class PostsController < ApplicationController$/;"	c
+PostsHelper	app/helpers/posts_helper.rb	/^module PostsHelper$/;"	m
+Profile	app/models/profile.rb	/^class Profile < ActiveRecord::Base$/;"	c
+ProfilesController	app/controllers/profiles_controller.rb	/^class ProfilesController < ApplicationController$/;"	c
+ProfilesHelper	app/helpers/profiles_helper.rb	/^module ProfilesHelper$/;"	m
+Tag	app/models/tag.rb	/^class Tag < ActiveRecord::Base$/;"	c
+TagsController	app/controllers/tags_controller.rb	/^class TagsController < ApplicationController$/;"	c
+TagsHelper	app/helpers/tags_helper.rb	/^module TagsHelper$/;"	m
+change	db/migrate/20130124143834_create_tags.rb	/^  def change$/;"	f	class:CreateTags
+change	db/migrate/20130125085143_create_categories.rb	/^  def change$/;"	f	class:CreateCategories
+change	db/migrate/20130125141512_create_posts.rb	/^  def change$/;"	f	class:CreatePosts
+change	db/migrate/20130125143640_create_profiles.rb	/^  def change$/;"	f	class:CreateProfiles
+change	db/migrate/20130125144920_add_category_to_post.rb	/^  def change$/;"	f	class:AddCategoryToPost
+change	db/migrate/20130127082006_create_posts_tags.rb	/^  def change$/;"	f	class:CreatePostsTags
+create	app/controllers/categories_controller.rb	/^  def create$/;"	f	class:CategoriesController
+create	app/controllers/posts_controller.rb	/^  def create$/;"	f	class:PostsController
+create	app/controllers/profiles_controller.rb	/^  def create$/;"	f	class:ProfilesController
+create	app/controllers/tags_controller.rb	/^  def create$/;"	f	class:TagsController
+current_email_address	features/step_definitions/email_steps.rb	/^  def current_email_address$/;"	f	class:EmailHelpers
+destroy	app/controllers/categories_controller.rb	/^  def destroy$/;"	f	class:CategoriesController
+destroy	app/controllers/posts_controller.rb	/^  def destroy$/;"	f	class:PostsController
+destroy	app/controllers/profiles_controller.rb	/^  def destroy$/;"	f	class:ProfilesController
+destroy	app/controllers/tags_controller.rb	/^  def destroy$/;"	f	class:TagsController
+edit	app/controllers/categories_controller.rb	/^  def edit$/;"	f	class:CategoriesController
+edit	app/controllers/posts_controller.rb	/^  def edit$/;"	f	class:PostsController
+edit	app/controllers/profiles_controller.rb	/^  def edit$/;"	f	class:ProfilesController
+edit	app/controllers/tags_controller.rb	/^  def edit$/;"	f	class:TagsController
+index	app/controllers/categories_controller.rb	/^  def index$/;"	f	class:CategoriesController
+index	app/controllers/home_controller.rb	/^  def index$/;"	f	class:HomeController
+index	app/controllers/posts_controller.rb	/^  def index$/;"	f	class:PostsController
+index	app/controllers/profiles_controller.rb	/^  def index$/;"	f	class:ProfilesController
+index	app/controllers/tags_controller.rb	/^  def index$/;"	f	class:TagsController
+new	app/controllers/categories_controller.rb	/^  def new$/;"	f	class:CategoriesController
+new	app/controllers/posts_controller.rb	/^  def new$/;"	f	class:PostsController
+new	app/controllers/profiles_controller.rb	/^  def new$/;"	f	class:ProfilesController
+new	app/controllers/tags_controller.rb	/^  def new$/;"	f	class:TagsController
+show	app/controllers/categories_controller.rb	/^  def show$/;"	f	class:CategoriesController
+show	app/controllers/posts_controller.rb	/^  def show$/;"	f	class:PostsController
+show	app/controllers/profiles_controller.rb	/^  def show$/;"	f	class:ProfilesController
+show	app/controllers/tags_controller.rb	/^  def show$/;"	f	class:TagsController
+update	app/controllers/categories_controller.rb	/^  def update$/;"	f	class:CategoriesController
+update	app/controllers/posts_controller.rb	/^  def update$/;"	f	class:PostsController
+update	app/controllers/profiles_controller.rb	/^  def update$/;"	f	class:ProfilesController
+update	app/controllers/tags_controller.rb	/^  def update$/;"	f	class:TagsController
+valid_attributes	spec/controllers/categories_controller_spec.rb	/^  def valid_attributes$/;"	f
+valid_attributes	spec/controllers/posts_controller_spec.rb	/^  def valid_attributes$/;"	f
+valid_attributes	spec/controllers/profiles_controller_spec.rb	/^  def valid_attributes$/;"	f
+valid_attributes	spec/controllers/tags_controller_spec.rb	/^  def valid_attributes$/;"	f
+valid_session	spec/controllers/categories_controller_spec.rb	/^  def valid_session$/;"	f
+valid_session	spec/controllers/posts_controller_spec.rb	/^  def valid_session$/;"	f
+valid_session	spec/controllers/profiles_controller_spec.rb	/^  def valid_session$/;"	f
+valid_session	spec/controllers/tags_controller_spec.rb	/^  def valid_session$/;"	f

@@ -6,7 +6,7 @@
   .control-group
     = f.label :content, :class => 'control-label'
     .controls
-      = f.text_area :content, :class => 'text_area'
+      = f.text_area :content, :class => 'span6 ckeditor'
   .control-group
     = f.label :author_id, :class => 'control-label'
     .controls
@@ -19,6 +19,7 @@
     = f.label :tag_id, :class => 'control-label'
     .controls
       = text_field_tag 'tag_input', nil, :class => 'text_field', 'data-provide' => 'typeahead', 'data-items' => '4', 'data-source' => '["startup","training","new business","new idea"]'
+
       / Data source to pass value from rails to javascript
       = content_tag :div, nil, {:id => 'tags_data_source', :data => {:source => @tags.to_json(:only => [:id, :name])}, :style => 'display:none'}
       = content_tag :div, nil, {:id => 'selected_tags', :data => {:source => @post.tags.to_json(:only => [:id, :name])}, :style => 'display:none'}
