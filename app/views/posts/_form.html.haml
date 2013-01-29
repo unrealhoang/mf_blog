@@ -6,15 +6,30 @@
   .control-group
     = f.label :content, :class => 'control-label'
     .controls
-      = f.text_area :content, :class => 'text_area'
+      = f.text_area :content, :class => 'span6 ckeditor'
   .control-group
     = f.label :author_id, :class => 'control-label'
     .controls
-      = f.number_field :author_id, :class => 'number_field'
+      = f.collection_select :author_id, @authors, :id, :username
   .control-group
     = f.label :category_id, :class => 'control-label'
     .controls
-      = f.number_field :category_id, :class => 'number_field'
+      = f.collection_select :category_id, @categories, :id, :name
+  .control-group
+    = f.label :tag_id, :class => 'control-label'
+    .controls
+      = text_field_tag 'tag_input', nil, :class => 'text_field', 'data-provide' => 'typeahead', 'data-items' => '4', 'data-source' => '["startup","training","new business","new idea"]'
+
+      / Data source to pass value from rails to javascript
+      = content_tag :div, nil, {:id => 'tags_data_source', :data => {:source => @tags.to_json(:only => [:id, :name])}, :style => 'display:none'}
+      = content_tag :div, nil, {:id => 'selected_tags', :data => {:source => @post.tags.to_json(:only => [:id, :name])}, :style => 'display:none'}
+
+      #tag_template.alert.alert-success{:style => 'float:left; display:none'}
+        %button.close{:type => 'button'} &times;
+        %span {tagName}
+      / Put all the selected tags here
+      #tags_pool
+      = hidden_field_tag 'tags'
   .form-actions
     = f.submit nil, :class => 'btn btn-primary'
     = link_to t('.cancel', :default => t("helpers.links.cancel")), posts_path, :class => 'btn'

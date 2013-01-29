@@ -7,5 +7,9 @@ MfBlog::Application.routes.draw do
 
   resources :tags
 
+  resources :posts
+
+  resources :profiles
+
   root :to => "home#index"
 end
