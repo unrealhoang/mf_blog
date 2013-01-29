@@ -9,6 +9,8 @@
       %th= model_class.human_attribute_name(:content)
       %th= model_class.human_attribute_name(:author_id)
       %th= model_class.human_attribute_name(:category_id)
+      %th= model_class.human_attribute_name(:image)
+      %th= model_class.human_attribute_name(:is_top_article)
       %th= model_class.human_attribute_name(:created_at)
       %th=t '.actions', :default => t("helpers.actions")
   %tbody
@@ -19,6 +21,8 @@
         %td= post.content
         %td= post.author_id
         %td= post.category_id
+        %td= post.image
+        %td= post.is_top_article
         %td=l post.created_at
         %td
           = link_to t('.edit', :default => t("helpers.links.edit")), edit_post_path(post), :class => 'btn btn-mini'
