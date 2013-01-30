@@ -29,7 +29,6 @@ ActiveRecord::Schema.define(:version => 20130129134208) do
     t.integer  "category_id"
     t.string   "image"
     t.boolean  "is_top_article"
-
   end
 
   create_table "posts_tags", :id => false, :force => true do |t|
