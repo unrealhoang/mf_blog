@@ -49,7 +49,7 @@ class PostsController < ApplicationController
     @post = Post.new(params[:post])
     tags = params[:tags].split(',')
     tags.each do |t|
-      @post.tags << Tag.find(t)
+      @post.tags << Tag.where(:name => t).first_or_create
     end
 
     respond_to do |format|
@@ -71,7 +71,7 @@ class PostsController < ApplicationController
     @post.tags.clear
     tags = params[:tags].split(',')
     tags.each do |t|
-      @post.tags << Tag.find(t)
+      @post.tags << Tag.where(:name => t).first_or_create
     end
     respond_to do |format|
       if @post.update_attributes(params[:post])
