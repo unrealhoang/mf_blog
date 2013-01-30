@@ -12,6 +12,7 @@
       %th= model_class.human_attribute_name(:facebook)
       %th= model_class.human_attribute_name(:linkedin)
       %th= model_class.human_attribute_name(:twitter)
+      %th= model_class.human_attribute_name(:name)
       %th= model_class.human_attribute_name(:created_at)
       %th=t '.actions', :default => t("helpers.actions")
   %tbody
@@ -25,6 +26,7 @@
         %td= profile.facebook
         %td= profile.linkedin
         %td= profile.twitter
+        %td= profile.name
         %td=l profile.created_at
         %td
           = link_to t('.edit', :default => t("helpers.links.edit")), edit_profile_path(profile), :class => 'btn btn-mini'

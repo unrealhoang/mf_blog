@@ -30,6 +30,10 @@
   %strong= model_class.human_attribute_name(:twitter) + ':'
   %br
   = @profile.twitter
+%p
+  %strong= model_class.human_attribute_name(:name) + ':'
+  %br
+  = @profile.name
 
 .form-actions
   = link_to t('.back', :default => t("helpers.links.back")), profiles_path, :class => 'btn'
