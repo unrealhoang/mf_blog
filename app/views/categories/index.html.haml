@@ -7,6 +7,7 @@
       %th= model_class.human_attribute_name(:id)
       %th= model_class.human_attribute_name(:name)
       %th= model_class.human_attribute_name(:description)
+      %th= model_class.human_attribute_name(:parent_category)
       %th= model_class.human_attribute_name(:created_at)
       %th=t '.actions', :default => t("helpers.actions")
   %tbody
@@ -15,6 +16,7 @@
         %td= link_to category.id, category_path(category)
         %td= category.name
         %td= category.description
+        %td= category.parent_category
         %td=l category.created_at
         %td
           = link_to t('.edit', :default => t("helpers.links.edit")), edit_category_path(category), :class => 'btn btn-mini'

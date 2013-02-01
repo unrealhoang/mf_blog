@@ -10,6 +10,10 @@
   %strong= model_class.human_attribute_name(:description) + ':'
   %br
   = @category.description
+%p
+  %strong= model_class.human_attribute_name(:parent_category) + ':'
+  %br
+  = @category.parent_category
 
 .form-actions
   = link_to t('.back', :default => t("helpers.links.back")), categories_path, :class => 'btn'
