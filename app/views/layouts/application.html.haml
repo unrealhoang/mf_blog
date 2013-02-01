@@ -1,25 +1,68 @@
 !!!
 %html
   %head
-    %meta{:content => "width=device-width, initial-scale=1.0", :name => "viewport"}
-      %title= content_for?(:title) ? yield(:title) : "Mf Blog"
-      %meta{:content => content_for?(:description) ? yield(:description) : "Mf Blog", :name => "description"}
+    %meta{:content => "width=980, initial-scale=1.0", :name => "viewport"}
+      %title= content_for?(:title) ? yield(:title) : "Homepage - We love startup"
+      %meta{:content => "text/html; charset=utf-8", "http-equiv" => "Content-Type"}
         = stylesheet_link_tag "application", :media => "all"
         = javascript_include_tag "application"
         = csrf_meta_tags
         = yield(:head)
-  %body{:class => "#{controller_name} #{action_name}", 'data-controller' => "#{controller_name}", 'data-action' => "#{action_name}"}
-    %header.navbar.navbar-fixed-top
-      %nav.navbar-inner
-        .container
-          = render 'layouts/navigation'
-    #main{:role => "main"}
-      .container
-        .content
-          .row
-            .span12
-              = render 'layouts/messages'
-              = yield
-          %footer
-      / ! end of .container
-    / ! end of #main
+  %body{:class => "#{controller_name} #{action_name}", 'data-controller' => "#{controller_name}", 'data-action' => "#{action_name}", :style => 'padding-top: 0px'}
+    #main.container
+      #cat-menu.row
+        .logo.span2
+          %img{:src => image_path("logo.png")}
+        .categories.span8.offset1{:style => "margin-top: 10px;"}
+          .btn-group
+            %a.btn.btn-primary.dropdown-toggle{"data-toggle" => "dropdown", :href => "#"}
+              Home
+          .btn-group
+            %a.btn.btn-primary.dropdown-toggle{"data-toggle" => "dropdown", :href => "#"}
+              Product
+              %span.caret
+            %ul.dropdown-menu
+              %li
+                %a{:href => "#"} Dev
+              %li
+                %a{:href => "#"} Design
+              %li
+                %a{:href => "#"} Tech
+              / dropdown menu links
+          .btn-group
+            %a.btn.btn-primary.dropdown-toggle{"data-toggle" => "dropdown", :href => "#"}
+              Business
+              %span.caret
+            %ul.dropdown-menu
+              %li
+                %a{:href => "#"} Team
+              %li
+                %a{:href => "#"} Money
+              %li
+                %a{:href => "#"} Marketing
+              / dropdown menu links
+          .btn-group
+            %a.btn.btn-primary.dropdown-toggle{"data-toggle" => "dropdown", :href => "#"}
+              Views & Case Study
+          .btn-group
+            %a.btn.btn-primary.dropdown-toggle{"data-toggle" => "dropdown", :href => "#"}
+              Collections
+          .btn-group
+            %a.btn.btn-primary.dropdown-toggle{"data-toggle" => "dropdown", :href => "#"}
+              Events
+
+      #breadcrumb.row{:style => "margin-top: 15px;"}
+        .span12
+          %ul.breadcrumb
+            %li.active Dev
+            %section#article-stream-search{:style => "float: right; margin-top:-5px; margin-right: -7px"}
+              %form#article-stream-search-form{:action => "search", :method => "GET"}
+                %form.form-search
+                  %input.input-medium.search-query{:type => "text"}
+                    %button.btn{:type => "submit"} Search
+
+      #cat-content.row{:style => "margin-top: 10px;"}
+        / Sidebar content
+        .span12
+          = yield
+

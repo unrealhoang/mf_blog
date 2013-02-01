@@ -1,0 +1,7 @@
+%ul.nav.nav-tabs{:style => "margin-top: 10px;"}
+  %li.active
+    %a{:href => "#"} Popular
+  %li
+    %a{:href => "#"} Latest
+%section
+  = render :partial => 'posts/sidebar_post', :collection => @posts

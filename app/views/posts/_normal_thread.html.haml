@@ -1,0 +1,10 @@
+%li.normal-thread
+  %a{:href => post_path(normal_thread)}
+    %img{:src => normal_thread.image}
+  .caption
+    %h4
+      %a{:href => post_path(normal_thread)}= normal_thread.title
+    %p{:style => "height: 50px;"}= truncate(strip_tags(normal_thread.content), :length => 140, :separator => ' ') 
+    %i
+      %a{:href => category_path(normal_thread.category)}= normal_thread.category.name
+      %a{:href => profile_path(normal_thread.author)}= normal_thread.author.name

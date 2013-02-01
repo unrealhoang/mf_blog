@@ -1,2 +1,5 @@
-%h1 Home#index
-%p Find me in app/views/home/index.html.haml
+.row
+  .span8
+    = render :partial => "posts/articles_stream"
+  .span4
+    = render :partial => "posts/sidebar_posts"
