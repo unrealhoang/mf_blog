@@ -7,6 +7,10 @@
     = f.label :description, :class => 'control-label'
     .controls
       = f.text_field :description, :class => 'text_field'
+  .control-group
+    = f.label :parent_category, :class => 'control-label'
+    .controls
+      = f.collection_select :parent_category, @categories, :id, :name
   .form-actions
     = f.submit nil, :class => 'btn btn-primary'
     = link_to t('.cancel', :default => t("helpers.links.cancel")), categories_path, :class => 'btn'
