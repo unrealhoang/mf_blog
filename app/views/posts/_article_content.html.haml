@@ -1,0 +1,49 @@
+- author = article_content.author
+- post = article_content
+%article#post-1
+  %header.entry-header
+    %h1.entry-title= post.title
+    .entry-meta
+      %span.sep Posted on
+      %a{:href => category_path(post.category), :rel => "bookmark", :title => "2:56 pm"}
+        %time.entry-date{:datetime => "2013-01-21T14:56:01+00:00"} January 21, 2013
+      %span.by-author
+        %span.sep by
+        %span.author.vcard
+          %a.url.fn.n{:href => profile_path(author), :rel => "author", :title => "View all posts by #{author.name}"}= author.name
+    / .entry-meta
+    / %img{:src => "img/facebook.png"}
+    %fb:like{:send => "true", :show_faces => "true", :width => "450"}
+    / %iframe{:frameborder => "0", :scrolling => "no", :src => "https://www.facebook.com/plugins/like.php?href=#{request_url}", :style => "border:none; width:450px; height:80px"}
+  / .entry-header
+  .entry-content
+    = post.content.html_safe
+  / .entry-content
+  %footer.entry-meta
+    This entry was posted in
+    %a{:href => category_path(post.category), :rel => "category", :title => "View all posts in #{post.category.name}"}= post.category.name
+    by
+    = succeed "." do
+      %a{:href => profile_path(author)}= author.name
+    %span.edit-link
+      %a{:class => "#", :title => "Edit Post"} Edit
+    .article-author-container
+      %div
+        %img.img-profile-avatar{:alt => author.name, :src => author.avatar}
+      .text
+        .name
+          %a.parsed{:href => "#", :rel => "author"}
+            %h3= author.name
+        %p
+          %a{:href => "#", :rel => "me"}
+          %strong= author.name
+          is a
+          %strong {author's job} 
+          = author.biography
+        %i
+          %a{:href => author.twitter} {Twitter name here}
+        %i
+          %a{:href => author.facebook} {Facebook name here}
+        %i
+          %a{:href => author.linkedin} {Linkedin name here}
+  / .entry-meta
