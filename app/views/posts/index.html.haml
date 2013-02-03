@@ -18,7 +18,7 @@
       %tr
         %td= link_to post.id, post_path(post)
         %td= post.title
-        %td= post.content
+        %td= truncate(strip_tags(post.content), :length => 140, :separator => ' ').html_safe
         %td= post.author_id
         %td= post.category_id
         %td= post.image
