@@ -30,6 +30,14 @@ tags_handle = () ->
     $.each $('#selected_tags').data('source'), (i, selectedTag) ->
       selectTag(selectedTag)
 
+    $("#tag_input").keypress (event) ->
+      keycode = ((if event.keyCode then event.keyCode else event.which))
+      if keycode is 13
+        event.preventDefault()
+        selectTag(this.value)
+        this.value = ''
+        false
+
     $("#tag_input").typeahead
       source: dataSource
       minLength: 1

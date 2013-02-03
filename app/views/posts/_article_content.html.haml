@@ -26,7 +26,7 @@
     = succeed "." do
       %a{:href => profile_path(author)}= author.name
     %span.edit-link
-      %a{:class => "#", :title => "Edit Post"} Edit
+      %a{:href => edit_post_path(post), :class => "#", :title => "Edit Post"} Edit
     .article-author-container
       %div
         %img.img-profile-avatar{:alt => author.name, :src => author.avatar}
