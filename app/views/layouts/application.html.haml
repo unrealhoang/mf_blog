@@ -15,41 +15,9 @@
           %img{:src => image_path("logo.png")}
         .categories.span8.offset1{:style => "margin-top: 10px;"}
           .btn-group
-            %a.btn.btn-primary.dropdown-toggle{"data-toggle" => "dropdown", :href => "#"}
+            %a.btn.btn-primary.dropdown-toggle{"data-toggle" => "dropdown", :href => root_path}
               Home
-          .btn-group
-            %a.btn.btn-primary.dropdown-toggle{"data-toggle" => "dropdown", :href => "#"}
-              Product
-              %span.caret
-            %ul.dropdown-menu
-              %li
-                %a{:href => "#"} Dev
-              %li
-                %a{:href => "#"} Design
-              %li
-                %a{:href => "#"} Tech
-              / dropdown menu links
-          .btn-group
-            %a.btn.btn-primary.dropdown-toggle{"data-toggle" => "dropdown", :href => "#"}
-              Business
-              %span.caret
-            %ul.dropdown-menu
-              %li
-                %a{:href => "#"} Team
-              %li
-                %a{:href => "#"} Money
-              %li
-                %a{:href => "#"} Marketing
-              / dropdown menu links
-          .btn-group
-            %a.btn.btn-primary.dropdown-toggle{"data-toggle" => "dropdown", :href => "#"}
-              Views & Case Study
-          .btn-group
-            %a.btn.btn-primary.dropdown-toggle{"data-toggle" => "dropdown", :href => "#"}
-              Collections
-          .btn-group
-            %a.btn.btn-primary.dropdown-toggle{"data-toggle" => "dropdown", :href => "#"}
-              Events
+          = render :partial => 'categories/category_button', :collection => @main_categories
 
       #breadcrumb.row{:style => "margin-top: 15px;"}
         .span12

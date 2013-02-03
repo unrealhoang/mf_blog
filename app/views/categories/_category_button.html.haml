@@ -1,0 +1,12 @@
+- category = category_button
+- has_child = category.child_category.length > 0
+.btn-group
+  %a.btn.btn-primary.dropdown-toggle{"data-toggle" => "dropdown", :href => category_path(category)}
+    = category.name
+    %span{:class => has_child ? 'caret' : '' }
+  - if has_child
+    %ul.dropdown-menu
+      - category.child_category.each do |c|
+        %li
+          %a{:href => category_path(c)}= c.name
+      / dropdown menu links
