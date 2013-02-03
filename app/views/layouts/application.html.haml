@@ -12,7 +12,8 @@
     #main.container
       #cat-menu.row
         .logo.span2
-          %img{:src => image_path("logo.png")}
+          %a{:href => root_path}
+            %img{:src => image_path("logo.png")}
         .categories.span8.offset1{:style => "margin-top: 10px;"}
           .btn-group
             %a.btn.btn-primary.dropdown-toggle{"data-toggle" => "dropdown", :href => root_path}
