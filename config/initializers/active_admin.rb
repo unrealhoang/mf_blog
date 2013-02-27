@@ -142,9 +142,6 @@ ActiveAdmin.setup do |config|
   #
   # To load a javascript file:
   config.clear_javascripts!
-  config.register_javascript 'jquery'
-  config.register_javascript 'ckeditor-jquery'
-  config.register_javascript 'ckeditor_config'
   config.register_javascript 'admin/active_admin.js'
 
 
