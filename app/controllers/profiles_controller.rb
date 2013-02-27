@@ -73,7 +73,7 @@ class ProfilesController < ApplicationController
   # DELETE /profiles/1.json
   def destroy
     @profile = Profile.find(params[:id])
-    @profile.destroy
+    @profile.is_active = false
 
     respond_to do |format|
       format.html { redirect_to profiles_url }
