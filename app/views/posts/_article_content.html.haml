@@ -25,8 +25,6 @@
     by
     = succeed "." do
       %a{:href => profile_path(author)}= author.name
-    %span.edit-link
-      %a{:href => edit_post_path(post), :class => "#", :title => "Edit Post"} Edit
     .article-author-container
       %div
         %img.img-profile-avatar{:alt => author.name, :src => author.avatar}
@@ -41,9 +39,9 @@
           %strong {author's job} 
           = author.biography
         %i
-          %a{:href => author.twitter} {Twitter name here}
+          %a{:href => author.twitter}= author.twitter
         %i
-          %a{:href => author.facebook} {Facebook name here}
+          %a{:href => author.facebook}= author.facebook
         %i
-          %a{:href => author.linkedin} {Linkedin name here}
+          %a{:href => author.linkedin}= author.linkedin
   / .entry-meta

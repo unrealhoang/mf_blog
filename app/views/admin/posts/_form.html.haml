@@ -1,0 +1,12 @@
+= semantic_form_for [:admin, @post] do |f|
+  = f.inputs "Details" do
+    = f.input :title
+    = f.input :category
+    = f.input :image
+    = f.input :is_top_article
+    = label_tag :tag_input
+    = text_field_tag :tag_input
+  = f.inputs "Content" do
+    = f.input :content, :input_html => { :class => 'ckeditor', :style => "display: inline-block" }
+  = f.actions
+end
