@@ -1,1 +1,0 @@
-(function(){CKEDITOR.editorConfig=function(e){return e.language="en",!0}}).call(this);

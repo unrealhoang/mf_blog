@@ -17,9 +17,8 @@ ActiveAdmin.register Post do
       f.input :category
       f.input :image
       f.input :is_top_article
-      f.input :tags, :as => :string, :input_html => { :value => "" }, :hint => 
-        f.template.content_tag(:div, "", :id => "tag-list-data", "data-tag-list" => Tag.select(:name).map { |t| t.name }.to_json ) + 
-        f.template.content_tag(:div, "", :id => "current-tag-data", "data-current-tag" => f.object.tags.map { |t| t.name }.to_json ) 
+      f.input :tags, :as => :string, :input_html => { :value => f.object.tags.map { |t| t.name }.join(',') }, :hint => 
+        f.template.content_tag(:div, "", :id => "tag-list-data", "data-tag-list" => Tag.select(:name).map { |t| t.name }.to_json )
     end
     f.inputs "Content" do
       f.input :content, :input_html => { :class => 'ckeditor', :style => "display: inline-block" }
