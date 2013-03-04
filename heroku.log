@@ -1,322 +1,249 @@
-2013-03-01T17:59:42+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/activeadmin-0.5.1/lib/active_admin/resource_controller/actions.rb:42:in `block (2 levels) in edit'
-2013-03-01T17:59:42+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/actionpack-3.2.7/lib/action_controller/metal/streaming.rb:225:in `_render_template'
-2013-03-01T17:59:42+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/actionpack-3.2.7/lib/action_controller/metal/instrumentation.rb:40:in `block (2 levels) in render'
-2013-03-01T17:59:42+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/actionpack-3.2.7/lib/action_controller/metal/responder.rb:230:in `default_render'
-2013-03-01T17:59:42+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/actionpack-3.2.7/lib/abstract_controller/rendering.rb:88:in `render'
-2013-03-01T17:59:42+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/responders-0.9.3/lib/responders/flash_responder.rb:104:in `to_html'
-2013-03-01T17:59:42+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/actionpack-3.2.7/lib/action_controller/metal/rendering.rb:16:in `render'
-2013-03-01T17:59:42+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/actionpack-3.2.7/lib/action_controller/metal/responder.rb:160:in `to_html'
-2013-03-01T17:59:42+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/actionpack-3.2.7/lib/action_controller/metal/instrumentation.rb:83:in `cleanup_view_runtime'
-2013-03-01T17:59:42+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/activesupport-3.2.7/lib/active_support/core_ext/benchmark.rb:5:in `ms'
-2013-03-01T17:59:42+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/actionpack-3.2.7/lib/action_controller/metal/instrumentation.rb:40:in `block in render'
-2013-03-01T17:59:42+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/actionpack-3.2.7/lib/action_controller/metal/responder.rb:153:in `respond'
-2013-03-01T17:59:42+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/actionpack-3.2.7/lib/action_controller/metal/mime_responds.rb:239:in `respond_with'
-2013-03-01T17:59:42+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/actionpack-3.2.7/lib/action_controller/metal/instrumentation.rb:39:in `render'
-2013-03-01T17:59:42+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/actionpack-3.2.7/lib/abstract_controller/base.rb:167:in `process_action'
-2013-03-01T17:59:42+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/actionpack-3.2.7/lib/action_controller/metal/implicit_render.rb:4:in `send_action'
-2013-03-01T17:59:42+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/activesupport-3.2.7/lib/active_support/notifications.rb:123:in `instrument'
-2013-03-01T17:59:42+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/actionpack-3.2.7/lib/abstract_controller/callbacks.rb:18:in `block in process_action'
-2013-03-01T17:59:42+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/activesupport-3.2.7/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
-2013-03-01T17:59:42+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/inherited_resources-1.3.1/lib/inherited_resources/actions.rb:25:in `edit'
-2013-03-01T17:59:42+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/activeadmin-0.5.1/lib/active_admin/resource_controller/actions.rb:40:in `edit'
-2013-03-01T17:59:42+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/activesupport-3.2.7/lib/active_support/callbacks.rb:81:in `run_callbacks'
-2013-03-01T17:59:42+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/activesupport-3.2.7/lib/active_support/callbacks.rb:385:in `_run_process_action_callbacks'
-2013-03-01T17:59:42+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/actionpack-3.2.7/lib/action_dispatch/routing/route_set.rb:73:in `dispatch'
-2013-03-01T17:59:42+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/actionpack-3.2.7/lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
-2013-03-01T17:59:42+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/actionpack-3.2.7/lib/action_controller/metal.rb:203:in `dispatch'
-2013-03-01T17:59:42+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/actionpack-3.2.7/lib/action_dispatch/routing/route_set.rb:36:in `call'
-2013-03-01T17:59:42+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/actionpack-3.2.7/lib/action_controller/metal.rb:246:in `block in action'
-2013-03-01T17:59:42+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/actionpack-3.2.7/lib/action_controller/metal/instrumentation.rb:29:in `process_action'
-2013-03-01T17:59:42+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/journey-1.0.4/lib/journey/router.rb:68:in `block in call'
-2013-03-01T17:59:42+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/actionpack-3.2.7/lib/action_controller/metal/rescue.rb:29:in `process_action'
-2013-03-01T17:59:42+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/activesupport-3.2.7/lib/active_support/callbacks.rb:458:in `_run__4130817295857402046__process_action__807065068918792504__callbacks'
-2013-03-01T17:59:42+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/activesupport-3.2.7/lib/active_support/callbacks.rb:405:in `__run_callback'
-2013-03-01T17:59:42+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/actionpack-3.2.7/lib/action_dispatch/routing/route_set.rb:600:in `call'
-2013-03-01T17:59:42+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/actionpack-3.2.7/lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
-2013-03-01T17:59:42+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/sass-3.2.5/lib/sass/plugin/rack.rb:54:in `call'
-2013-03-01T17:59:42+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/warden-1.2.1/lib/warden/manager.rb:35:in `block in call'
-2013-03-01T17:59:42+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/warden-1.2.1/lib/warden/manager.rb:34:in `call'
-2013-03-01T17:59:42+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/rack-1.4.1/lib/rack/etag.rb:23:in `call'
-2013-03-01T17:59:42+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/rack-1.4.1/lib/rack/conditionalget.rb:25:in `call'
-2013-03-01T17:59:42+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/actionpack-3.2.7/lib/action_dispatch/middleware/params_parser.rb:21:in `call'
-2013-03-01T17:59:42+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/activerecord-3.2.7/lib/active_record/railties/controller_runtime.rb:18:in `process_action'
-2013-03-01T17:59:42+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/actionpack-3.2.7/lib/action_controller/metal/instrumentation.rb:30:in `block in process_action'
-2013-03-01T17:59:42+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/activesupport-3.2.7/lib/active_support/notifications.rb:123:in `block in instrument'
-2013-03-01T17:59:42+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/activerecord-3.2.7/lib/active_record/query_cache.rb:64:in `call'
-2013-03-01T17:59:42+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/actionpack-3.2.7/lib/abstract_controller/rendering.rb:45:in `process'
-2013-03-01T17:59:42+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/actionpack-3.2.7/lib/action_dispatch/middleware/cookies.rb:338:in `call'
-2013-03-01T17:59:42+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/activerecord-3.2.7/lib/active_record/connection_adapters/abstract/connection_pool.rb:473:in `call'
-2013-03-01T17:59:42+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/actionpack-3.2.7/lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
-2013-03-01T17:59:42+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/activesupport-3.2.7/lib/active_support/callbacks.rb:81:in `run_callbacks'
-2013-03-01T17:59:42+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/journey-1.0.4/lib/journey/router.rb:56:in `call'
-2013-03-01T17:59:42+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/actionpack-3.2.7/lib/abstract_controller/base.rb:121:in `process'
-2013-03-01T17:59:42+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/activesupport-3.2.7/lib/active_support/callbacks.rb:405:in `__run_callback'
-2013-03-01T17:59:42+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/actionpack-3.2.7/lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
-2013-03-01T17:59:42+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/rack-1.4.1/lib/rack/session/abstract/id.rb:200:in `call'
-2013-03-01T17:59:42+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/railties-3.2.7/lib/rails/rack/logger.rb:16:in `call'
-2013-03-01T17:59:42+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/actionpack-3.2.7/lib/action_dispatch/middleware/callbacks.rb:27:in `call'
-2013-03-01T17:59:42+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/rack-1.4.1/lib/rack/methodoverride.rb:21:in `call'
-2013-03-01T17:59:42+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/actionpack-3.2.7/lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
-2013-03-01T17:59:42+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/actionpack-3.2.7/lib/action_dispatch/middleware/request_id.rb:22:in `call'
-2013-03-01T17:59:42+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/rack-1.4.1/lib/rack/session/abstract/id.rb:205:in `context'
-2013-03-01T17:59:42+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/rack-1.4.1/lib/rack/runtime.rb:17:in `call'
-2013-03-01T17:59:42+00:00
- app[web.1]:   vendor/bundle/ruby/1.9.1/gems/railties-3.2.7/lib/rails/rack/logger.rb:26:in `call_app'
-2013-03-01T17:59:42+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/rack-cache-1.2/lib/rack/cache/context.rb:245:in `fetch'
-2013-03-01T17:59:42+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/rack-1.4.1/lib/rack/lock.rb:15:in `call'
-2013-03-01T17:59:42+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/actionpack-3.2.7/lib/action_dispatch/middleware/static.rb:62:in `call'
-2013-03-01T17:59:42+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/railties-3.2.7/lib/rails/application.rb:220:in `call'
-2013-03-01T17:59:42+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/rack-1.4.1/lib/rack/content_length.rb:14:in `call'
-2013-03-01T17:59:42+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/railties-3.2.7/lib/rails/rack/log_tailer.rb:17:in `call'
-2013-03-01T17:59:42+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/rack-cache-1.2/lib/rack/cache/context.rb:66:in `call!'
-2013-03-01T17:59:42+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/rack-1.4.1/lib/rack/handler/webrick.rb:59:in `service'
-2013-03-01T17:59:42+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/rack-cache-1.2/lib/rack/cache/context.rb:51:in `call'
-2013-03-01T17:59:42+00:00 app[web.1]:   /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
-2013-03-01T17:59:42+00:00 app[web.1]:   /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
-2013-03-01T17:59:42+00:00 app[web.1]:   /usr/local/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
-2013-03-01T17:59:42+00:00 app[web.1]: Processing by Admin::PostsController#edit as HTML
-2013-03-01T17:59:42+00:00 app[web.1]: 
-2013-03-01T17:59:42+00:00 app[web.1]:   Parameters: {"id"=>"2"}
-2013-03-01T17:59:42+00:00 app[web.1]:   Rendered vendor/bundle/ruby/1.9.1/gems/activeadmin-0.5.1/app/views/active_admin/resource/edit.html.arb (2.1ms)
-2013-03-01T17:59:42+00:00 app[web.1]: Completed 500 Internal Server Error in 7ms
-2013-03-01T17:59:42+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/actionpack-3.2.7/lib/action_controller/metal/responder.rb:146:in `call'
-2013-03-01T17:59:42+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/actionpack-3.2.7/lib/action_controller/metal/rendering.rb:10:in `process_action'
-2013-03-01T17:59:42+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/actionpack-3.2.7/lib/abstract_controller/callbacks.rb:17:in `process_action'
-2013-03-01T17:59:42+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/activesupport-3.2.7/lib/active_support/core_ext/benchmark.rb:5:in `block in ms'
-2013-03-01T17:59:42+00:00 app[web.1]:   /usr/local/lib/ruby/1.9.1/benchmark.rb:310:in `realtime'
-2013-03-01T17:59:42+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/activerecord-3.2.7/lib/active_record/railties/controller_runtime.rb:24:in `cleanup_view_runtime'
-2013-03-01T17:59:42+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/act
-ionpack-3.2.7/lib/action_controller/metal/params_wrapper.rb:207:in `process_action'
-2013-03-01T17:59:42+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/journey-1.0.4/lib/journey/router.rb:56:in `each'
-2013-03-01T17:59:42+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/actionpack-3.2.7/lib/action_dispatch/middleware/head.rb:14:in `call'
-2013-03-01T17:59:42+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/actionpack-3.2.7/lib/action_dispatch/routing/route_set.rb:73:in `call'
-2013-03-01T17:59:42+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/warden-1.2.1/lib/warden/manager.rb:34:in `catch'
-2013-03-01T17:59:42+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/actionpack-3.2.7/lib/action_dispatch/middleware/flash.rb:242:in `call'
-2013-03-01T17:59:42+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/actionpack-3.2.7/lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
-2013-03-01T17:59:42+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/activesupport-3.2.7/lib/active_support/cache/strategy/local_cache.rb:72:in `call'
-2013-03-01T17:59:42+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/rack-cache-1.2/lib/rack/cache/context.rb:185:in `lookup'
-2013-03-01T17:59:42+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/activesupport-3.2.7/lib/active_support/callbacks.rb:405:in `_run__2419809659949114516__call__3330661565163555617__callbacks'
-2013-03-01T17:59:42+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/activesupport-3.2.7/lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
-2013-03-01T17:59:42+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/rack-cache-1.2/lib/rack/cache/context.rb:136:in `forward'
-2013-03-01T17:59:42+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/railties-3.2.7/lib/rails/engine.rb:479:in `call'
-2013-03-01T17:59:42+00:00 app[web.1]: 
-2013-03-01T17:59:44+00:00 heroku[router]: at=info method=GET path=/favicon.ico host=mfblog.herokuapp.com fwd="58.186.154.214" dyno=web.1 queue=0 wait=0ms connect=0ms service=368ms status=304 bytes=0
-2013-03-01T18:00:27+00:00 app[web.1]: 
-2013-03-01T18:00:27+00:00 app[web.1]: 
-2013-03-01T18:00:27+00:00 app[web.1]: Started GET "/admin/posts/2/edit" for 58.186.154.214 at 2013-03-01 18:00:23 +0000
-2013-03-01T18:00:27+00:00 heroku[router]: at=info method=GET path=/admin/posts/2/edit host=mfblog.herokuapp.com fwd="58.186.154.214" dyno=web.1 queue=0 wait=0ms connect=1ms service=3960ms status=500 bytes=643
-2013-03-01T18:00:27+00:00 app[web.1]: 
-2013-03-01T18:00:27+00:00 app[web.1]: ActionView::Template::Error (admin/active_admin.css isn't precompiled):
-2013-03-01T18:00:27+00:00 app[web.1]:     1: insert_tag renderer_for(:edit)
-2013-03-01T18:00:27+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/actionpack-3.2.7/lib/sprockets/helpers/rails_helper.rb:142:in `digest_for'
-2013-03-01T18:00:27+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/actionpack-3.2.7/lib/sprockets/helpers/rails_helper.rb:150:in `rewrite_asset_path'
-2013-03-01T18:00:27+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/actionpack-3.2.7/lib/action_view/asset_paths.rb:27:in `compute_public_path'
-2013-03-01T18:00:27+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/actionpack-3.2.7/lib/sprockets/helpers/rails_helper.rb:56:in `asset_path'
-2013-03-01T18:00:27+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/actionpack-3.2.7/lib/sprockets/helpers/rails_helper.rb:49:in `block in stylesheet_link_tag'
-2013-03-01T18:00:27+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/actionpack-3.2.7/lib/sprockets/helpers/rails_helper.rb:43:in `collect'
-2013-03-01T18:00:27+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/actionpack-3.2.7/lib/sprockets/helpers/rails_helper.rb:43:in `stylesheet_link_tag'
-2013-03-01T18:00:27+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/arbre-1.0.1/lib/arbre/element.rb:175:in `method_missing'
-2013-03-01T18:00:27+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/activeadmin-0.5.1/lib/active_admin/views/pages/base.rb:27:in `block (2 levels) in build_active_admin_head'
-2013-03-01T18:00:27+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/activeadmin-0.5.1/lib/active_admin/views/pages/base.rb:26:in `each'
-2013-03-01T18:00:27+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/activeadmin-0.5.1/lib/active_admin/views/pages/base.rb:26:in `block in build_active_admin_head'
-2013-03-01T18:00:27+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/arbre-1.0.1/lib/arbre/context.rb:92:in `with_current_arbre_element'
-2013-03-01T18:00:27+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/arbre-1.0.1/lib/arbre/element/builder_methods.rb:49:in `with_current_arbre_element'
-2013-03-01T18:00:27+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/activeadmin-0.5.1/lib/active_admin/views/pages/base.rb:24:in `build_active_admin_head'
-2013-03-01T18:00:27+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/activeadmin-0.5.1/lib/active_admin/views/pages/base.rb:9:in `build'
-2013-03-01T18:00:27+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/arbre-1.0.1/lib/arbre/element/builder_methods.rb:30:in `block in build_tag'
-2013-03-01T18:00:27+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/arbre-1.0.1/lib/arbre/context.rb:92:in `with_current_arbre_element'
-2013-03-01T18:00:27+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/arbre-1.0.1/lib/arbre/element/builder_methods.rb:26:in `build_tag'
-2013-03-01T18:00:27+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/arbre-1.0.1/lib/arbre/element/builder_methods.rb:39:in `insert_tag'
-2013-03-01T18:00:27+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/activeadmin-0.5.1/app/views/active_admin/resource/edit.html.arb:1:in `block in _vendor_bundle_ruby_______gems_activeadmin_______app_views_active_admin_resource_edit_html_arb__3093838030817599831_39953160'
-2013-03-01T18:00:27+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/arbre-1.0.1/lib/arbre/context.rb:45:in `instance_eval'
-2013-03-01T18:00:27+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/arbre-1.0.1/lib/arbre/context.rb:45:in `initialize'
-2013-03-01T18:00:27+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/activeadmin-0.5.1/app/views/active_admin/resource/edit.html.arb:1:in `new'
-2013-03-01T18:00:27+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/activeadmin-0.5.1/app/views/active_admin/resource/edit.html.arb:1:in `_vendor_bundle_ruby_______gems_activeadmin_______app_views_active_admin_resource_edit_html_arb__3093838030817599831_39953160'
-2013-03-01T18:00:27+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/actionpack-3.2.7/lib/action_view/template.rb:145:in `block in render'
-2013-03-01T18:00:27+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/activesupport-3.2.7/lib/active_support/notifications.rb:125:in `instrument'
-2013-03-01T18:00:27+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/actionpack-3.2.7/lib/action_view/template.rb:143:in `render'
-2013-03-01T18:00:27+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/actionpack-3.2.7/lib/action_view/renderer/template_renderer.rb:47:in `block (2 levels) in render_template'
-2013-03-01T18:00:27+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/actionpack-3.2.7/lib/action_view/renderer/abstract_renderer.rb:38:in `block in instrument'
-2013-03-01T18:00:27+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/activesupport-3.2.7/lib/active_support/notifications.rb:123:in `block in instrument'
-2013-03-01T18:00:27+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/activesupport-3.2.7/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
-2013-03-01T18:00:27+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/activesupport-3.2.7/lib/active_support/notifications.rb:123:in `instrument'
-2013-03-01T18:00:27+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/actionpack-3.2.7/lib/action_view/renderer/abstract_renderer.rb:38:in `instrument'
-2013-03-01T18:00:27+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/actionpack-3.2.7/lib/action_view/renderer/template_renderer.rb:46:in `block in render_template'
-2013-03-01T18:00:27+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/actionpack-3.2.7/lib/action_view/renderer/template_renderer.rb:54:in `render_with_layout'
-2013-03-01T18:00:27+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/actionpack-3.2.7/lib/action_view/renderer/template_renderer.rb:45:in `render_template'
-2013-03-01T18:00:27+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/actionpack-3.2.7/lib/action_view/renderer/template_renderer.rb:18:in `render'
-2013-03-01T18:00:27+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/actionpack-3.2.7/lib/action_view/renderer/renderer.rb:36:in `render_template'
-2013-03-01T18:00:27+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/actionpack-3.2.7/lib/action_view/renderer/renderer.rb:17:in `render'
-2013-03-01T18:00:27+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/actionpack-3.2.7/lib/abstract_controller/rendering.rb:110:in `_render_template'
-2013-03-01T18:00:27+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/actionpack-3.2.7/lib/action_controller/metal/streaming.rb:225:in `_render_template'
-2013-03-01T18:00:27+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/actionpack-3.2.7/lib/abstract_controller/rendering.rb:103:in `render_to_body'
-2013-03-01T18:00:27+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/actionpack-3.2.7/lib/action_controller/metal/renderers.rb:28:in `render_to_body'
-2013-03-01T18:00:27+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/actionpack-3.2.7/lib/action_controller/metal/compatibility.rb:50:in `render_to_body'
-2013-03-01T18:00:27+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/actionpack-3.2.7/lib/abstract_controller/rendering.rb:88:in `render'
-2013-03-01T18:00:27+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/actionpack-3.2.7/lib/action_controller/metal/rendering.rb:16:in `render'
-2013-03-01T18:00:27+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/actionpack-3.2.7/lib/action_controller/metal/instrumentation.rb:40:in `block (2 levels) in render'
-2013-03-01T18:00:27+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/activesupport-3.2.7/lib/active_support/core_ext/benchmark.rb:5:in `block in ms'
-2013-03-01T18:00:27+00:00 app[web.1]:   /usr/local/lib/ruby/1.9.1/benchmark.rb:310:in `realtime'
-2013-03-01T18:00:27+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/activesupport-3.2.7/lib/active_support/core_ext/benchmark.rb:5:in `ms'
-2013-03-01T18:00:27+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/actionpack-3.2.7/lib/action_controller/metal/instrumentation.rb:40:in `block in render'
-2013-03-01T18:00:27+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/actionpack-3.2.7/lib/action_controller/metal/instrumentation.rb:83:in `cleanup_view_runtime'
-2013-03-01T18:00:27+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/activerecord-3.2.7/lib/active_record/railties/controller_runtime.rb:24:in `cleanup_view_runtime'
-2013-03-01T18:00:27+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/actionpack-3.2.7/lib/action_controller/metal/instrumentation.rb:39:in `render'
-2013-03-01T18:00:27+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/activeadmin-0.5.1/lib/active_admin/resource_controller/actions.rb:42:in `block (2 levels) in edit'
-2013-03-01T18:00:27+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/actionpack-3.2.7/lib/action_controller/metal/responder.rb:230:in `call'
-2013-03-01T18:00:27+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/actionpack-3.2.7/lib/action_controller/metal/responder.rb:230:in `default_render'
-2013-03-01T18:00:27+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/actionpack-3.2.7/lib/action_controller/metal/responder.rb:160:in `to_html'
-2013-03-01T18:00:27+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/responders-0.9.3/lib/responders/flash_responder.rb:104:in `to_html'
-2013-03-01T18:00:27+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/actionpack-3.2.7/lib/action_controller/metal/responder.rb:153:in `respond'
-2013-03-01T18:00:27+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/actionpack-3.2.7/lib/action_controller/metal/responder.rb:146:in `call'
-2013-03-01T18:00:27+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/actionpack-3.2.7/lib/action_controller/metal/mime_responds.rb:239:in `respond_with'
-2013-03-01T18:00:27+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/inherited_resources-1.3.1/lib/inherited_resources/actions.rb:25:in `edit'
-2013-03-01T18:00:27+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/activeadmin-0.5.1/lib/active_admin/resource_controller/actions.rb:40:in `edit'
-2013-03-01T18:00:27+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/actionpack-3.2.7/lib/action_controller/metal/implicit_render.rb:4:in `send_action'
-2013-03-01T18:00:27+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/actionpack-3.2.7/lib/abstract_controller/base.rb:167:in `process_action'
-2013-03-01T18:00:27+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/actionpack-3.2.7/lib/action_controller/metal/rendering.rb:10:in `process_action'
-2013-03-01T18:00:27+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/actionpack-3.2.7/lib/abstract_controller/callbacks.rb:18:in `block in process_action'
-2013-03-01T18:00:27+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/activesupport-3.2.7/lib/active_support/callbacks.rb:458:in `_run__4130817295857402046__process_action__807065068918792504__callbacks'
-2013-03-01T18:00:27+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/activesupport-3.2.7/lib/active_support/callbacks.rb:405:in `__run_callback'
-2013-03-01T18:00:27+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/activesupport-3.2.7/lib/active_support/callbacks.rb:385:in `_run_process_action_callbacks'
-2013-03-01T18:00:27+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/activesupport-3.2.7/lib/active_support/callbacks.rb:81:in `run_callbacks'
-2013-03-01T18:00:27+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/actionpack-3.2.7/lib/abstract_controller/callbacks.rb:17:in `process_action'
-2013-03-01T18:00:27+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/actionpack-3.2.7/lib/action_controller/metal/rescue.rb:29:in `process_action'
-2013-03-01T18:00:27+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/actionpack-3.2.7/lib/action_controller/metal/instrumentation.rb:30:in `block in process_action'
-2013-03-01T18:00:27+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/activesupport-3.2.7/lib/active_support/notifications.rb:123:in `block in instrument'
-2013-03-01T18:00:27+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/activesupport-3.2.7/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
-2013-03-01T18:00:27+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/activesupport-3.2.7/lib/active_support/notifications.rb:123:in `instrument'
-2013-03-01T18:00:27+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/actionpack-3.2.7/lib/action_controller/metal/instrumentation.rb:29:in `process_action'
-2013-03-01T18:00:27+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/actionpack-3.2.7/lib/action_controller/metal/params_wrapper.rb:207:in `process_action'
-2013-03-01T18:00:27+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/activerecord-3.2.7/lib/active_record/railties/controller_runtime.rb:18:in `process_action'
-2013-03-01T18:00:27+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/actionpack-3.2.7/lib/abstract_controller/base.rb:121:in `process'
-2013-03-01T18:00:27+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/actionpack-3.2.7/lib/abstract_controller/rendering.rb:45:in `process'
-2013-03-01T18:00:27+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/actionpack-3.2.7/lib/action_controller/metal.rb:203:in `dispatch'
-2013-03-01T18:00:27+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/actionpack-3.2.7/lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
-2013-03-01T18:00:27+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/actionpack-3.2.7/lib/action_controller/metal.rb:246:in `block in action'
-2013-03-01T18:00:27+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/actionpack-3.2.7/lib/action_dispatch/routing/route_set.rb:73:in `call'
-2013-03-01T18:00:27+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/actionpack-3.2.7/lib/action_dispatch/routing/route_set.rb:73:in `dispatch'
-2013-03-01T18:00:27+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/actionpack-3.2.7/lib/action_dispatch/routing/route_set.rb:36:in `call'
-2013-03-01T18:00:27+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/journey-1.0.4/lib/journey/router.rb:68:in `block in call'
-2013-03-01T18:00:27+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/journey-1.0.4/lib/journey/router.rb:56:in `each'
-2013-03-01T18:00:27+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/journey-1.0.4/lib/journey/router.rb:56:in `call'
-2013-03-01T18:00:27+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/actionpack-3.2.7/lib/action_dispatch/routing/route_set.rb:600:in `call'
-2013-03-01T18:00:27+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/sass-3.2.5/lib/sass/plugin/rack.rb:54:in `call'
-2013-03-01T18:00:27+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/warden-1.2.1/lib/warden/manager.rb:35:in `block in call'
-2013-03-01T18:00:27+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/warden-1.2.1/lib/warden/manager.rb:34:in `catch'
-2013-03-01T18:00:27+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/warden-1.2.1/lib/warden/manager.rb:34:in `call'
-2013-03-01T18:00:27+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/actionpack-3.2.7/lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
-2013-03-01T18:00:27+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/rack-1.4.1/lib/rack/etag.rb:23:in `call'
-2013-03-01T18:00:27+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/rack-1.4.1/lib/rack/conditionalget.rb:25:in `call'
-2013-03-01T18:00:27+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/actionpack-3.2.7/lib/action_dispatch/middleware/head.rb:14:in `call'
-2013-03-01T18:00:27+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/actionpack-3.2.7/lib/action_dispatch/middleware/params_parser.rb:21:in `call'
-2013-03-01T18:00:27+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/actionpack-3.2.7/lib/action_dispatch/middleware/flash.rb:242:in `call'
-2013-03-01T18:00:27+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/rack-1.4.1/lib/rack/session/abstract/id.rb:205:in `context'
-2013-03-01T18:00:27+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/rack-1.4.1/lib/rack/session/abstract/id.rb:200:in `call'
-2013-03-01T18:00:27+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/actionpack-3.2.7/lib/action_dispatch/middleware/cookies.rb:338:in `call'
-2013-03-01T18:00:27+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/activerecord-3.2.7/lib/active_record/query_cache.rb:64:in `call'
-2013-03-01T18:00:27+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/activerecord-3.2.7/lib/active_record/connection_adapters/abstract/connection_pool.rb:473:in `call'
-2013-03-01T18:00:27+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/actionpack-3.2.7/lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
-2013-03-01T18:00:27+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/activesupport-3.2.7/lib/active_support/callbacks.rb:405:in `_run__2419809659949114516__call__3330661565163555617__callbacks'
-2013-03-01T18:00:27+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/activesupport-3.2.7/lib/active_support/callbacks.rb:405:in `__run_callback'
-2013-03-01T18:00:27+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/activesupport-3.2.7/lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
-2013-03-01T18:00:27+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/activesupport-3.2.7/lib/active_support/callbacks.rb:81:in `run_callbacks'
-2013-03-01T18:00:27+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/actionpack-3.2.7/lib/action_dispatch/middleware/callbacks.rb:27:in `call'
-2013-03-01T18:00:27+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/actionpack-3.2.7/lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
-2013-03-01T18:00:27+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/actionpack-3.2.7/lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
-2013-03-01T18:00:27+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/actionpack-3.2.7/lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
-2013-03-01T18:00:27+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/railties-3.2.7/lib/rails/rack/logger.rb:26:in `call_app'
-2013-03-01T18:00:27+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/railties-3.2.7/lib/rails/rack/logger.rb:16:in `call'
-2013-03-01T18:00:27+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/actionpack-3.2.7/lib/action_dispatch/middleware/request_id.rb:22:in `call'
-2013-03-01T18:00:27+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/rack-1.4.1/lib/rack/methodoverride.rb:21:in `call'
-2013-03-01T18:00:27+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/rack-1.4.1/lib/rack/runtime.rb:17:in `call'
-2013-03-01T18:00:27+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/activesupport-3.2.7/lib/active_support/cache/strategy/local_cache.rb:72:in `call'
-2013-03-01T18:00:27+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/rack-1.4.1/lib/rack/lock.rb:15:in `call'
-2013-03-01T18:00:27+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/actionpack-3.2.7/lib/action_dispatch/middleware/static.rb:62:in `call'
-2013-03-01T18:00:27+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/rack-cache-1.2/lib/rack/cache/context.rb:136:in `forward'
-2013-03-01T18:00:27+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/rack-cache-1.2/lib/rack/cache/context.rb:245:in `fetch'
-2013-03-01T18:00:27+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/rack-cache-1.2/lib/rack/cache/context.rb:185:in `lookup'
-2013-03-01T18:00:27+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/rack-cache-1.2/lib/rack/cache/context.rb:66:in `call!'
-2013-03-01T18:00:27+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/rack-cache-1.2/lib/rack/cache/context.rb:51:in `call'
-2013-03-01T18:00:27+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/railties-3.2.7/lib/rails/engine.rb:479:in `call'
-2013-03-01T18:00:27+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/railties-3.2.7/lib/rails/application.rb:220:in `call'
-2013-03-01T18:00:27+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/rack-1.4.1/lib/rack/content_length.rb:14:in `call'
-2013-03-01T18:00:27+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/railties-3.2.7/lib/rails/rack/log_tailer.rb:17:in `call'
-2013-03-01T18:00:27+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/rack-1.4.1/lib/rack/handler/webrick.rb:59:in `service'
-2013-03-01T18:00:27+00:00 app[web.1]:   /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
-2013-03-01T18:00:27+00:00 app[web.1]:   /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
-2013-03-01T18:00:27+00:00 app[web.1]:   /usr/local/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
-2013-03-01T18:00:27+00:00 app[web.1]: 
-2013-03-01T18:00:27+00:00 app[web.1]: 
-2013-03-01T18:00:27+00:00 app[web.1]: Processing by Admin::PostsController#edit as HTML
-2013-03-01T18:00:27+00:00 app[web.1]:   Parameters: {"id"=>"2"}
-2013-03-01T18:00:27+00:00 app[web.1]:   Rendered vendor/bundle/ruby/1.9.1/gems/activeadmin-0.5.1/app/views/active_admin/resource/edit.html.arb (5.8ms)
-2013-03-01T18:00:27+00:00 app[web.1]: Completed 500 Internal Server Error in 25ms
-2013-03-01T18:00:28+00:00 heroku[router]: at=info method=GET path=/favicon.ico host=mfblog.herokuapp.com fwd="58.186.154.214" dyno=web.1 queue=0 wait=0ms connect=0ms service=50ms status=304 bytes=0
-2013-03-01T18:21:33+00:00 heroku[slugc]: Slug compilation started
-2013-03-01T18:22:22+00:00 heroku[api]: Release v16 created by unrealhoang@gmail.com
-2013-03-01T18:22:22+00:00 heroku[api]: Deploy a21862b by unrealhoang@gmail.com
-2013-03-01T18:22:23+00:00 heroku[slugc]: Slug compilation finished
-2013-03-01T18:22:24+00:00 heroku[web.1]: Starting process with command `bundle exec rails server -p 21798`
-2013-03-01T18:22:22+00:00 heroku[web.1]: State changed from up to starting
-2013-03-01T18:22:25+00:00 heroku[web.1]: Stopping all processes with SIGTERM
-2013-03-01T18:22:26+00:00 app[web.1]: [2013-03-01 18:22:26] ERROR SignalException: SIGTERM
-2013-03-01T18:22:26+00:00 app[web.1]: 	/usr/local/lib/ruby/1.9.1/webrick/server.rb:90:in `select'
-2013-03-01T18:22:37+00:00 heroku[web.1]: Error R12 (Exit timeout) -> At least one process failed to exit within 10 seconds of SIGTERM
-2013-03-01T18:22:37+00:00 heroku[web.1]: Stopping remaining processes with SIGKILL
-2013-03-01T18:22:38+00:00 app[web.1]: DEPRECATION WARNING: You have Rails 2.3-style plugins in vendor/plugins! Support for these plugins will be removed in Rails 4.0. Move them out and bundle them in your Gemfile, or fold them in to your app as lib/myplugin/* and config/initializers/myplugin.rb. See the release notes for more on this: http://weblog.rubyonrails.org/2012/1/4/rails-3-2-0-rc2-has-been-released. (called from <top (required)> at /app/config/environment.rb:5)
-2013-03-01T18:22:38+00:00 app[web.1]: DEPRECATION WARNING: You have Rails 2.3-style plugins in vendor/plugins! Support for these plugins will be removed in Rails 4.0. Move them out and bundle them in your Gemfile, or fold them in to your app as lib/myplugin/* and config/initializers/myplugin.rb. See the release notes for more on this: http://weblog.rubyonrails.org/2012/1/4/rails-3-2-0-rc2-has-been-released. (called from <top (required)> at /app/config/environment.rb:5)
-2013-03-01T18:22:38+00:00 heroku[web.1]: Process exited with status 137
-2013-03-01T18:22:45+00:00 app[web.1]: [2013-03-01 18:22:45] INFO  WEBrick 1.3.1
-2013-03-01T18:22:45+00:00 app[web.1]: [2013-03-01 18:22:45] INFO  ruby 1.9.2 (2011-07-09) [x86_64-linux]
-2013-03-01T18:22:45+00:00 app[web.1]: [2013-03-01 18:22:45] INFO  WEBrick::HTTPServer#start: pid=2 port=21798
-2013-03-01T18:22:47+00:00 heroku[web.1]: State changed from starting to up
-2013-03-01T18:23:13+00:00 app[web.1]: => Booting WEBrick
-2013-03-01T18:23:13+00:00 app[web.1]: => Rails 3.2.7 application starting in production on http://0.0.0.0:21798
-2013-03-01T18:23:13+00:00 app[web.1]: => Call with -d to detach
-2013-03-01T18:23:13+00:00 app[web.1]: => Ctrl-C to shutdown server
-2013-03-01T18:23:13+00:00 app[web.1]: 
-2013-03-01T18:23:13+00:00 app[web.1]: 
-2013-03-01T18:23:13+00:00 app[web.1]: Started GET "/admin/posts/2/edit" for 58.186.154.214 at 2013-03-01 18:23:13 +0000
-2013-03-01T18:23:15+00:00 app[web.1]: Processing by Admin::PostsController#edit as HTML
-2013-03-01T18:23:15+00:00 app[web.1]:   Parameters: {"id"=>"2"}
-2013-03-01T18:23:15+00:00 app[web.1]:   Rendered vendor/bundle/ruby/1.9.1/gems/activeadmin-0.5.1/app/views/active_admin/resource/edit.html.arb (927.3ms)
-2013-03-01T18:23:15+00:00 app[web.1]: Completed 200 OK in 1158ms (Views: 978.8ms | ActiveRecord: 83.3ms)
-2013-03-01T18:23:15+00:00 heroku[router]: at=info method=GET path=/admin/posts/2/edit host=mfblog.herokuapp.com fwd="58.186.154.214" dyno=web.1 queue=0 wait=1ms connect=2ms service=1344ms status=200 bytes=13338
-2013-03-01T18:23:15+00:00 heroku[router]: at=info method=GET path=/assets/admin/active_admin-95ad68f699df9b8b6b84607598414232.css host=mfblog.herokuapp.com fwd="58.186.154.214" dyno=web.1 queue=0 wait=0ms connect=4ms service=59ms status=200 bytes=97689
-2013-03-01T18:23:15+00:00 heroku[router]: at=info method=GET path=/assets/admin/active_admin-f96c9d6220215f0bf6168398c6795bed.js host=mfblog.herokuapp.com fwd="58.186.154.214" dyno=web.1 queue=0 wait=0ms connect=1ms service=71ms status=200 bytes=804839
-2013-03-01T18:23:22+00:00 heroku[router]: at=info method=GET path=/assets/jquery-ui/ui-icons_888888_256x240-5b928d6b862809eb8130d7b7e0b51a1d.png host=mfblog.herokuapp.com fwd="58.186.154.214" dyno=web.1 queue=0 wait=0ms connect=1ms service=11ms status=200 bytes=4369
-2013-03-01T18:23:22+00:00 heroku[router]: at=info method=GET path=/assets/jquery-ui/ui-bg_flat_75_ffffff_40x100-841636c8f8d33987bb8d2f31e8ef92ca.png host=mfblog.herokuapp.com fwd="58.186.154.214" dyno=web.1 queue=0 wait=0ms connect=1ms service=9ms status=200 bytes=178
-2013-03-01T18:23:22+00:00 heroku[router]: at=info method=GET path=/assets/ckeditor/config.js?t=D08E host=mfblog.herokuapp.com fwd="58.186.154.214" dyno=web.1 queue=0 wait=0ms connect=1ms service=9ms status=200 bytes=198
-2013-03-01T18:23:23+00:00 heroku[router]: at=info method=GET path=/assets/ckeditor/skins/moono/editor.css?t=D08E host=mfblog.herokuapp.com fwd="58.186.154.214" dyno=web.1 queue=0 wait=0ms connect=1ms service=7ms status=200 bytes=30965
-2013-03-01T18:23:23+00:00 heroku[router]: at=info method=GET path=/favicon.ico host=mfblog.herokuapp.com fwd="58.186.154.214" dyno=web.1 queue=0 wait=1ms connect=4ms service=7ms status=200 bytes=0
-2013-03-01T18:23:23+00:00 heroku[router]: at=info method=GET path=/assets/ckeditor/lang/en.js?t=D08E host=mfblog.herokuapp.com fwd="58.186.154.214" dyno=web.1 queue=0 wait=0ms connect=2ms service=5ms status=200 bytes=16490
-2013-03-01T18:23:23+00:00 heroku[router]: at=info method=GET path=/assets/ckeditor/contents.css host=mfblog.herokuapp.com fwd="58.186.154.214" dyno=web.1 queue=0 wait=0ms connect=1ms service=5ms status=200 bytes=875
-2013-03-01T18:23:23+00:00 heroku[router]: at=info method=GET path=/assets/ckeditor/plugins/icons.png?t=D08E host=mfblog.herokuapp.com fwd="58.186.154.214" dyno=web.1 queue=0 wait=0ms connect=1ms service=7ms status=200 bytes=21201
-2013-03-01T18:23:24+00:00 heroku[router]: at=info method=GET path=/assets/ckeditor/styles.js?t=D08E host=mfblog.herokuapp.com fwd="58.186.154.214" dyno=web.1 queue=0 wait=0ms connect=2ms service=8ms status=200 bytes=2080
-2013-03-01T18:23:24+00:00 heroku[router]: at=info method=GET path=/assets/ckeditor/skins/moono/icons.png host=mfblog.herokuapp.com fwd="58.186.154.214" dyno=web.1 queue=0 wait=0ms connect=8ms service=6ms status=200 bytes=21201
-2013-03-01T18:24:28+00:00 app[web.1]: 
-2013-03-01T18:24:28+00:00 app[web.1]: 
-2013-03-01T18:24:28+00:00 app[web.1]: Started PUT "/admin/posts/2" for 58.186.154.214 at 2013-03-01 18:24:28 +0000
-2013-03-01T18:24:28+00:00 app[web.1]: Processing by Admin::PostsController#update as HTML
-2013-03-01T18:24:28+00:00 app[web.1]:   Parameters: {"utf8"=>"✓", "authenticity_token"=>"bqv+ZSLnr8pidEvCkVjnLqwv1/NPdC90QMWoPssIzLE=", "post"=>{"title"=>"VIBER -THỊ TRƯỜNG CHÂU Á LÀ MỤC TIÊU CHIẾN LƯỢC CỦA NĂM 2013", "category_id"=>"2", "image"=>"http://www.action.vn/images/stories/Content_update/130201/viber-china.jpg", "is_top_article"=>"0", "tags"=>"startup,hola,instant messenger", "content"=>"<p style=\"margin: 0px; padding: 0px; line-height: 24px; color: rgb(85, 85, 85); font-family: Arial, Helvetica, sans-serif; font-size: 14px;\"><strong>Action.vn - Ứng dụng tin nhắn Viber sẽ d&agrave;nh tổng lực để chinh phục ch&acirc;u &Aacute; khi m&agrave; thị trường &quot;m&agrave;u mỡ&quot; n&agrave;y hiện đang chiếm 1/3 tổng số người d&ugrave;ng của Viber.</strong></p>\r\n\r\n<p style=\"margin: 0px; padding: 0px; line-height: 24px; color: rgb(85, 85, 85); font-family: Arial, Helvetica, sans-serif; font-size: 14px;\">&nbsp;</p>\r\n\r\n<p style=\"margin: 0px; padding: 0px; line-height: 24px;
-2013-03-01T18:24:28+00:00 app[web.1]:  color: rgb(85, 85, 85); font-family: Arial, Helvetica, sans-serif; font-size: 14px;\"><a href=\"http://appstore.vn/android/home/app/1329\" style=\"color: rgb(235, 187, 1); text-decoration: initial;\" target=\"_blank\">Viber</a>, ứng dụng di động cho ph&eacute;p người d&ugrave;ng gửi tin nhắn v&agrave; thực hiện c&aacute;c cuộc gọi miễn ph&iacute; phổ biến to&agrave;n cầu hiện đang c&oacute; 160 triệu người d&ugrave;ng trong đ&oacute; c&oacute; 50 triệu người d&ugrave;ng hiện đang sinh sống tại c&aacute;c nước Ch&acirc;u &Aacute;.</p>\r\n\r\n<p style=\"margin: 0px; padding: 0px; line-height: 24px; color: rgb(85, 85, 85); font-family: Arial, Helvetica, sans-serif; font-size: 14px;\">&nbsp;</p>\r\n\r\n<p style=\"margin: 0px; padding: 0px; line-height: 24px; color: rgb(85, 85, 85); font-family: Arial, Helvetica, sans-serif; font-size: 14px;\">Được ph&aacute;t triển bởi Viber Media, ứng dụng n&agrave;y gi&uacute;p gửi đi hơn 12 tỷ tin nhắn
-2013-03-01T18:24:28+00:00 app[web.1]:  mỗi th&aacute;ng, gấp 2 lần so với qu&yacute; trước v&agrave; hơn 17 triệu cuộc gọi mỗi ng&agrave;y v&agrave; tổng thời lượng gọi k&eacute;o d&agrave;i hơn 3 tỷ ph&uacute;t mỗi th&aacute;ng. Viber mỗi ng&agrave;y thu h&uacute;t th&ecirc;m 500.000 người d&ugrave;ng mới.</p>\r\n\r\n<p style=\"margin: 0px; padding: 0px; line-height: 24px; color: rgb(85, 85, 85); font-family: Arial, Helvetica, sans-serif; font-size: 14px;\">&nbsp;</p>\r\n\r\n<p style=\"margin: 0px; padding: 0px; line-height: 24px; color: rgb(85, 85, 85); font-family: Arial, Helvetica, sans-serif; font-size: 14px;\">Động th&aacute;i đầu ti&ecirc;n được Viber thực hiện nhằm th&acirc;m nhập s&acirc;u v&agrave;o thị trường Ch&acirc;u &Aacute; l&agrave; việc ứng dụng n&agrave;y được dịch sang tiếng Hoa, tiếng Nhật v&agrave; tiếng H&agrave;n. C&ocirc;ng ty n&agrave;y cũng sẽ tung ra c&aacute;c phi&ecirc;n bản tiếng Th&aacute;i v&agrave; tiếng Việt trong th�
-2013-03-01T18:24:28+00:00 app[web.1]: ��i gian tới. Theo Gi&aacute;m đốc điều h&agrave;nh Talmon Marco trong th&ocirc;ng c&aacute;o b&aacute;o ch&iacute; từ Viber: &quot;Ch&uacute;ng t&ocirc;i rất phấn khởi khi thấy rằng sự hiện diện của Viber tại Ch&acirc;u &Aacute; đang tăng l&ecirc;n nhanh ch&oacute;ng. V&agrave; ch&uacute;ng t&ocirc;i tin rằng đ&acirc;y chỉ mới l&agrave; khởi đầu của giai đoạn ph&aacute;t triển vượt bậc của Viber tại Ch&acirc;u &Aacute;.&quot;</p>\r\n\r\n<p style=\"margin: 0px; padding: 0px; line-height: 24px; color: rgb(85, 85, 85); font-family: Arial, Helvetica, sans-serif; font-size: 14px;\">&nbsp;</p>\r\n\r\n<p style=\"margin: 0px; padding: 0px; line-height: 24px; color: rgb(85, 85, 85); font-family: Arial, Helvetica, sans-serif; font-size: 14px;\"><img alt=\"\" height=\"282\" src=\"http://www.action.vn/images/stories/Content_update/130201/viber-china.jpg\" style=\"border: 0px; display: block; margin-left: auto; margin-right: auto;\" width=\"577\" /></p>\r\n\r\n
-2013-03-01T18:24:28+00:00 app[web.1]: <p style=\"margin: 0px; padding: 0px; line-height: 24px; color: rgb(85, 85, 85); font-family: Arial, Helvetica, sans-serif; font-size: 14px;\">&nbsp;</p>\r\n\r\n<p style=\"margin: 0px; padding: 0px; line-height: 24px; color: rgb(85, 85, 85); font-family: Arial, Helvetica, sans-serif; font-size: 14px;\">Viber đ&atilde; lựa chọn một thời điểm kh&aacute; căng thẳng để th&acirc;m nhập v&agrave;o&nbsp;<a href=\"http://www.action.vn/tin-cong-nghe/tin-moi/2780-mobile-messaging-apps-co-gi-hay-sao-ai-cung-lam\" style=\"color: rgb(235, 187, 1); text-decoration: initial;\" target=\"_blank\">thị trường ứng dụng tin nhắn</a>khi m&agrave; c&aacute;c ứng dụng như&nbsp;<a href=\"http://www.action.vn/tin-cong-nghe/tin-moi/2887-kakaotalk-tung-ra-bo-sticker-chu-de-tet-viet\" style=\"color: rgb(235, 187, 1); text-decoration: initial;\" target=\"_blank\">KakaoTalk</a>, LINE v&agrave; WeChat đang b&ugrave;ng nổ tại đ&acirc;y. C&aacute;c c&ocirc;ng ty lớn tại ch&acirc;u &Aacute; như D
-2013-03-01T18:24:28+00:00 app[web.1]: ena v&agrave; GREE cũng đ&atilde; ph&aacute;t h&agrave;nh ứng dụng tin nhắn cho ri&ecirc;ng m&igrave;nh.</p>\r\n\r\n<p style=\"margin: 0px; padding: 0px; line-height: 24px; color: rgb(85, 85, 85); font-family: Arial, Helvetica, sans-serif; font-size: 14px;\">&nbsp;</p>\r\n\r\n<p style=\"margin: 0px; padding: 0px; line-height: 24px; color: rgb(85, 85, 85); font-family: Arial, Helvetica, sans-serif; font-size: 14px;\">Khi nhắc đến c&aacute;c đối thủ cạnh tranh, Talmon cho biết: &quot;Viber l&agrave; một trong những dịch vụ tin nhắn văn bản v&agrave; cuộc gọi h&agrave;ng đầu tr&ecirc;n thế giới v&agrave; tại Ch&acirc;u &Aacute;. Viber cung cấp giải ph&aacute;p to&agrave;n diện nhất về mặt t&iacute;nh năng (cả tin nhắn v&agrave; cuộc gọi thực sự hoạt động một c&aacute;ch hiệu quả) cũng như về mặt nền tảng khi ứng dụng n&agrave;y hỗ trợ nhiều nền tảng hơn bất kỳ đối thủ cạnh tranh n&agrave;o c�
-2013-03-01T18:24:28+00:00 app[web.1]: �a n&oacute; &quot;.</p>\r\n\r\n<p style=\"margin: 0px; padding: 0px; line-height: 24px; color: rgb(85, 85, 85); font-family: Arial, Helvetica, sans-serif; font-size: 14px;\">&nbsp;</p>\r\n\r\n<p style=\"margin: 0px; padding: 0px; line-height: 24px; color: rgb(85, 85, 85); font-family: Arial, Helvetica, sans-serif; font-size: 14px;\">Khi đề cập đến LINE - ứng dụng tạo doanh thu từ việc cung cấp c&aacute;c sản phẩm đặc biệt như stickers v&agrave; game cho người d&ugrave;ng, Talmon nhận x&eacute;t rằng: &quot;Ch&uacute;ng t&ocirc;i đang xem x&eacute;t đến m&ocirc; h&igrave;nh kinh doanh đ&oacute;. Gần đ&acirc;y, ch&uacute;ng t&ocirc;i đ&atilde; giới thiệu với người d&ugrave;ng một số sticker v&agrave; thật sự hạnh ph&uacute;c khi ch&uacute;ng được người d&ugrave;ng ưa chuộng. Ch&uacute;ng t&ocirc;i sẽ tiếp tục tăng cường c&aacute;c t&iacute;nh năng th&uacute; vị n&agrave;y trong c&aacute;c phi&ecirc;n bản tương lai.&quo
-2013-03-01T18:24:28+00:00 app[web.1]: t;</p>\r\n\r\n<p style=\"margin: 0px; padding: 0px; line-height: 24px; color: rgb(85, 85, 85); font-family: Arial, Helvetica, sans-serif; font-size: 14px;\">&nbsp;</p>\r\n\r\n<p style=\"margin: 0px; padding: 0px; line-height: 24px; color: rgb(85, 85, 85); font-family: Arial, Helvetica, sans-serif; font-size: 14px; text-align: right;\"><em>Action.vn/e27</em></p>\r\n"}, "commit"=>"Update Post", "id"=>"2"}
-2013-03-01T18:24:28+00:00 app[web.1]: Redirected to http://mfblog.herokuapp.com/admin/posts/2
-2013-03-01T18:24:28+00:00 app[web.1]: Completed 302 Found in 121ms (ActiveRecord: 0.0ms)
-2013-03-01T18:24:28+00:00 app[web.1]: 
-2013-03-01T18:24:28+00:00 app[web.1]: 
-2013-03-01T18:24:28+00:00 app[web.1]: Started GET "/admin/posts/2" for 58.186.154.214 at 2013-03-01 18:24:28 +0000
-2013-03-01T18:24:28+00:00 app[web.1]: Processing by Admin::PostsController#show as HTML
-2013-03-01T18:24:28+00:00 app[web.1]:   Parameters: {"id"=>"2"}
-2013-03-01T18:24:28+00:00 app[web.1]:   Rendered vendor/bundle/ruby/1.9.1/gems/activeadmin-0.5.1/app/views/active_admin/resource/show.html.arb (141.2ms)
-2013-03-01T18:24:28+00:00 app[web.1]: Completed 200 OK in 159ms (Views: 116.5ms | ActiveRecord: 38.6ms)
-2013-03-01T18:24:29+00:00 heroku[router]: at=info method=GET path=/assets/admin/active_admin-95ad68f699df9b8b6b84607598414232.css host=mfblog.herokuapp.com fwd="58.186.154.214" dyno=web.1 queue=0 wait=9ms connect=28ms service=19ms status=304 bytes=0
-2013-03-01T18:24:29+00:00 heroku[router]: at=info method=GET path=/assets/admin/active_admin-f96c9d6220215f0bf6168398c6795bed.js host=mfblog.herokuapp.com fwd="58.186.154.214" dyno=web.1 queue=0 wait=2ms connect=7ms service=7ms status=304 bytes=0
-2013-03-01T18:24:29+00:00 heroku[router]: at=info method=GET path=/favicon.ico host=mfblog.herokuapp.com fwd="58.186.154.214" dyno=web.1 queue=0 wait=0ms connect=1ms service=6ms status=304 bytes=0
-2013-03-01T18:24:28+00:00 heroku[router]: at=info method=GET path=/admin/posts/2 host=mfblog.herokuapp.com fwd="58.186.154.214" dyno=web.1 queue=0 wait=0ms connect=2ms service=175ms status=200 bytes=13995
+2013-03-04T20:09:35+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/actionpack-3.2.7/lib/action_view/renderer/template_renderer.rb:47:in `block (2 levels) in render_template'
+2013-03-04T20:09:35+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/actionpack-3.2.7/lib/abstract_controller/rendering.rb:103:in `render_to_body'
+2013-03-04T20:09:35+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/activeadmin-0.5.1/lib/active_admin/resource_controller/actions.rb:13:in `block (2 levels) in index'
+2013-03-04T20:09:35+00:00 app[web.1]:   /usr/local/lib/ruby/1.9.1/benchmark.rb:310:in `realtime'
+2013-03-04T20:09:35+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/activerecord-3.2.7/lib/active_record/railties/controller_runtime.rb:24:in `cleanup_view_runtime'
+2013-03-04T20:09:35+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/actionpack-3.2.7/lib/action_controller/metal/responder.rb:230:in `call'
+2013-03-04T20:09:35+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/actionpack-3.2.7/lib/action_controller/metal/responder.rb:230:in `default_render'
+2013-03-04T20:09:35+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/actionpack-3.2.7/lib/action_controller/metal/instrumentation.rb:83:in `cleanup_view_runtime'
+2013-03-04T20:09:35+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/actionpack-3.2.7/lib/action_controller/metal/instrumentation.rb:39:in `render'
+2013-03-04T20:09:35+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/activesupport-3.2.7/lib/active_support/core_ext/benchmark.rb:5:in `ms'
+2013-03-04T20:09:35+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/actionpack-3.2.7/lib/action_controller/metal/responder.rb:160:in `to_html'
+2013-03-04T20:09:35+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/responders-0.9.3/lib/responders/flash_responder.rb:104:in `to_html'
+2013-03-04T20:09:35+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/activeadmin-0.5.1/lib/active_admin/resource_controller/actions.rb:11:in `index'
+2013-03-04T20:09:35+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/actionpack-3.2.7/lib/action_controller/metal/implicit_render.rb:4:in `send_action'
+2013-03-04T20:09:35+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/inherited_resources-1.3.1/lib/inherited_resources/actions.rb:7:in `index'
+2013-03-04T20:09:35+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/actionpack-3.2.7/lib/action_controller/metal/mime_responds.rb:239:in `respond_with'
+2013-03-04T20:09:35+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/activesupport-3.2.7/lib/active_support/callbacks.rb:469:in `_run__2983766192458494679__process_action__365499334584288222__callbacks'
+2013-03-04T20:09:35+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/actionpack-3.2.7/lib/abstract_controller/base.rb:167:in `process_action'
+2013-03-04T20:09:35+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/actionpack-3.2.7/lib/action_controller/metal/responder.rb:153:in `respond'
+2013-03-04T20:09:35+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/actionpack-3.2.7/lib/action_controller/metal/responder.rb:146:in `call'
+2013-03-04T20:09:35+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/activesupport-3.2.7/lib/active_support/callbacks.rb:405:in `__run_callback'
+2013-03-04T20:09:35+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/actionpack-3.2.7/lib/action_controller/metal/rendering.rb:10:in `process_action'
+2013-03-04T20:09:35+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/activesupport-3.2.7/lib/active_support/callbacks.rb:385:in `_run_process_action_callbacks'
+2013-03-04T20:09:35+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/activesupport-3.2.7/lib/active_support/callbacks.rb:81:in `run_callbacks'
+2013-03-04T20:09:35+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/actionpack-3.2.7/lib/abstract_controller/callbacks.rb:17:in `process_action'
+2013-03-04T20:09:35+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/actionpack-3.2.7/lib/action_controller/metal/rescue.rb:29:in `process_action'
+2013-03-04T20:09:35+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/activesupport-3.2.7/lib/active_support/notifications.rb:123:in `instrument'
+2013-03-04T20:09:35+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/actionpack-3.2.7/lib/abstract_controller/callbacks.rb:18:in `block in process_action'
+2013-03-04T20:09:35+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/actionpack-3.2.7/lib/action_controller/metal/instrumentation.rb:29:in `process_action'
+2013-03-04T20:09:35+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/rack-1.4.1/lib/rack/session/abstract/id.rb:205:in `context'
+2013-03-04T20:09:35+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/rack-1.4.1/lib/rack/session/abstract/id.rb:200:in `call'
+2013-03-04T20:09:35+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/actionpack-3.2.7/lib/action_dispatch/middleware/cookies.rb:338:in `call'
+2013-03-04T20:09:35+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/activerecord-3.2.7/lib/active_record/query_cache.rb:64:in `call'
+2013-03-04T20:09:35+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/activerecord-3.2.7/lib/active_record/connection_adapters/abstract/connection_pool.rb:473:in `call'
+2013-03-04T20:09:35+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/actionpack-3.2.7/lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+2013-03-04T20:09:35+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/actionpack-3.2.7/lib/action_controller/metal/rack_delegation.rb:14:in `dispatch'
+2013-03-04T20:09:35+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/actionpack-3.2.7/lib/abstract_controller/rendering.rb:45:in `process'
+2013-03-04T20:09:35+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/activesupport-3.2.7/lib/active_support/callbacks.rb:405:in `_run__2039942522226179955__call__4479016413475606476__callbacks'
+2013-03-04T20:09:35+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/activesupport-3.2.7/lib/active_support/callbacks.rb:405:in `__run_callback'
+2013-03-04T20:09:35+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/activesupport-3.2.7/lib/active_support/callbacks.rb:385:in `_run_call_callbacks'
+2013-03-04T20:09:35+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/activesupport-3.2.7/lib/active_support/callbacks.rb:81:in `run_callbacks'
+2013-03-04T20:09:35+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/actionpack-3.2.7/lib/action_dispatch/middleware/callbacks.rb:27:in `call'
+2013-03-04T20:09:35+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/actionpack-3.2.7/lib/action_dispatch/middleware/remote_ip.rb:31:in `call'
+2013-03-04T20:09:35+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/actionpack-3.2.7/lib/action_dispatch/middleware/debug_exceptions.rb:16:in `call'
+2013-03-04T20:09:35+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/actionpack-3.2.7/lib/action_dispatch/middleware/show_exceptions.rb:56:in `call'
+2013-03-04T20:09:35+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/railties-3.2.7/lib/rails/rack/logger.rb:26:in `call_app'
+2013-03-04T20:09:35+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/actionpack-3.2.7/lib/action_controller/metal/params_wrapper.rb:207:in `process_action'
+2013-03-04T20:09:35+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/activerecord-3.2.7/lib/active_record/railties/controller_runtime.rb:18:in `process_action'
+2013-03-04T20:09:35+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/actionpack-3.2.7/lib/action_controller/metal.rb:246:in `block in action'
+2013-03-04T20:09:35+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/actionpack-3.2.7/lib/action_dispatch/routing/route_set.rb:36:in `call'
+2013-03-04T20:09:35+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/journey-1.0.4/lib/journey/router.rb:68:in `block in call'
+2013-03-04T20:09:35+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/actionpack-3.2.7/lib/action_dispatch/middleware/best_standards_support.rb:17:in `call'
+2013-03-04T20:09:35+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/activesupport-3.2.7/lib/active_support/notifications/instrumenter.rb:20:in `instrument'
+2013-03-04T20:09:35+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/actionpack-3.2.7/lib/action_dispatch/routing/route_set.rb:73:in `call'
+2013-03-04T20:09:35+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/sass-3.2.5/lib/sass/plugin/rack.rb:54:in `call'
+2013-03-04T20:09:35+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/rack-1.4.1/lib/rack/etag.rb:23:in `call'
+2013-03-04T20:09:35+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/journey-1.0.4/lib/journey/router.rb:56:in `each'
+2013-03-04T20:09:35+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/actionpack-3.2.7/lib/action_controller/metal/instrumentation.rb:30:in `block in process_action'
+2013-03-04T20:09:35+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/actionpack-3.2.7/lib/action_dispatch/routing/route_set.rb:600:in `call'
+2013-03-04T20:09:35+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/actionpack-3.2.7/lib/action_controller/metal.rb:203:in `dispatch'
+2013-03-04T20:09:35+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/actionpack-3.2.7/lib/action_dispatch/routing/route_set.rb:73:in `dispatch'
+2013-03-04
+T20:09:35+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/warden-1.2.1/lib/warden/manager.rb:34:in `call'
+2013-03-04T20:09:35+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/journey-1.0.4/lib/journey/router.rb:56:in `call'
+2013-03-04T20:09:35+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/actionpack-3.2.7/lib/abstract_controller/base.rb:121:in `process'
+2013-03-04T20:09:35+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/warden-1.2.1/lib/warden/manager.rb:35:in `block in call'
+2013-03-04T20:09:35+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/actionpack-3.2.7/lib/action_dispatch/middleware/head.rb:14:in `call'
+2013-03-04T20:09:35+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/actionpack-3.2.7/lib/action_dispatch/middleware/flash.rb:242:in `call'
+2013-03-04T20:09:35+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/rack-1.4.1/lib/rack/conditionalget.rb:25:in `call'
+2013-03-04T20:09:35+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/railties-3.2.7/lib/rails/rack/logger.rb:16:in `call'
+2013-03-04T20:09:35+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/actionpack-3.2.7/lib/action_dispatch/middleware/request_id.rb:22:in `call'
+2013-03-04T20:09:35+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/rack-1.4.1/lib/rack/methodoverride.rb:21:in `call'
+2013-03-04T20:09:35+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/rack-1.4.1/lib/rack/runtime.rb:17:in `call'
+2013-03-04T20:09:35+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/activesupport-3.2.7/lib/active_support/cache/strategy/local_cache.rb:72:in `call'
+2013-03-04T20:09:35+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/rack-1.4.1/lib/rack/lock.rb:15:in `call'
+2013-03-04T20:09:35+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/actionpack-3.2.7/lib/action_dispatch/middleware/static.rb:62:in `call'
+2013-03-04T20:09:35+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/rack-cache-1.2/lib/rack/cache/context.rb:136:in `forward'
+2013-03-04T20:09:35+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/rack-cache-1.2/lib/rack/cache/context.rb:245:in `fetch'
+2013-03-04T20:09:35+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/rack-cache-1.2/lib/rack/cache/context.rb:185:in `lookup'
+2013-03-04T20:09:35+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/rack-cache-1.2/lib/rack/cache/context.rb:66:in `call!'
+2013-03-04T20:09:35+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/activesupport-3.2.7/lib/active_support/notifications.rb:123:in `block in instrument'
+2013-03-04T20:09:35+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/warden-1.2.1/lib/warden/manager.rb:34:in `catch'
+2013-03-04T20:09:35+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/actionpack-3.2.7/lib/action_dispatch/middleware/params_parser.rb:21:in `call'
+2013-03-04T20:09:35+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/rack-1.4.1/lib/rack/content_length.rb:14:in `call'
+2013-03-04T20:09:35+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/rack-1.4.1/lib/rack/handler/webrick.rb:59:in `service'
+2013-03-04T20:09:35+00:00 app[web.1]:   /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+2013-03-04T20:09:35+00:00 app[web.1]: 
+2013-03-04T20:09:35+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/rack-cache-1.2/lib/rack/cache/context.rb:51:in `call'
+2013-03-04T20:09:35+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/railties-3.2.7/lib/rails/rack/log_tailer.rb:17:in `call'
+2013-03-04T20:09:35+00:00 app[web.1]:   /usr/local/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+2013-03-04T20:09:35+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/railties-3.2.7/lib/rails/engine.rb:479:in `call'
+2013-03-04T20:09:35+00:00 app[web.1]:   vendor/bundle/ruby/1.9.1/gems/railties-3.2.7/lib/rails/application.rb:220:in `call'
+2013-03-04T20:09:35+00:00 app[web.1]: 
+2013-03-04T20:09:35+00:00 app[web.1]: Processing by Admin::ProfilesController#index as HTML
+2013-03-04T20:09:35+00:00 app[web.1]:   /usr/local/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+2013-03-04T20:09:35+00:00 app[web.1]:   Rendered vendor/bundle/ruby/1.9.1/gems/activeadmin-0.5.1/app/views/active_admin/resource/index.html.arb (2511.0ms)
+2013-03-04T20:09:35+00:00 app[web.1]: Completed 500 Internal Server Error in 2703ms
+2013-03-04T20:09:36+00:00 app[web.1]: DEPRECATION WARNING: You have Rails 2.3-style plugins in vendor/plugins! Support for these plugins will be removed in Rails 4.0. Move them out and bundle them in your Gemfile, or fold them in to your app as lib/myplugin/* and config/initializers/myplugin.rb. See the release notes for more on this: http://weblog.rubyonrails.org/2012/1/4/rails-3-2-0-rc2-has-been-released. (called from <top (required)> at /app/config/environment.rb:5)
+2013-03-04T20:09:36+00:00 app[web.1]: DEPRECATION WARNING: You have Rails 2.3-style plugins in vendor/plugins! Support for these plugins will be removed in Rails 4.0. Move them out and bundle them in your Gemfile, or fold them in to your app as lib/myplugin/* and config/initializers/myplugin.rb. See the release notes for more on this: http://weblog.rubyonrails.org/2012/1/4/rails-3-2-0-rc2-has-been-released. (called from <top (required)> at /app/config/environment.rb:5)
+2013-03-04T20:09:40+00:00 heroku[web.1]: Error R12 (Exit timeout) -> At least one process failed to exit within 10 seconds of SIGTERM
+2013-03-04T20:09:40+00:00 heroku[web.1]: Stopping remaining processes with SIGKILL
+2013-03-04T20:09:43+00:00 heroku[web.1]: Process exited with status 137
+2013-03-04T20:09:44+00:00 app[web.1]: [2013-03-04 20:09:44] INFO  WEBrick 1.3.1
+2013-03-04T20:09:44+00:00 app[web.1]: [2013-03-04 20:09:44] INFO  ruby 1.9.2 (2011-07-09) [x86_64-linux]
+2013-03-04T20:09:44+00:00 app[web.1]: [2013-03-04 20:09:44] INFO  WEBrick::HTTPServer#start: pid=2 port=55288
+2013-03-04T20:09:44+00:00 heroku[web.1]: State changed from starting to up
+2013-03-04T20:09:45+00:00 app[web.1]: => Booting WEBrick
+2013-03-04T20:09:45+00:00 app[web.1]: => Rails 3.2.7 application starting in production on http://0.0.0.0:55288
+2013-03-04T20:09:45+00:00 app[web.1]: => Call with -d to detach
+2013-03-04T20:09:45+00:00 app[web.1]: => Ctrl-C to shutdown server
+2013-03-04T20:09:45+00:00 app[web.1]: 
+2013-03-04T20:09:45+00:00 app[web.1]: 
+2013-03-04T20:09:45+00:00 app[web.1]: Started GET "/admin/profiles" for 58.186.154.214 at 2013-03-04 20:09:45 +0000
+2013-03-04T20:09:36+00:00 heroku[router]: at=info method=GET path=/favicon.ico host=mfblog.herokuapp.com fwd="58.186.154.214" dyno=web.1 queue=0 wait=0ms connect=0ms service=72ms status=304 bytes=0
+2013-03-04T20:09:46+00:00 app[web.1]: Processing by Admin::ProfilesController#index as HTML
+2013-03-04T20:09:46+00:00 app[web.1]:   Rendered vendor/bundle/ruby/1.9.1/gems/activeadmin-0.5.1/app/views/active_admin/resource/index.html.arb (704.1ms)
+2013-03-04T20:09:46+00:00 app[web.1]: Completed 200 OK in 897ms (Views: 779.5ms | ActiveRecord: 25.5ms)
+2013-03-04T20:09:46+00:00 heroku[router]: at=info method=GET path=/admin/profiles host=mfblog.herokuapp.com fwd="58.186.154.214" dyno=web.1 queue=0 wait=0ms connect=1ms service=1092ms status=200 bytes=9603
+2013-03-04T20:09:47+00:00 heroku[router]: at=info method=GET path=/assets/admin/active_admin-f96c9d6220215f0bf6168398c6795bed.js host=mfblog.herokuapp.com fwd="58.186.154.214" dyno=web.1 queue=0 wait=2ms connect=4ms service=8ms status=304 bytes=0
+2013-03-04T20:09:47+00:00 heroku[router]: at=info method=GET path=/assets/admin/active_admin-95ad68f699df9b8b6b84607598414232.css host=mfblog.herokuapp.com fwd="58.186.154.214" dyno=web.1 queue=0 wait=0ms connect=1ms service=6ms status=304 bytes=0
+2013-03-04T20:09:48+00:00 heroku[router]: at=info method=GET path=/assets/active_admin/datepicker/datepicker-nipple-e13362aa148d84973a266eeee0b89e9a.png host=mfblog.herokuapp.com fwd="58.186.154.214" dyno=web.1 queue=0 wait=1ms connect=3ms service=5ms status=200 bytes=1224
+2013-03-04T20:09:48+00:00 heroku[router]: at=info method=GET path=/assets/active_admin/datepicker/datepicker-input-icon-876ae70b38bc880f91ce2315ed552260.png host=mfblog.herokuapp.com fwd="58.186.154.214" dyno=web.1 queue=0 wait=1ms connect=4ms service=6ms status=200 bytes=1535
+2013-03-04T20:09:48+00:00 heroku[router]: at=info method=GET path=/assets/active_admin/orderable-d9e1503253eff94adee978d6f43f2409.png host=mfblog.herokuapp.com fwd="58.186.154.214" dyno=web.1 queue=0 wait=0ms connect=3ms service=4ms status=304 bytes=0
+2013-03-04T20:10:02+00:00 app[web.1]: 
+2013-03-04T20:10:02+00:00 app[web.1]: 
+2013-03-04T20:10:02+00:00 app[web.1]: Started GET "/admin/profiles/new" for 58.186.154.214 at 2013-03-04 20:10:02 +0000
+2013-03-04T20:10:03+00:00 app[web.1]: Processing by Admin::ProfilesController#new as HTML
+2013-03-04T20:10:03+00:00 app[web.1]:   Rendered vendor/bundle/ruby/1.9.1/gems/activeadmin-0.5.1/app/views/active_admin/resource/new.html.arb (275.3ms)
+2013-03-04T20:10:03+00:00 app[web.1]: Completed 200 OK in 303ms (Views: 280.1ms | ActiveRecord: 3.2ms)
+2013-03-04T20:10:03+00:00 heroku[router]: at=info method=GET path=/admin/profiles/new host=mfblog.herokuapp.com fwd="58.186.154.214" dyno=web.1 queue=0 wait=2ms connect=4ms service=327ms status=200 bytes=4198
+2013-03-04T20:10:03+00:00 heroku[router]: at=info method=GET path=/assets/ckeditor/config.js?t=D08E host=mfblog.herokuapp.com fwd="58.186.154.214" dyno=web.1 queue=0 wait=0ms connect=1ms service=11ms status=200 bytes=198
+2013-03-04T20:10:04+00:00 heroku[router]: at=info method=GET path=/assets/ckeditor/lang/en.js?t=D08E host=mfblog.herokuapp.com fwd="58.186.154.214" dyno=web.1 queue=0 wait=0ms connect=2ms service=9ms status=200 bytes=16490
+2013-03-04T20:10:04+00:00 heroku[router]: at=info method=GET path=/assets/ckeditor/skins/moono/editor.css?t=D08E host=mfblog.herokuapp.com fwd="58.186.154.214" dyno=web.1 queue=0 wait=0ms connect=2ms service=7ms status=200 bytes=30965
+2013-03-04T20:10:06+00:00 heroku[router]: at=info method=GET path=/assets/ckeditor/plugins/icons.png?t=D08E host=mfblog.herokuapp.com fwd="58.186.154.214" dyno=web.1 queue=0 wait=0ms connect=3ms service=11ms status=200 bytes=21201
+2013-03-04T20:10:07+00:00 heroku[router]: at=info method=GET path=/assets/ckeditor/contents.css host=mfblog.herokuapp.com fwd="58.186.154.214" dyno=web.1 queue=0 wait=17ms connect=14ms service=17ms status=200 bytes=875
+2013-03-04T20:10:07+00:00 heroku[router]: at=info method=GET path=/assets/ckeditor/styles.js?t=D08E host=mfblog.herokuapp.com fwd="58.186.154.214" dyno=web.1 queue=0 wait=0ms connect=1ms service=9ms status=200 bytes=2080
+2013-03-04T20:10:07+00:00 heroku[router]: at=info method=GET path=/assets/ckeditor/skins/moono/icons.png host=mfblog.herokuapp.com fwd="58.186.154.214" dyno=web.1 queue=0 wait=0ms connect=2ms service=24ms status=200 bytes=21201
+2013-03-04T20:12:42+00:00 app[web.1]: 
+2013-03-04T20:12:42+00:00 app[web.1]: 
+2013-03-04T20:12:42+00:00 app[web.1]: Started POST "/admin/profiles" for 58.186.154.214 at 2013-03-04 20:12:42 +0000
+2013-03-04T20:12:42+00:00 app[web.1]: Processing by Admin::ProfilesController#create as HTML
+2013-03-04T20:12:42+00:00 app[web.1]:   Parameters: {"utf8"=>"✓", "authenticity_token"=>"bqv+ZSLnr8pidEvCkVjnLqwv1/NPdC90QMWoPssIzLE=", "profile"=>{"name"=>"Minh Long", "avatar"=>"http://www.deviantart.com/download/167163267/Steiner_____FF9_by_Rasuel.png", "facebook"=>"https://www.facebook.com/minhlong.fet", "linkedin"=>"", "twitter"=>"minhlong.fet", "biography"=>"<p>Test biography here</p>\r\n"}, "commit"=>"Create Profile"}
+2013-03-04T20:12:42+00:00 app[web.1]: Redirected to http://mfblog.herokuapp.com/admin/profiles/7
+2013-03-04T20:12:42+00:00 app[web.1]: Completed 302 Found in 103ms (ActiveRecord: 0.0ms)
+2013-03-04T20:12:42+00:00 heroku[router]: at=info method=POST path=/admin/profiles host=mfblog.herokuapp.com fwd="58.186.154.214" dyno=web.1 queue=0 wait=0ms connect=1ms service=157ms status=302 bytes=110
+2013-03-04T20:12:42+00:00 app[web.1]: 
+2013-03-04T20:12:42+00:00 app[web.1]: 
+2013-03-04T20:12:42+00:00 app[web.1]: Started GET "/admin/profiles/7" for 58.186.154.214 at 2013-03-04 20:12:42 +0000
+2013-03-04T20:12:43+00:00 app[web.1]: Processing by Admin::ProfilesController#show as HTML
+2013-03-04T20:12:43+00:00 app[web.1]:   Parameters: {"id"=>"7"}
+2013-03-04T20:12:43+00:00 app[web.1]:   Rendered vendor/bundle/ruby/1.9.1/gems/activeadmin-0.5.1/app/views/active_admin/resource/show.html.arb (176.1ms)
+2013-03-04T20:12:43+00:00 app[web.1]: Completed 200 OK in 187ms (Views: 157.4ms | ActiveRecord: 25.4ms)
+2013-03-04T20:12:43+00:00 heroku[router]: at=info method=GET path=/admin/profiles/7 host=mfblog.herokuapp.com fwd="58.186.154.214" dyno=web.1 queue=0 wait=0ms connect=3ms service=199ms status=200 bytes=5801
+2013-03-04T20:12:43+00:00 heroku[router]: at=info method=GET path=/assets/admin/active_admin-f96c9d6220215f0bf6168398c6795bed.js host=mfblog.herokuapp.com fwd="58.186.154.214" dyno=web.1 queue=0 wait=0ms connect=0ms service=6ms status=304 bytes=0
+2013-03-04T20:12:45+00:00 heroku[router]: at=info method=GET path=/favicon.ico host=mfblog.herokuapp.com fwd="58.186.154.214" dyno=web.1 queue=0 wait=0ms connect=0ms service=4ms status=304 bytes=0
+2013-03-04T20:12:52+00:00 app[web.1]: 
+2013-03-04T20:12:52+00:00 app[web.1]: 
+2013-03-04T20:12:52+00:00 app[web.1]: Started GET "/admin/admin_users" for 58.186.154.214 at 2013-03-04 20:12:52 +0000
+2013-03-04T20:12:52+00:00 heroku[router]: at=info method=GET path=/admin/admin_users host=mfblog.herokuapp.com fwd="58.186.154.214" dyno=web.1 queue=0 wait=0ms connect=4ms service=266ms status=304 bytes=0
+2013-03-04T20:12:52+00:00 app[web.1]: Processing by Admin::AdminUsersController#index as HTML
+2013-03-04T20:12:52+00:00 app[web.1]:   Rendered vendor/bundle/ruby/1.9.1/gems/activeadmin-0.5.1/app/views/active_admin/resource/index.html.arb (232.1ms)
+2013-03-04T20:12:52+00:00 app[web.1]: Completed 200 OK in 253ms (Views: 207.5ms | ActiveRecord: 41.1ms)
+2013-03-04T20:12:53+00:00 heroku[router]: at=info method=GET path=/assets/active_admin/orderable-d9e1503253eff94adee978d6f43f2409.png host=mfblog.herokuapp.com fwd="58.186.154.214" dyno=web.1 queue=0 wait=5ms connect=7ms service=6ms status=304 bytes=0
+2013-03-04T20:12:44+00:00 heroku[router]: at=info method=GET path=/assets/admin/active_admin-95ad68f699df9b8b6b84607598414232.css host=mfblog.herokuapp.com fwd="58.186.154.214" dyno=web.1 queue=0 wait=7ms connect=3ms service=12ms status=304 bytes=0
+2013-03-04T20:12:56+00:00 app[web.1]: 
+2013-03-04T20:12:56+00:00 app[web.1]: 
+2013-03-04T20:12:56+00:00 app[web.1]: Started GET "/admin/admin_users/new" for 58.186.154.214 at 2013-03-04 20:12:56 +0000
+2013-03-04T20:12:56+00:00 heroku[router]: at=info method=GET path=/admin/admin_users/new host=mfblog.herokuapp.com fwd="58.186.154.214" dyno=web.1 queue=0 wait=1ms connect=7ms service=258ms status=200 bytes=4233
+2013-03-04T20:12:56+00:00 app[web.1]: Processing by Admin::AdminUsersController#new as HTML
+2013-03-04T20:12:56+00:00 app[web.1]:   Rendered vendor/bundle/ruby/1.9.1/gems/activeadmin-0.5.1/app/views/active_admin/resource/new.html.arb (244.6ms)
+2013-03-04T20:12:56+00:00 app[web.1]: Completed 200 OK in 250ms (Views: 244.7ms | ActiveRecord: 1.7ms)
+2013-03-04T20:13:13+00:00 app[web.1]: 
+2013-03-04T20:13:13+00:00 app[web.1]: 
+2013-03-04T20:13:13+00:00 app[web.1]: Started POST "/admin/admin_users" for 58.186.154.214 at 2013-03-04 20:13:13 +0000
+2013-03-04T20:13:14+00:00 app[web.1]: Processing by Admin::AdminUsersController#create as HTML
+2013-03-04T20:13:14+00:00 app[web.1]:   Parameters: {"utf8"=>"✓", "authenticity_token"=>"bqv+ZSLnr8pidEvCkVjnLqwv1/NPdC90QMWoPssIzLE=", "admin_user"=>{"email"=>"minhlong@mobifood.vn", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "profile_id"=>"7", "is_active"=>"1"}, "commit"=>"Create Admin user"}
+2013-03-04T20:13:14+00:00 app[web.1]: Redirected to http://mfblog.herokuapp.com/admin/admin_users/2
+2013-03-04T20:13:14+00:00 app[web.1]: Completed 302 Found in 233ms (ActiveRecord: 0.0ms)
+2013-03-04T20:13:14+00:00 heroku[router]: at=info method=POST path=/admin/admin_users host=mfblog.herokuapp.com fwd="58.186.154.214" dyno=web.1 queue=0 wait=1ms connect=2ms service=253ms status=302 bytes=113
+2013-03-04T20:13:14+00:00 app[web.1]: 
+2013-03-04T20:13:14+00:00 app[web.1]: 
+2013-03-04T20:13:14+00:00 app[web.1]: Started GET "/admin/admin_users/2" for 58.186.154.214 at 2013-03-04 20:13:14 +0000
+2013-03-04T20:13:14+00:00 app[web.1]: Processing by Admin::AdminUsersController#show as HTML
+2013-03-04T20:13:14+00:00 app[web.1]:   Parameters: {"id"=>"2"}
+2013-03-04T20:13:14+00:00 app[web.1]:   Rendered vendor/bundle/ruby/1.9.1/gems/activeadmin-0.5.1/app/views/active_admin/resource/show.html.arb (340.8ms)
+2013-03-04T20:13:14+00:00 app[web.1]: Completed 200 OK in 357ms (Views: 342.6ms | ActiveRecord: 6.0ms)
+2013-03-04T20:13:14+00:00 heroku[router]: at=info method=GET path=/admin/admin_users/2 host=mfblog.herokuapp.com fwd="58.186.154.214" dyno=web.1 queue=0 wait=0ms connect=3ms service=374ms status=200 bytes=7125
+2013-03-04T20:14:33+00:00 app[web.1]: 
+2013-03-04T20:14:33+00:00 app[web.1]: 
+2013-03-04T20:14:33+00:00 app[web.1]: Started GET "/profiles/2" for 58.186.154.214 at 2013-03-04 20:14:33 +0000
+2013-03-04T20:14:33+00:00 app[web.1]: 
+2013-03-04T20:14:33+00:00 app[web.1]: ActiveRecord::RecordNotFound (Couldn't find Profile with id=2):
+2013-03-04T20:14:33+00:00 app[web.1]:   app/controllers/profiles_controller.rb:18:in `show'
+2013-03-04T20:14:33+00:00 app[web.1]: 
+2013-03-04T20:14:33+00:00 app[web.1]: 
+2013-03-04T20:14:33+00:00 app[web.1]: Processing by ProfilesController#show as HTML
+2013-03-04T20:14:33+00:00 heroku[router]: at=info method=GET path=/profiles/2 host=mfblog.herokuapp.com fwd="58.186.154.214" dyno=web.1 queue=0 wait=0ms connect=2ms service=17ms status=404 bytes=728
+2013-03-04T20:14:33+00:00 app[web.1]:   Parameters: {"id"=>"2"}
+2013-03-04T20:14:33+00:00 app[web.1]: Completed 500 Internal Server Error in 2ms
+2013-03-04T20:14:34+00:00 heroku[router]: at=info method=GET path=/favicon.ico host=mfblog.herokuapp.com fwd="58.186.154.214" dyno=web.1 queue=0 wait=0ms connect=2ms service=21ms status=304 bytes=0
+2013-03-04T20:14:38+00:00 app[web.1]: 
+2013-03-04T20:14:38+00:00 app[web.1]: 
+2013-03-04T20:14:38+00:00 app[web.1]: Started GET "/profiles/3" for 58.186.154.214 at 2013-03-04 20:14:38 +0000
+2013-03-04T20:14:38+00:00 app[web.1]: 
+2013-03-04T20:14:38+00:00 app[web.1]: ActiveRecord::RecordNotFound (Couldn't find Profile with id=3):
+2013-03-04T20:14:38+00:00 app[web.1]:   app/controllers/profiles_controller.rb:18:in `show'
+2013-03-04T20:14:38+00:00 app[web.1]: 
+2013-03-04T20:14:38+00:00 app[web.1]: 
+2013-03-04T20:14:38+00:00 app[web.1]: Processing by ProfilesController#show as HTML
+2013-03-04T20:14:38+00:00 heroku[router]: at=info method=GET path=/profiles/3 host=mfblog.herokuapp.com fwd="58.186.154.214" dyno=web.1 queue=0 wait=0ms connect=3ms service=14ms status=404 bytes=728
+2013-03-04T20:14:38+00:00 app[web.1]:   Parameters: {"id"=>"3"}
+2013-03-04T20:14:38+00:00 app[web.1]: Completed 500 Internal Server Error in 2ms
+2013-03-04T20:14:43+00:00 app[web.1]: 
+2013-03-04T20:14:43+00:00 app[web.1]: 
+2013-03-04T20:14:43+00:00 app[web.1]: Started GET "/" for 58.186.154.214 at 2013-03-04 20:14:43 +0000
+2013-03-04T20:14:43+00:00 app[web.1]: Processing by PostsController#index as HTML
+2013-03-04T20:14:43+00:00 heroku[router]: at=info method=GET path=/assets/logo-4a9764d58e34332173f6bfcbb06f0eee.png host=mfblog.herokuapp.com fwd="58.186.154.214" dyno=web.1 queue=0 wait=0ms connect=2ms service=98ms status=304 bytes=0
+2013-03-04T20:14:43+00:00 heroku[router]: at=info method=GET path=/assets/application-a32afc0310fa7b4f844a4c4f7bf58a31.js host=mfblog.herokuapp.com fwd="58.186.154.214" dyno=web.1 queue=0 wait=0ms connect=5ms service=111ms status=304 bytes=0
+2013-03-04T20:14:43+00:00 heroku[router]: at=info method=GET path=/ host=mfblog.herokuapp.com fwd="58.186.154.214" dyno=web.1 queue=0 wait=0ms connect=2ms service=388ms status=304 bytes=0
+2013-03-04T20:14:43+00:00 app[web.1]:   Rendered posts/_normal_thread.html.haml (253.8ms)
+2013-03-04T20:14:43+00:00 app[web.1]:   Rendered posts/_articles_stream.html.haml (271.5ms)
+2013-03-04T20:14:43+00:00 app[web.1]:   Rendered posts/_sidebar_post.html.haml (2.3ms)
+2013-03-04T20:14:43+00:00 app[web.1]:   Rendered posts/_sidebar_posts.html.haml (5.1ms)
+2013-03-04T20:14:43+00:00 app[web.1]:   Rendered posts/index.html.haml within layouts/application (280.0ms)
+2013-03-04T20:14:43+00:00 app[web.1]:   Rendered categories/_category_button.html.haml (83.0ms)
+2013-03-04T20:14:43+00:00 app[web.1]:   Rendered vendor/bundle/ruby/1.9.1/gems/twitter-bootstrap-rails-2.2.0/app/views/twitter-bootstrap/_breadcrumbs.html.erb (0.6ms)
+2013-03-04T20:14:43+00:00 app[web.1]: Completed 200 OK in 379ms (Views: 363.8ms | ActiveRecord: 13.5ms)
+2013-03-04T20:14:43+00:00 heroku[router]: at=info method=GET path=/assets/application-f5bcc389552b0116b3f468c6dbc32a77.css host=mfblog.herokuapp.com fwd="58.186.154.214" dyno=web.1 queue=0 wait=0ms connect=3ms service=8ms status=304 bytes=0
+2013-03-04T20:14:44+00:00 heroku[router]: at=info method=GET path=/assets/logo-4a9764d58e34332173f6bfcbb06f0eee.png host=mfblog.herokuapp.com fwd="58.186.154.214" dyno=web.1 queue=0 wait=0ms connect=2ms service=15ms status=304 bytes=0
+2013-03-04T20:14:53+00:00 app[web.1]: 
+2013-03-04T20:14:53+00:00 app[web.1]: 
+2013-03-04T20:14:53+00:00 app[web.1]: Started GET "/categories/1" for 58.186.154.214 at 2013-03-04 20:14:53 +0000
+2013-03-04T20:14:53+00:00 heroku[router]: at=info method=GET path=/categories/1 host=mfblog.herokuapp.com fwd="58.186.154.214" dyno=web.1 queue=0 wait=0ms connect=4ms service=33ms status=500 bytes=643
+2013-03-04T20:14:53+00:00 app[web.1]: 
+2013-03-04T20:14:53+00:00 app[web.1]: ActionView::Template::Error (undefined local variable or method `categories_path' for #<#<Class:0x00000006679fc0>:0x00000006672a68>):
+2013-03-04T20:14:53+00:00 app[web.1]:     16:   = @category.parent_category ? @category.parent_category.name : ""
+2013-03-04T20:14:53+00:00 app[web.1]:     17: 
+2013-03-04T20:14:53+00:00 app[web.1]:     18: .form-actions
+2013-03-04T20:14:53+00:00 app[web.1]:     19:   = link_to t('.back', :default => t("helpers.links.back")), categories_path, :class => 'btn'
+2013-03-04T20:14:53+00:00 app[web.1]:     20:   = link_to t('.edit', :default => t("helpers.links.edit")), edit_category_path(@category), :class => 'btn'
+2013-03-04T20:14:53+00:00 app[web.1]:     21:   = link_to t('.destroy', :default => t("helpers.links.destroy")), category_path(@category), :method => "delete", :data => { :confirm => t('.confirm', :default => t("helpers.links.confirm", :default => 'Are you sure?')) }, :class => 'btn btn-danger'
+2013-03-04T20:14:53+00:00 app[web.1]:   app/views/categories/show.html.haml:19:in `_app_views_categories_show_html_haml___2943281762042154332_53406420'
+2013-03-04T20:14:53+00:00 app[web.1]:   app/controllers/categories_controller.rb:18:in `show'
+2013-03-04T20:14:53+00:00 app[web.1]: 
+2013-03-04T20:14:53+00:00 app[web.1]: 
+2013-03-04T20:14:53+00:00 app[web.1]: Processing by CategoriesController#show as HTML
+2013-03-04T20:14:53+00:00 app[web.1]:   Parameters: {"id"=>"1"}
+2013-03-04T20:14:53+00:00 app[web.1]:   Rendered categories/show.html.haml within layouts/application (16.4ms)
+2013-03-04T20:14:53+00:00 app[web.1]: Completed 500 Internal Server Error in 22ms

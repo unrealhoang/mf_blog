@@ -1,6 +1,6 @@
 class PostsController < ApplicationController
 
-  add_breadcrumb "Posts", :posts_path
+  add_breadcrumb "Articles", :posts_path
 
   # GET /posts
   # GET /posts.json
