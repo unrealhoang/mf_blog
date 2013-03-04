@@ -3,6 +3,7 @@ ActiveAdmin.register Post do
     selectable_column
     column :title
     column :category
+    column :author
     column :image
     column :is_top_article
     column :content do |post|
@@ -24,6 +25,29 @@ ActiveAdmin.register Post do
       f.input :content, :input_html => { :class => 'ckeditor', :style => "display: inline-block" }
     end
     f.actions
+  end
+
+  controller do
+    def create
+      @post = Post.new(params[:post])
+      @post.author = current_admin_user.profile
+      create!
+    end
+  end
+
+  show do |post|
+    attributes_table do 
+      row :title
+      row :content do 
+        link_to post.title, post_path(post)
+      end
+      row :author
+      row :category
+      row :image
+      row :is_top_article
+    end
+
+    active_admin_comments
   end
   
 end

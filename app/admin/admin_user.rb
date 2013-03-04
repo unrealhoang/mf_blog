@@ -5,6 +5,7 @@ ActiveAdmin.register AdminUser do
     column :last_sign_in_at           
     column :sign_in_count             
     column :profile
+    column :is_active
     default_actions                   
   end                                 
 
@@ -16,6 +17,7 @@ ActiveAdmin.register AdminUser do
       f.input :password               
       f.input :password_confirmation  
       f.input :profile
+      f.input :is_active
     end                               
     f.actions                         
   end                                 

@@ -3,17 +3,13 @@ MfBlog::Application.routes.draw do
 
   devise_for :admin_users, ActiveAdmin::Devise.config
 
-  resources :profiles
+  resources :categories, :only => [:show]
 
-  resources :posts
+  resources :tags, :only => [:show]
 
-  resources :categories
+  resources :posts, :only => [:index, :show]
 
-  resources :tags
-
-  resources :posts
-
-  resources :profiles
+  resources :profiles, :only => [:show]
 
   root :to => "home#index"
 end

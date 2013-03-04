@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130211193906) do
+ActiveRecord::Schema.define(:version => 20130304065659) do
 
   create_table "active_admin_comments", :force => true do |t|
     t.string   "resource_id",   :null => false
@@ -42,6 +42,7 @@ ActiveRecord::Schema.define(:version => 20130211193906) do
     t.datetime "created_at",                             :null => false
     t.datetime "updated_at",                             :null => false
     t.integer  "profile_id"
+    t.boolean  "is_active"
   end
 
   add_index "admin_users", ["email"], :name => "index_admin_users_on_email", :unique => true
@@ -72,8 +73,6 @@ ActiveRecord::Schema.define(:version => 20130211193906) do
   end
 
   create_table "profiles", :force => true do |t|
-    t.string   "username"
-    t.string   "password"
     t.string   "avatar"
     t.text     "biography"
     t.string   "facebook"
@@ -82,7 +81,6 @@ ActiveRecord::Schema.define(:version => 20130211193906) do
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
     t.string   "name"
-    t.boolean  "is_active"
   end
 
   create_table "tags", :force => true do |t|
