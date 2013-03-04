@@ -5,6 +5,8 @@ class Post < ActiveRecord::Base
   belongs_to :author, :class_name => 'Profile', :foreign_key => :author_id, :validate => true
   belongs_to :category, :validate => true
 
+  self.per_page = 5
+
   def tags=(tag_names)
     tag_names = tag_names.split(',')
     self.tags.clear
@@ -21,6 +23,11 @@ class Post < ActiveRecord::Base
   def update_attributes(params)
   	Post.update_all(:is_top_article => false) if self.is_top_article
   	super(params)
+  end
+
+  def self.simple_search(query, page)
+    paginate :per_page => 5, :page => page,
+       :conditions => ['content like ?', "%#{query}%"]
   end
 end
 

@@ -15,4 +15,3 @@
 #= require ckeditor-jquery
 #= require twitter/bootstrap
 #= require_directory .
-

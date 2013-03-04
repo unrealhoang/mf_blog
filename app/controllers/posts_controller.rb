@@ -1,8 +1,12 @@
 class PostsController < ApplicationController
+
+  add_breadcrumb "Posts", :posts_path
+
   # GET /posts
   # GET /posts.json
   def index
-    @posts = Post.paginate(:page => params[:page], :per_page => 5)
+    @query = params[:query]
+    @posts = @query ? Post.simple_search(@query, params[:page]) : Post.paginate(:page => params[:page])
 
     respond_to do |format|
       format.html # index.html.erb
@@ -14,6 +18,7 @@ class PostsController < ApplicationController
   # GET /posts/1.json
   def show
     @post = Post.find(params[:id])
+    add_breadcrumb @post.title, post_path(@post)
 
     respond_to do |format|
       format.html # show.html.erb

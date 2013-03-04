@@ -10,7 +10,7 @@ class AdminUser < ActiveRecord::Base
   # attr_accessible :title, :body
   belongs_to :profile
 
-  def active?
+  def active_for_authentication?
     super and self.is_active?
   end
 

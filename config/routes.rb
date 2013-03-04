@@ -11,5 +11,5 @@ MfBlog::Application.routes.draw do
 
   resources :profiles, :only => [:show]
 
-  root :to => "home#index"
+  root :to => "posts#index"
 end
