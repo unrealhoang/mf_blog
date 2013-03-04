@@ -4,8 +4,8 @@
       %img{:alt => profile.name, :src => profile.avatar, :style => "max-width: 140px; float:right; display: inline; margin:5px"}/
     .text
       .name
-        %a.parsed{:href => "#", :rel => "author"}/
-        %h3= profile.name
+        %a{:href => profile_path(profile)}
+          %h3= profile.name
       %p= profile.biography.html_safe
       - if profile.twitter
         %i
