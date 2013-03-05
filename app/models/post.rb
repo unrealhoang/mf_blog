@@ -27,7 +27,7 @@ class Post < ActiveRecord::Base
 
   def self.simple_search(query, page)
     paginate :per_page => 5, :page => page,
-       :conditions => ['content like ?', "%#{query}%"]
+       :conditions => ['content ~~* ?', "%#{query}%"]
   end
 end
 
