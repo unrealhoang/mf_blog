@@ -1,0 +1,8 @@
+- post = top_article
+.row
+  .span12.top-article
+    %img.img-polaroid{:src => post.top_article_image, :style => "width:100%;height: 500px; box-sizing:border-box"}/
+    .img-time-text= distance_of_time_in_words_to_now post.created_at
+    .img-title-text
+      %h4
+        %a{:href => post_path(post)}= post.title

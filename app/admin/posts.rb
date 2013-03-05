@@ -6,6 +6,7 @@ ActiveAdmin.register Post do
     column :author
     column :image
     column :is_top_article
+    column :top_article_image
     column :content do |post|
       truncate(strip_tags(post.content).html_safe, :length => 200, :separator => ' ').html_safe
     end
@@ -18,6 +19,7 @@ ActiveAdmin.register Post do
       f.input :category
       f.input :image
       f.input :is_top_article
+      f.input :top_article_image
       f.input :tags, :as => :string, :input_html => { :value => f.object.tags.map { |t| t.name }.join(',') }, :hint => 
         f.template.content_tag(:div, "", :id => "tag-list-data", "data-tag-list" => Tag.select(:name).map { |t| t.name }.to_json )
     end
@@ -45,6 +47,7 @@ ActiveAdmin.register Post do
       row :category
       row :image
       row :is_top_article
+      row :top_article_image
     end
 
     active_admin_comments

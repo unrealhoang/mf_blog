@@ -1,5 +1,5 @@
 class ProfilesController < ApplicationController
-  add_breadcrumb "Authors", ""
+  add_breadcrumb "Author", ""
 
   # GET /profiles
   # GET /profiles.json

@@ -3,6 +3,8 @@
     %section.article-stream-search.span8
       Showing results for 
       %em= @query
+- elsif @top_article
+  = render :partial => "posts/top_article", :object => @top_article
 .row
   .span8
     = render :partial => "posts/articles_stream"

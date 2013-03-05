@@ -7,6 +7,7 @@ class PostsController < ApplicationController
   def index
     @query = params[:query]
     @posts = @query ? Post.simple_search(@query, params[:page]) : Post.paginate(:page => params[:page])
+    @top_article = Post.top_article
 
     respond_to do |format|
       format.html # index.html.erb
