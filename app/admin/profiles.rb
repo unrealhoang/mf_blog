@@ -4,7 +4,9 @@ ActiveAdmin.register Profile do
       f.input :name
       f.input :avatar
       f.input :facebook
+      f.input :facebook_url
       f.input :linkedin
+      f.input :linkedin_url
       f.input :twitter
     end
     f.inputs "Biography" do

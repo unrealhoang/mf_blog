@@ -12,7 +12,7 @@
           %a{:href => "http://twitter.com/#{profile.twitter}"} @#{profile.twitter}
       - if profile.facebook
         %i
-          %a{:href => profile.facebook} Facebook Name here
+          %a{:href => profile.facebook_url}= profile.facebook
       - if profile.linkedin
         %i
-          %a{:href => profile.linkedin} Linkedin Name here
+          %a{:href => profile.linkedin_url}= profile.linkedin
