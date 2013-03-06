@@ -1,4 +1,13 @@
 ActiveAdmin.register Post do
+
+  scope_to do
+    Class.new do
+      def self.posts
+        Post.unscoped
+      end
+    end
+  end
+
   index do 
     selectable_column
     column :title

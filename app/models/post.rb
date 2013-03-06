@@ -7,6 +7,8 @@ class Post < ActiveRecord::Base
   belongs_to :author, :class_name => 'Profile', :foreign_key => :author_id, :validate => true
   belongs_to :category, :validate => true
 
+  before_save :unique_top_article
+
   self.per_page = 5
 
   def tags=(tag_names)
@@ -17,16 +19,6 @@ class Post < ActiveRecord::Base
     end
   end
 
-  def save
-  	Post.update_all(:is_top_article => false) if self.is_top_article
-  	super
-  end
-
-  def update_attributes(params)
-  	Post.update_all(:is_top_article => false) if self.is_top_article
-  	super(params)
-  end
-
   def self.simple_search(query, page)
     paginate :per_page => 5, :page => page,
        :conditions => ['content ~~* ?', "%#{query}%"]
@@ -35,6 +27,11 @@ class Post < ActiveRecord::Base
   def self.top_article
     Post.where(:is_top_article => true).first
   end
+
+  private
+    def unique_top_article
+      Post.unscoped.update_all(:is_top_article => false) if self.is_top_article
+    end
 end
 
 
