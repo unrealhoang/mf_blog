@@ -1,6 +1,4 @@
 class ProfilesController < ApplicationController
-  add_breadcrumb "Author", ""
-
   # GET /profiles
   # GET /profiles.json
   def index
@@ -16,7 +14,7 @@ class ProfilesController < ApplicationController
   # GET /profiles/1.json
   def show
     @profile = Profile.find(params[:id])
-    add_breadcrumb @profile.name, profile_path(@profile)
+    add_breadcrumb "Author #{@profile.name}", profile_path(@profile)
 
     @posts = @profile.posts.paginate(:page => params[:page], :per_page => 5)
 

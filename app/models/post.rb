@@ -1,7 +1,7 @@
 class Post < ActiveRecord::Base
-  default_scope where(:is_top_article => false)
+  scope :non_top, where(:is_top_article => false) 
 
-  attr_accessible :author, :content, :title, :author_id, :category_id, :is_top_article, :image, :tags, :top_article_image
+  attr_accessible :author, :content, :title, :author_id, :category_id, :is_top_article, :image, :tags, :top_article_image, :view_count
 
   has_and_belongs_to_many :tags
   belongs_to :author, :class_name => 'Profile', :foreign_key => :author_id, :validate => true
@@ -30,7 +30,7 @@ class Post < ActiveRecord::Base
 
   private
     def unique_top_article
-      Post.unscoped.update_all(:is_top_article => false) if self.is_top_article
+      Post.update_all(:is_top_article => false) if self.is_top_article
     end
 end
 

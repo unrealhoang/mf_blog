@@ -1,13 +1,5 @@
 ActiveAdmin.register Post do
 
-  scope_to do
-    Class.new do
-      def self.posts
-        Post.unscoped
-      end
-    end
-  end
-
   index do 
     selectable_column
     column :title
@@ -16,6 +8,7 @@ ActiveAdmin.register Post do
     column :image
     column :is_top_article
     column :top_article_image
+    column :view_count
     column :content do |post|
       truncate(strip_tags(post.content).html_safe, :length => 200, :separator => ' ').html_safe
     end
@@ -57,6 +50,7 @@ ActiveAdmin.register Post do
       row :image
       row :is_top_article
       row :top_article_image
+      row :view_count
     end
 
     active_admin_comments
