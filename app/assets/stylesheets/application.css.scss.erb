@@ -21,12 +21,19 @@ h1, h2, h3, h4, h5, h6 {
   font-family:  "SEGOEUIL", "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
 }
 body {
-  background: url(<%= image_path "site-bg4.jpg" %>);
+  background: url(<%= image_path "background.jpg" %>);
   font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+}
+hr {
+  border-top: 1px solid #000
 }
 
 img {
   box-sizing: border-box;
+}
+
+.meta span:after {
+  content: '·';
 }
 
 #main {
@@ -83,10 +90,11 @@ img {
     border: 2px solid #dcdcd1
   }
   h4 {
-    height: 40px;
-    margin: 0px;
     margin-top: 10px;
     margin-bottom: 5px;
+  }
+  .caption {
+    margin-bottom: 10px;
   }
 }
 .img-profile-avatar {

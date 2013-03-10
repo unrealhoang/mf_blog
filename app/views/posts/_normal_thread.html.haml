@@ -4,7 +4,12 @@
   .caption
     %h4
       %a{:href => post_path(normal_thread)}= normal_thread.title
-    %p= strip_tags(normal_thread.content).truncate(600, :separator => ' ').html_safe
-    %i
-      %a{:href => category_path(normal_thread.category)}= normal_thread.category.name
-      %a{:href => profile_path(normal_thread.author)}= normal_thread.author.name
+    .row
+      .span8.meta
+        %span.author-name
+          %a{:href => profile_path(normal_thread.author)}= normal_thread.author.name
+        %span.category
+          %a{:href => category_path(normal_thread.category)}= normal_thread.category.name
+        %em
+          = normal_thread.created_at.strftime("%b %d %Y")
+  %p= strip_tags(normal_thread.content).truncate(600, :separator => ' ').html_safe
