@@ -25,23 +25,25 @@
     by
     = succeed "." do
       %a{:href => profile_path(author)}= author.name
+    %hr/
     .article-author-container
-      %div
-        %img.img-profile-avatar{:alt => author.name, :src => author.avatar}
+      %img.img-profile-avatar.img-polaroid{:alt => author.name, :src => author.avatar}
       .text
         .name
-          %a.parsed{:href => "#", :rel => "author"}
+          %a.parsed{:href => profile_path(author), :rel => "author"}
             %h3= author.name
         %p
-          %a{:href => "#", :rel => "me"}
-          %strong= author.name
-          is a
-          %strong {author's job} 
+          %strong
           = author.biography
         %i
-          %a{:href => author.twitter}= author.twitter
+          %a{:href => author.twitter} @#{author.twitter}
+        &nbsp;
         %i
-          %a{:href => author.facebook}= author.facebook
+          %a{:href => author.facebook} #{author.facebook} on Facebook
+        &nbsp;
         %i
-          %a{:href => author.linkedin}= author.linkedin
-  / .entry-meta
+          %a{:href => author.linkedin} #{author.linkedin} on Linkedin
+    %hr/
+   / .span8
+   / = render :partial => "posts/article_related_posts"
+  / .entry-met
