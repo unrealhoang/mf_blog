@@ -56,6 +56,16 @@ ActiveRecord::Schema.define(:version => 20130306144601) do
     t.integer  "parent_category_id"
   end
 
+  create_table "photos", :force => true do |t|
+    t.integer  "author_id"
+    t.integer  "like_count"
+    t.string   "image"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+  end
+
+  add_index "photos", ["author_id"], :name => "index_photos_on_author_id"
+
   create_table "posts", :force => true do |t|
     t.string   "title"
     t.text     "content"
@@ -91,6 +101,20 @@ ActiveRecord::Schema.define(:version => 20130306144601) do
     t.string   "name"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
+  end
+
+  create_table "users", :force => true do |t|
+    t.string   "provider"
+    t.string   "uid"
+    t.string   "name"
+    t.string   "oauth_token"
+    t.datetime "oauth_expires_at"
+    t.string   "address"
+    t.string   "phone"
+    t.string   "vnid"
+    t.string   "email"
+    t.datetime "created_at",       :null => false
+    t.datetime "updated_at",       :null => false
   end
 
 end
