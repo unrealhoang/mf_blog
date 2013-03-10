@@ -1,6 +1,7 @@
-.item
+- post = top_article
+%div{ :class => top_article_counter == 0 ? "item active" : "item" }
   %a{:href => post_path(post)}
-    %img.img-polaroid{:src => post.top_article_image, :style => "width:100%;height: 500px; box-sizing:border-box"}/
+    %img.img-polaroid{:src => post.image, :style => "width:100%;height: 500px; box-sizing:border-box"}/
     .title
       / .img-time-text= distance_of_time_in_words_to_now post.created_at
       .img-title-text

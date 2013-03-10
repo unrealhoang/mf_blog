@@ -7,8 +7,6 @@ class Post < ActiveRecord::Base
   belongs_to :author, :class_name => 'Profile', :foreign_key => :author_id, :validate => true
   belongs_to :category, :validate => true
 
-  before_save :unique_top_article
-
   self.per_page = 5
 
   def tags=(tag_names)
@@ -24,14 +22,11 @@ class Post < ActiveRecord::Base
        :conditions => ['content ~~* ?', "%#{query}%"]
   end
 
-  def self.top_article
-    Post.where(:is_top_article => true).first
+  def self.top_articles
+    result = Post.where(:is_top_article => true)
+    result.empty? ? nil : result
   end
 
-  private
-    def unique_top_article
-      Post.update_all(:is_top_article => false) if self.is_top_article
-    end
 end
 
 

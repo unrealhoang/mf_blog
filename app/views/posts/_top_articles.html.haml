@@ -2,9 +2,8 @@
   .span12.top-articles
     #myCarousel.carousel.slide
       %ol.carousel-indicators
-        %li.active{"data-slide-to" => "0", "data-target" => "#myCarousel"}
-        %li{"data-slide-to" => "1", "data-target" => "#myCarousel"}
-        %li{"data-slide-to" => "2", "data-target" => "#myCarousel"}
+        - top_articles.each_with_index do |t, i|
+          %li{ :class => i == 0 ? "active" : nil, "data-slide-to" => i, "data-target" => "#myCarousel"}
       / Carousel items
       .carousel-inner
         = render :partial => "posts/top_article", :collection => top_articles

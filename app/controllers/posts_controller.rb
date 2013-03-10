@@ -5,7 +5,7 @@ class PostsController < ApplicationController
   def index
     @query = params[:query]
     @posts = @query ? Post.simple_search(@query, params[:page]) : Post.non_top.paginate(:page => params[:page])
-    @top_article = Post.top_article
+    @top_articles = Post.top_articles
     @first_three = Post.limit(3)
 
     add_breadcrumb "Search for \"#{@query}\"" if @query
