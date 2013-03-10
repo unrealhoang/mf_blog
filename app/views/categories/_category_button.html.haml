@@ -1,7 +1,7 @@
 - category = category_button
 - has_child = category.child_category.length > 0
 %li{:class => has_child ? 'dropdown' : ''}
-  %a.dropdown-toggle{"data-toggle" => "dropdown", :href => category_path(category)}
+  %a.dropdown-toggle{"data-toggle" => has_child ? "dropdown" : nil, :href => category_path(category)}
     = category.name
     %span{:class => has_child ? 'caret' : '' }
   - if has_child
