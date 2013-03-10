@@ -12,8 +12,16 @@
  *= require_directory .
 */
 
+body {
+  background: url(<%= image_path "site-bg4.jpg" %>)
+}
+
+img {
+  box-sizing: border-box;
+}
+
 #main {
-  margin-top: 45px;
+  margin-top: 43px;
 }
 .breadcrumb {
   margin-top: 20px;
@@ -29,43 +37,47 @@
   -moz-box-shadow: 0 1px 2px rgba(0,0,0,.15);
   box-shadow: 0 1px 2px rgba(0,0,0,.15);
 }
+.top-article {
+  position: relative;
+  .title {
+    width: 65%;
+    top: 40px;
+    overflow: visible;
+    position: absolute;
 
-.img-title-text {
-	position: absolute; 
-	top:180px; 
-	background:rgba(68, 59, 59, 0.52);
-  h4 {
-    color: #fff;
+    .img-title-text {
+      h2 {
+        color: black;
+        background-color: white;
+        padding: 2px 2px 2px 0;
+        display: inline;
+      }
+      a {
+        color: black;
+      }
+    }
+
+    .img-time-text {
+      color: #fff;
+       background:rgb(245, 20, 20);
+    }
   }
-  a {
-    color: rgb(132, 252, 38);
-  }
-}
-.img-time-text {
-	color: #fff;
-	 position: absolute; 
-	 top:160px; 
-	 background:rgb(245, 20, 20);
 }
 
 .normal-thread {
 	padding-top: 10px;
   img {
-    width: 160px; 
-    height: 120px;
-    float:left; 
-    display: inline;
-    padding-right: 10px;
+    width: 100%; 
+    height: 350px;
     margin-top: 10px;
+    box-sizing: border-box;
+    border: 2px solid #dcdcd1
   }
   h4 {
     height: 40px;
     margin: 0px;
     margin-top: 10px;
     margin-bottom: 5px;
-  }
-  p {
-    height: 40px;
   }
 }
 .img-profile-avatar {
@@ -98,14 +110,18 @@
 }
 .sidebar-post {
   clear: both;
+  img {
+    width: 100%;
+    height: 169px;
+  }
 }
-.img-popular-post {
-  width: 75px;
-  height: 75px;
-  float:left;
-  display: inline;
-  margin:5px;
-}
+//.img-popular-post {
+//  width: 75px;
+//  height: 75px;
+//  float:left;
+//  display: inline;
+//  margin:5px;
+//}
 .search-box {
   float: right;
   margin-top:-5px;

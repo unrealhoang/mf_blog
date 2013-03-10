@@ -9,18 +9,25 @@
         = csrf_meta_tags
         = yield(:head)
   %body{:class => "#{controller_name} #{action_name}", 'data-controller' => "#{controller_name}", 'data-action' => "#{action_name}", :style => 'padding-top: 0px'}
+    / nav bar here
     .navbar.navbar-fixed-top.navbar-inverse
       .navbar-inner
         .container
-          %a.brand{:href => root_path, :style => 'padding: 0px'}
-            %img{:src => image_path("logo.png"), :style => 'width: 120px'}
+          / %a.brand{:href => root_path, :style => 'padding: 0px'}
+          /   %img{:src => image_path("logo.png"), :style => 'width: 120px'}
           %ul.nav
-            %li.divider-vertical
+            / %li.divider-vertical
+            %li= link_to "Home", root_path
             = render :partial => 'categories/category_button', :collection => @main_categories
           = form_tag posts_path, :method => :get, :class => "navbar-search pull-right" do
             %input.input-medium.search-query{:type => "text", :placeholder => "Search...", :name => "query"}
           / %form.navbar-search.pull-right
     #main.container
-      = render_breadcrumbs
+      / header
+      .row.header
+        .span12{:style => "text-align: center"}
+          %h1 Step.vn
+          %hr/
+
       = yield
 

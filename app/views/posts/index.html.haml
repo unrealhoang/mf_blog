@@ -5,7 +5,11 @@
       %em= @query
 - elsif @top_article
   = render :partial => "posts/top_article", :object => @top_article
-.row
+.row{:style => "margin-top: 40px"}
+  = render :partial => "posts/article_thumb_small", :collection => @first_three
+.row{:style => "margin-top: 0px"}
+  .span8.offset2
+    %hr
   .span8
     = render :partial => "posts/articles_stream"
   .span4

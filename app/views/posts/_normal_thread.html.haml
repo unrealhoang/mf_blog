@@ -4,7 +4,7 @@
   .caption
     %h4
       %a{:href => post_path(normal_thread)}= normal_thread.title
-    %p{:style => "height: 50px;"}= strip_tags(normal_thread.content).truncate(140, :separator => ' ').html_safe
+    %p= strip_tags(normal_thread.content).truncate(600, :separator => ' ').html_safe
     %i
       %a{:href => category_path(normal_thread.category)}= normal_thread.category.name
       %a{:href => profile_path(normal_thread.author)}= normal_thread.author.name

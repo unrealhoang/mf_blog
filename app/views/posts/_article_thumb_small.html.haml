@@ -1,0 +1,6 @@
+- post = article_thumb_small
+.span4
+  = link_to post_path(post) do
+    = image_tag post.image, :style => "height: 169px; width: 100%; border: 2px solid #dcdcd1; box-sizing: border-box"
+    %h4= post.title
+
