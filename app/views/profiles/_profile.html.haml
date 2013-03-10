@@ -1,7 +1,8 @@
 .row
-  .span12
-    .photo
-      %img{:alt => profile.name, :src => profile.avatar, :style => "max-width: 140px; float:right; display: inline; margin:5px"}/
+  .span4
+    .photo.img-polaroid
+      %img{:alt => profile.name, :src => profile.avatar, :style => "width: 240px; height: 225px; display: inline; margin:10px"}/
+  .span8 
     .text
       .name
         %a{:href => profile_path(profile)}
