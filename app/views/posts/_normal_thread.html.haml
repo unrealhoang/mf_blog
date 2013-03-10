@@ -6,10 +6,14 @@
       %a{:href => post_path(normal_thread)}= normal_thread.title
     .row
       .span8.meta
-        %span.author-name
-          %a{:href => profile_path(normal_thread.author)}= normal_thread.author.name
         %span.category
           %a{:href => category_path(normal_thread.category)}= normal_thread.category.name
+        &nbsp;
         %em
           = normal_thread.created_at.strftime("%b %d %Y")
-  %p= strip_tags(normal_thread.content).truncate(600, :separator => ' ').html_safe
+        &nbsp;
+        %span.author-name{:style=> "float:right"}
+          %a{:href => profile_path(normal_thread.author)}= normal_thread.author.name
+  %p
+    = strip_tags(normal_thread.content).truncate(600, :separator => ' ').html_safe
+    %a{:href => post_path(normal_thread)} [Read More..]
