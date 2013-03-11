@@ -11,6 +11,7 @@ class PostsController < ApplicationController
       @posts = Post.non_top.paginate(:page => params[:page]).offset(3)
       @top_articles = Post.top_articles
       @first_three = Post.limit(3)
+      @popular_posts = Post.popular
     end
 
     respond_to do |format|
@@ -24,6 +25,11 @@ class PostsController < ApplicationController
   # GET /posts/1.json
   def show
     @post = Post.find(params[:id])
+    @post.view_count = @post.view_count + 1
+    @post.save!
+
+    @popular_posts = @post.category.posts.popular
+
     add_breadcrumb_for_category @post.category
     add_breadcrumb @post.title, post_path(@post)
 

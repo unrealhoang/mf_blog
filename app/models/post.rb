@@ -1,6 +1,7 @@
 class Post < ActiveRecord::Base
   scope :non_top, where(:is_top_article => false) 
   scope :normal_posts, offset(3)
+  scope :popular, order('view_count DESC').limit(5)
 
   attr_accessible :author, :content, :title, :author_id, :category_id, :is_top_article, :image, :tags, :top_article_image, :view_count
 
