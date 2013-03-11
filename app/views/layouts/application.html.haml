@@ -22,17 +22,18 @@
           = form_tag posts_path, :method => :get, :class => "navbar-search pull-right" do
             %input.input-medium.search-query{:type => "text", :placeholder => "Search...", :name => "query"}
           / %form.navbar-search.pull-right
-    #main.container
-      / header
-      .row.header
-        .span12{:style => "text-align: center"}
-          %h1= image_tag "logo2.png" 
+    .site-container
+      #main.container
+        / header
+        .row.header
+          .span12{:style => "text-align: center"}
+            %h1= image_tag "logo2.png" 
 
-      .row
-        .span8.offset2
-          %hr/
+        .row
+          .span8.offset2
+            %hr/
 
-      = yield
+        = yield
     %footer.footer
       .container
         %p
