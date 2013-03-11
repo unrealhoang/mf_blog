@@ -11,9 +11,20 @@
  * require_self
  *= require_directory .
 */
-
+@font-face { 
+  font-family: "SEGOEUIL";
+  src: url('http://fontsforweb.com/public/fonts/1409/SEGOEUIL.eot');
+  src: local("Segoe UI Light"), url('http://fontsforweb.com/public/fonts/1409/SEGOEUIL.woff') format("woff"), url('http://fontsforweb.com/public/fonts/1409/SEGOEUIL.ttf') format("truetype");
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family:  "SEGOEUIL", "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+}
 body {
-  background: url(<%= image_path "site-bg5.png" %>)
+  background: url(<%= image_path "site-bg5.png" %>);
+  font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+}
+hr {
+  border-top: 1px solid #000;
 }
 
 img {
