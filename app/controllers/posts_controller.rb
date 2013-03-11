@@ -4,11 +4,15 @@ class PostsController < ApplicationController
   # GET /posts.json
   def index
     @query = params[:query]
-    @posts = @query ? Post.simple_search(@query, params[:page]) : Post.non_top.paginate(:page => params[:page])
-    @top_articles = Post.top_articles
-    @first_three = Post.limit(3)
-
-    add_breadcrumb "Search for \"#{@query}\"" if @query
+    if @query
+      @posts = Post.simple_search(@query, params[:page])
+      add_breadcrumb "Search for \"#{@query}\"" 
+    else
+      @posts = Post.non_top.paginate(:page => params[:page]).offset(3)
+      @top_articles = Post.top_articles
+      @first_three = Post.limit(3)
+      @popular_posts = Post.popular
+    end
 
     respond_to do |format|
       format.html # index.html.erb
@@ -21,6 +25,11 @@ class PostsController < ApplicationController
   # GET /posts/1.json
   def show
     @post = Post.find(params[:id])
+    @post.view_count = @post.view_count + 1
+    @post.save!
+
+    @popular_posts = @post.category.posts.popular
+
     add_breadcrumb_for_category @post.category
     add_breadcrumb @post.title, post_path(@post)
 

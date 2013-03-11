@@ -3,10 +3,12 @@
     %section.article-stream-search.span8
       Showing results for 
       %em= @query
-- elsif @top_articles
-  = render :partial => "posts/top_articles", :object => @top_articles
-.row{:style => "margin-top: 40px"}
-  = render :partial => "posts/article_thumb_small", :collection => @first_three
+- else
+  - if @top_articles
+    = render :partial => "posts/top_articles", :object => @top_articles
+  .row{:style => "margin-top: 40px"}
+    = render :partial => "posts/article_thumb_small", :collection => @first_three
+
 .row{:style => "margin-top: 0px"}
   .span8.offset2
     %hr
