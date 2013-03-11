@@ -4,11 +4,14 @@ class PostsController < ApplicationController
   # GET /posts.json
   def index
     @query = params[:query]
-    @posts = @query ? Post.simple_search(@query, params[:page]) : Post.non_top.paginate(:page => params[:page])
-    @top_articles = Post.top_articles
-    @first_three = Post.limit(3)
-
-    add_breadcrumb "Search for \"#{@query}\"" if @query
+    if @query
+      @posts = Post.simple_search(@query, params[:page])
+      add_breadcrumb "Search for \"#{@query}\"" 
+    else
+      @posts = Post.non_top.paginate(:page => params[:page]).offset(3)
+      @top_articles = Post.top_articles
+      @first_three = Post.limit(3)
+    end
 
     respond_to do |format|
       format.html # index.html.erb
