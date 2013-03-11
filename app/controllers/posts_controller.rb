@@ -9,6 +9,8 @@ class PostsController < ApplicationController
       add_breadcrumb "Search for \"#{@query}\"" 
     else
       @posts = Post.non_top.paginate(:page => params[:page]).offset(3)
+      logger.debug @posts.select(:id).to_json
+
       @top_articles = Post.top_articles
       @first_three = Post.limit(3)
       @popular_posts = Post.popular
