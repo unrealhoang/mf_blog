@@ -12,7 +12,7 @@ class PostsController < ApplicationController
       logger.debug @posts.select(:id).to_json
 
       @top_articles = Post.top_articles
-      @first_three = Post.limit(3)
+      @first_three = Post.non_top.limit(3)
       @popular_posts = Post.popular
     end
 
