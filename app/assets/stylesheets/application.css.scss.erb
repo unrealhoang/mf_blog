@@ -10,9 +10,7 @@
  *
  * require_self
  *= require_directory .
-*/
-
-
+ */
 @font-face { 
   font-family: "SEGOEUIL";
   src: url('http://fontsforweb.com/public/fonts/1409/SEGOEUIL.eot');
@@ -72,7 +70,7 @@ img {
 
     .img-time-text {
       color: #fff;
-       background:rgb(245, 20, 20);
+      background:rgb(245, 20, 20);
     }
   }
 }
@@ -110,7 +108,14 @@ img {
     height: 60px;
   }
 }
-
+.site-container {
+  margin: auto;
+  width: 980px;
+  padding: 0px 25px;
+  background: none repeat scroll 0% 0% rgb(255, 255, 255);
+  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.1);
+  margin-bottom: 70px;
+}
 .entry-bottom {
   margin-top: 20px;
 }
@@ -130,42 +135,59 @@ img {
   }
 }
 //.img-popular-post {
-//  width: 75px;
-//  height: 75px;
-//  float:left;
-//  display: inline;
-//  margin:5px;
-//}
-.footer {
-  margin-top: 20px;
-}
-.search-box {
-  float: right;
-  margin-top:-5px;
-  margin-right: -7px;
-
-}
-
-.carousel-indicators {
-  position: absolute;
-  top: 15px;
-  right: 15px;
-  z-index: 5;
-  margin: 0;
-  list-style: none;
-
-  li {
-    display: block;
-    float: left;
-    width: 10px;
-    height: 10px;
-    margin-left: 5px;
-    text-indent: -999px;
-    background-color: #ccc;
-    background-color: rgba(255,255,255,.25);
-    border-radius: 5px;
+  //  width: 75px;
+  //  height: 75px;
+  //  float:left;
+  //  display: inline;
+  //  margin:5px;
+  //}
+  .footer {
+    text-align: center;
+    padding: 30px 0;
+    margin-top: 70px;
+    border-top: 1px solid #e5e5e5;
+    background-color: #f5f5f5;
   }
-  .active {
-    background-color: #fff;
+  .footer ul {
+    list-style: none;
   }
-}
+  .footer-links {
+    margin: 10px 0;
+  }
+  .footer-links li:first-child {
+    padding-left: 0;
+  }
+  .footer-links li {
+    display: inline;
+    padding: 0 2px;
+  }
+  .search-box {
+    float: right;
+    margin-top:-5px;
+    margin-right: -7px;
+
+  }
+
+  .carousel-indicators {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    z-index: 5;
+    margin: 0;
+    list-style: none;
+
+    li {
+      display: block;
+      float: left;
+      width: 10px;
+      height: 10px;
+      margin-left: 5px;
+      text-indent: -999px;
+      background-color: #ccc;
+      background-color: rgba(255,255,255,.25);
+      border-radius: 5px;
+    }
+    .active {
+      background-color: #fff;
+    }
+  }
