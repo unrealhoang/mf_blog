@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130306144601) do
+ActiveRecord::Schema.define(:version => 20130311170701) do
 
   create_table "active_admin_comments", :force => true do |t|
     t.string   "resource_id",   :null => false
@@ -56,27 +56,17 @@ ActiveRecord::Schema.define(:version => 20130306144601) do
     t.integer  "parent_category_id"
   end
 
-  create_table "photos", :force => true do |t|
-    t.integer  "author_id"
-    t.integer  "like_count"
-    t.string   "image"
-    t.datetime "created_at", :null => false
-    t.datetime "updated_at", :null => false
-  end
-
-  add_index "photos", ["author_id"], :name => "index_photos_on_author_id"
-
   create_table "posts", :force => true do |t|
     t.string   "title"
     t.text     "content"
     t.integer  "author_id"
-    t.datetime "created_at",        :null => false
-    t.datetime "updated_at",        :null => false
+    t.datetime "created_at",                       :null => false
+    t.datetime "updated_at",                       :null => false
     t.integer  "category_id"
     t.string   "image"
     t.boolean  "is_top_article"
     t.string   "top_article_image"
-    t.integer  "view_count"
+    t.integer  "view_count",        :default => 0
   end
 
   create_table "posts_tags", :id => false, :force => true do |t|
@@ -101,20 +91,6 @@ ActiveRecord::Schema.define(:version => 20130306144601) do
     t.string   "name"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
-  end
-
-  create_table "users", :force => true do |t|
-    t.string   "provider"
-    t.string   "uid"
-    t.string   "name"
-    t.string   "oauth_token"
-    t.datetime "oauth_expires_at"
-    t.string   "address"
-    t.string   "phone"
-    t.string   "vnid"
-    t.string   "email"
-    t.datetime "created_at",       :null => false
-    t.datetime "updated_at",       :null => false
   end
 
 end
