@@ -5,64 +5,110 @@
 !_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
 !_TAG_PROGRAM_VERSION	5.8	//
 AddCategoryToPost	db/migrate/20130125144920_add_category_to_post.rb	/^class AddCategoryToPost < ActiveRecord::Migration$/;"	c
+AddDefaultValueForViewCount	db/migrate/20130311170701_add_default_value_for_view_count.rb	/^class AddDefaultValueForViewCount < ActiveRecord::Migration$/;"	c
+AddFacebookUrlLinkedinUrlToProfiles	db/migrate/20130306144601_add_facebook_url_linkedin_url_to_profiles.rb	/^class AddFacebookUrlLinkedinUrlToProfiles < ActiveRecord::Migration$/;"	c
+AddImageToPost	db/migrate/20130129132952_add_image_to_post.rb	/^class AddImageToPost < ActiveRecord::Migration$/;"	c
+AddIsActiveToAdminUsers	db/migrate/20130304065626_add_is_active_to_admin_users.rb	/^class AddIsActiveToAdminUsers < ActiveRecord::Migration$/;"	c
+AddIsActiveToProfiles	db/migrate/20130203183125_add_is_active_to_profiles.rb	/^class AddIsActiveToProfiles < ActiveRecord::Migration$/;"	c
+AddIsTopArticleToPost	db/migrate/20130129134208_add_is_top_article_to_post.rb	/^class AddIsTopArticleToPost < ActiveRecord::Migration$/;"	c
+AddNameToProfile	db/migrate/20130130085757_add_name_to_profile.rb	/^class AddNameToProfile < ActiveRecord::Migration$/;"	c
+AddParentCategoryToCategory	db/migrate/20130131084542_add_parent_category_to_category.rb	/^class AddParentCategoryToCategory < ActiveRecord::Migration$/;"	c
+AddProfileIdToAdminUser	db/migrate/20130211193906_add_profile_id_to_admin_user.rb	/^class AddProfileIdToAdminUser < ActiveRecord::Migration$/;"	c
+AddTopArticleImageToPosts	db/migrate/20130305132048_add_top_article_image_to_posts.rb	/^class AddTopArticleImageToPosts < ActiveRecord::Migration$/;"	c
+AddViewCountToPosts	db/migrate/20130306141130_add_view_count_to_posts.rb	/^class AddViewCountToPosts < ActiveRecord::Migration$/;"	c
+AdminUser	app/models/admin_user.rb	/^class AdminUser < ActiveRecord::Base$/;"	c
 Application	config/application.rb	/^  class Application < Rails::Application$/;"	c	class:MfBlog
 ApplicationController	app/controllers/application_controller.rb	/^class ApplicationController < ActionController::Base$/;"	c
 ApplicationHelper	app/helpers/application_helper.rb	/^module ApplicationHelper$/;"	m
+BootstrapLinkRenderer	app/helpers/posts_helper.rb	/^  class BootstrapLinkRenderer < WillPaginate::ActionView::LinkRenderer$/;"	c	class:PostsHelper
 CategoriesController	app/controllers/categories_controller.rb	/^class CategoriesController < ApplicationController$/;"	c
 CategoriesHelper	app/helpers/categories_helper.rb	/^module CategoriesHelper$/;"	m
 Category	app/models/category.rb	/^class Category < ActiveRecord::Base$/;"	c
+CreateAdminNotes	db/migrate/20130209121446_create_admin_notes.rb	/^class CreateAdminNotes < ActiveRecord::Migration$/;"	c
 CreateCategories	db/migrate/20130125085143_create_categories.rb	/^class CreateCategories < ActiveRecord::Migration$/;"	c
 CreatePosts	db/migrate/20130125141512_create_posts.rb	/^class CreatePosts < ActiveRecord::Migration$/;"	c
 CreatePostsTags	db/migrate/20130127082006_create_posts_tags.rb	/^class CreatePostsTags < ActiveRecord::Migration$/;"	c
 CreateProfiles	db/migrate/20130125143640_create_profiles.rb	/^class CreateProfiles < ActiveRecord::Migration$/;"	c
 CreateTags	db/migrate/20130124143834_create_tags.rb	/^class CreateTags < ActiveRecord::Migration$/;"	c
+DeviseCreateAdminUsers	db/migrate/20130209121441_devise_create_admin_users.rb	/^class DeviseCreateAdminUsers < ActiveRecord::Migration$/;"	c
 EmailHelpers	features/step_definitions/email_steps.rb	/^module EmailHelpers$/;"	m
+FixCategoryColumnName	db/migrate/20130203035244_fix_category_column_name.rb	/^class FixCategoryColumnName < ActiveRecord::Migration$/;"	c
 HomeController	app/controllers/home_controller.rb	/^class HomeController < ApplicationController$/;"	c
 HomeHelper	app/helpers/home_helper.rb	/^module HomeHelper$/;"	m
 MfBlog	config/application.rb	/^module MfBlog$/;"	m
+MoveAdminNotesToComments	db/migrate/20130209121447_move_admin_notes_to_comments.rb	/^class MoveAdminNotesToComments < ActiveRecord::Migration$/;"	c
 Post	app/models/post.rb	/^class Post < ActiveRecord::Base$/;"	c
 PostsController	app/controllers/posts_controller.rb	/^class PostsController < ApplicationController$/;"	c
 PostsHelper	app/helpers/posts_helper.rb	/^module PostsHelper$/;"	m
 Profile	app/models/profile.rb	/^class Profile < ActiveRecord::Base$/;"	c
 ProfilesController	app/controllers/profiles_controller.rb	/^class ProfilesController < ApplicationController$/;"	c
 ProfilesHelper	app/helpers/profiles_helper.rb	/^module ProfilesHelper$/;"	m
+RemoveIsActiveFromProfiles	db/migrate/20130304065659_remove_is_active_from_profiles.rb	/^class RemoveIsActiveFromProfiles < ActiveRecord::Migration$/;"	c
+RemoveUsernameAndPasswordFromProfiles	db/migrate/20130304064523_remove_username_and_password_from_profiles.rb	/^class RemoveUsernameAndPasswordFromProfiles < ActiveRecord::Migration$/;"	c
 Tag	app/models/tag.rb	/^class Tag < ActiveRecord::Base$/;"	c
 TagsController	app/controllers/tags_controller.rb	/^class TagsController < ApplicationController$/;"	c
 TagsHelper	app/helpers/tags_helper.rb	/^module TagsHelper$/;"	m
+active_for_authentication?	app/models/admin_user.rb	/^  def active_for_authentication?$/;"	f	class:AdminUser
+add_breadcrumb_for_category	app/controllers/application_controller.rb	/^  def add_breadcrumb_for_category(category)$/;"	f	class:ApplicationController
+add_breadcrumb_for_category	app/helpers/application_helper.rb	/^  def add_breadcrumb_for_category(category)$/;"	f	class:ApplicationHelper
 change	db/migrate/20130124143834_create_tags.rb	/^  def change$/;"	f	class:CreateTags
 change	db/migrate/20130125085143_create_categories.rb	/^  def change$/;"	f	class:CreateCategories
 change	db/migrate/20130125141512_create_posts.rb	/^  def change$/;"	f	class:CreatePosts
 change	db/migrate/20130125143640_create_profiles.rb	/^  def change$/;"	f	class:CreateProfiles
 change	db/migrate/20130125144920_add_category_to_post.rb	/^  def change$/;"	f	class:AddCategoryToPost
 change	db/migrate/20130127082006_create_posts_tags.rb	/^  def change$/;"	f	class:CreatePostsTags
-create	app/controllers/categories_controller.rb	/^  def create$/;"	f	class:CategoriesController
-create	app/controllers/posts_controller.rb	/^  def create$/;"	f	class:PostsController
+change	db/migrate/20130129132952_add_image_to_post.rb	/^  def change$/;"	f	class:AddImageToPost
+change	db/migrate/20130129134208_add_is_top_article_to_post.rb	/^  def change$/;"	f	class:AddIsTopArticleToPost
+change	db/migrate/20130130085757_add_name_to_profile.rb	/^  def change$/;"	f	class:AddNameToProfile
+change	db/migrate/20130131084542_add_parent_category_to_category.rb	/^  def change$/;"	f	class:AddParentCategoryToCategory
+change	db/migrate/20130203035244_fix_category_column_name.rb	/^  def change$/;"	f	class:FixCategoryColumnName
+change	db/migrate/20130203183125_add_is_active_to_profiles.rb	/^  def change$/;"	f	class:AddIsActiveToProfiles
+change	db/migrate/20130209121441_devise_create_admin_users.rb	/^  def change$/;"	f	class:DeviseCreateAdminUsers
+change	db/migrate/20130211193906_add_profile_id_to_admin_user.rb	/^  def change$/;"	f	class:AddProfileIdToAdminUser
+change	db/migrate/20130304065626_add_is_active_to_admin_users.rb	/^  def change$/;"	f	class:AddIsActiveToAdminUsers
+change	db/migrate/20130305132048_add_top_article_image_to_posts.rb	/^  def change$/;"	f	class:AddTopArticleImageToPosts
+change	db/migrate/20130306141130_add_view_count_to_posts.rb	/^  def change$/;"	f	class:AddViewCountToPosts
+change	db/migrate/20130306144601_add_facebook_url_linkedin_url_to_profiles.rb	/^  def change$/;"	f	class:AddFacebookUrlLinkedinUrlToProfiles
+change	db/migrate/20130311170701_add_default_value_for_view_count.rb	/^  def change$/;"	f	class:AddDefaultValueForViewCount
+create	app/admin/posts.rb	/^    def create$/;"	f
 create	app/controllers/profiles_controller.rb	/^  def create$/;"	f	class:ProfilesController
 create	app/controllers/tags_controller.rb	/^  def create$/;"	f	class:TagsController
 current_email_address	features/step_definitions/email_steps.rb	/^  def current_email_address$/;"	f	class:EmailHelpers
-destroy	app/controllers/categories_controller.rb	/^  def destroy$/;"	f	class:CategoriesController
-destroy	app/controllers/posts_controller.rb	/^  def destroy$/;"	f	class:PostsController
 destroy	app/controllers/profiles_controller.rb	/^  def destroy$/;"	f	class:ProfilesController
 destroy	app/controllers/tags_controller.rb	/^  def destroy$/;"	f	class:TagsController
-edit	app/controllers/categories_controller.rb	/^  def edit$/;"	f	class:CategoriesController
-edit	app/controllers/posts_controller.rb	/^  def edit$/;"	f	class:PostsController
+down	db/migrate/20130209121446_create_admin_notes.rb	/^  def self.down$/;"	F	class:CreateAdminNotes
+down	db/migrate/20130209121447_move_admin_notes_to_comments.rb	/^  def self.down$/;"	F	class:MoveAdminNotesToComments
+down	db/migrate/20130304064523_remove_username_and_password_from_profiles.rb	/^  def down$/;"	f	class:RemoveUsernameAndPasswordFromProfiles
+down	db/migrate/20130304065659_remove_is_active_from_profiles.rb	/^  def down$/;"	f	class:RemoveIsActiveFromProfiles
 edit	app/controllers/profiles_controller.rb	/^  def edit$/;"	f	class:ProfilesController
 edit	app/controllers/tags_controller.rb	/^  def edit$/;"	f	class:TagsController
+gap	app/helpers/posts_helper.rb	/^    def gap$/;"	f	class:PostsHelper.BootstrapLinkRenderer
+html_container	app/helpers/posts_helper.rb	/^    def html_container(html)$/;"	f	class:PostsHelper.BootstrapLinkRenderer
 index	app/controllers/categories_controller.rb	/^  def index$/;"	f	class:CategoriesController
 index	app/controllers/home_controller.rb	/^  def index$/;"	f	class:HomeController
 index	app/controllers/posts_controller.rb	/^  def index$/;"	f	class:PostsController
 index	app/controllers/profiles_controller.rb	/^  def index$/;"	f	class:ProfilesController
 index	app/controllers/tags_controller.rb	/^  def index$/;"	f	class:TagsController
-new	app/controllers/categories_controller.rb	/^  def new$/;"	f	class:CategoriesController
-new	app/controllers/posts_controller.rb	/^  def new$/;"	f	class:PostsController
+load_main_categories	app/controllers/application_controller.rb	/^  def load_main_categories$/;"	f	class:ApplicationController
+migrate	db/migrate/20130209121441_devise_create_admin_users.rb	/^  def migrate(direction)$/;"	f	class:DeviseCreateAdminUsers
+name_only	app/helpers/posts_helper.rb	/^  def name_only(tags)$/;"	f	class:PostsHelper
 new	app/controllers/profiles_controller.rb	/^  def new$/;"	f	class:ProfilesController
 new	app/controllers/tags_controller.rb	/^  def new$/;"	f	class:TagsController
+page_number	app/helpers/posts_helper.rb	/^    def page_number(page)$/;"	f	class:PostsHelper.BootstrapLinkRenderer
+prepare_breadcrumb	app/controllers/application_controller.rb	/^  def prepare_breadcrumb$/;"	f	class:ApplicationController
+previous_or_next_page	app/helpers/posts_helper.rb	/^    def previous_or_next_page(page, text, classname)$/;"	f	class:PostsHelper.BootstrapLinkRenderer
+request_url	app/helpers/application_helper.rb	/^  def request_url$/;"	f	class:ApplicationHelper
 show	app/controllers/categories_controller.rb	/^  def show$/;"	f	class:CategoriesController
-show	app/controllers/posts_controller.rb	/^  def show$/;"	f	class:PostsController
+show	app/controllers/posts_controller.rb	/^  def show$/;"	f
 show	app/controllers/profiles_controller.rb	/^  def show$/;"	f	class:ProfilesController
 show	app/controllers/tags_controller.rb	/^  def show$/;"	f	class:TagsController
-update	app/controllers/categories_controller.rb	/^  def update$/;"	f	class:CategoriesController
-update	app/controllers/posts_controller.rb	/^  def update$/;"	f	class:PostsController
+simple_search	app/models/post.rb	/^  def self.simple_search(query, page)$/;"	F	class:Post
+tags=	app/models/post.rb	/^  def tags=(tag_names)$/;"	f	class:Post
+top_articles	app/models/post.rb	/^  def self.top_articles$/;"	F	class:Post
+up	db/migrate/20130209121446_create_admin_notes.rb	/^  def self.up$/;"	F	class:CreateAdminNotes
+up	db/migrate/20130209121447_move_admin_notes_to_comments.rb	/^  def self.up$/;"	F	class:MoveAdminNotesToComments
+up	db/migrate/20130304064523_remove_username_and_password_from_profiles.rb	/^  def up$/;"	f	class:RemoveUsernameAndPasswordFromProfiles
+up	db/migrate/20130304065659_remove_is_active_from_profiles.rb	/^  def up$/;"	f	class:RemoveIsActiveFromProfiles
 update	app/controllers/profiles_controller.rb	/^  def update$/;"	f	class:ProfilesController
 update	app/controllers/tags_controller.rb	/^  def update$/;"	f	class:TagsController
 valid_attributes	spec/controllers/categories_controller_spec.rb	/^  def valid_attributes$/;"	f
