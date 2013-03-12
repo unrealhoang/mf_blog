@@ -19,6 +19,7 @@ ActiveAdmin.register Post do
     f.inputs "Details" do
       f.input :title
       f.input :category
+      f.input :author
       f.input :image
       f.input :is_top_article
       f.input :top_article_image

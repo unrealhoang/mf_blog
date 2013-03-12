@@ -27,25 +27,25 @@
         / header
         .row.header
           .span12{:style => "text-align: center"}
-            %h1= image_tag "logo2.png" 
+            %h1= image_tag "logo3.png" 
 
         .row
           .span8.offset2
             %hr/
 
         = yield
-      %footer.footer
-        .container
-          %p
-            Designed and built with all the love in the world by
-            = succeed "." do
-              %a{:href => "http://mobifood.vn", :target => "_blank"} @Mobifood
-          %ul.footer-links
-            %li
-              %a{:href => "http://blog.mobifood.vn"} Blog
-            %li.muted ·
-            %li
-              %a{:href => "#"} Contact
-            %li.muted ·
-            %li
-              %a{:href => "#"} About
+    %footer.footer
+      .container
+        %p
+          Designed and built with all the love in the world by
+          = succeed "." do
+            %a{:href => "http://mobifood.vn", :target => "_blank"} @Mobifood
+        %ul.footer-links
+          %li
+            %a{:href => "http://blog.mobifood.vn"} Blog
+          %li.muted ·
+          %li
+            %a{:href => "#"} Contact
+          %li.muted ·
+          %li
+            %a{:href => "#"} About
