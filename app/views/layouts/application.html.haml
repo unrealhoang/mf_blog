@@ -27,7 +27,8 @@
         / header
         .row.header
           .span12{:style => "text-align: center"}
-            %h1= image_tag "logo3.png" 
+            %a{:href => root_path}
+              %h1= image_tag "logo3.png" 
 
         .row
           .span8.offset2
@@ -37,13 +38,13 @@
     %footer.footer
       .container
         %p
-          Designed and built with all the love in the world by
+          Designed and built with love by
           = succeed "." do
             %a{:href => "http://mobifood.vn", :target => "_blank"} @Mobifood
         %ul.footer-links
           %li
-            %a{:href => "http://blog.mobifood.vn"} Blog
-          %li.muted ·
+            %a{:href => "#"} Blog
+          %li.muted 
           %li
             %a{:href => "#"} Contact
           %li.muted ·
