@@ -34,15 +34,15 @@
             %h3= author.name
         %p
           %strong
-          = author.biography
+          = author.biography.html_safe
         %i
-          %a{:href => author.twitter} @#{author.twitter}
+          %a{:href => "http://twitter.com/#{author.twitter}"} @#{author.twitter}
         &nbsp;
         %i
-          %a{:href => author.facebook} #{author.facebook} on Facebook
+          %a{:href => author.facebook_url} #{author.facebook} on Facebook
         &nbsp;
         %i
-          %a{:href => author.linkedin} #{author.linkedin} on Linkedin
+          %a{:href => author.linkedin_url} #{author.linkedin} on Linkedin
     %hr/
   / .span8
   / = render :partial => "posts/article_related_posts"
