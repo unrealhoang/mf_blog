@@ -18,7 +18,7 @@ class CategoriesController < ApplicationController
 
     @first_three = @category.posts.limit(3)
     @posts = @category.posts.paginate(:page => params[:page]).offset(3)
-    @popular_posts = @category.posts.popular
+    @popular_posts = @category.posts.unscoped.popular
 
     respond_to do |format|
       format.html # show.html.erb

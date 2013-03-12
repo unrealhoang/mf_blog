@@ -18,7 +18,7 @@ class PostsController < ApplicationController
 
       @top_articles = Post.top_articles
       @first_three = Post.non_top.limit(3)
-      @popular_posts = Post.popular
+      @popular_posts = Post.unscoped.popular
     end
 
     respond_to do |format|
@@ -35,7 +35,7 @@ class PostsController < ApplicationController
     @post.view_count = @post.view_count + 1
     @post.save!
 
-    @popular_posts = @post.category.posts.popular
+    @popular_posts = @post.category.posts.unscoped.popular
 
     add_breadcrumb_for_category @post.category
     add_breadcrumb @post.title, post_path(@post)
