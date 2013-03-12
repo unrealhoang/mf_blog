@@ -35,7 +35,7 @@ class PostsController < ApplicationController
     @post.view_count = @post.view_count + 1
     @post.save!
 
-    @popular_posts = @post.category.posts.unscoped.popular
+    @popular_posts = @post.category.posts.unscoped.where("id != ?", @post.id).popular
 
     add_breadcrumb_for_category @post.category
     add_breadcrumb @post.title, post_path(@post)
