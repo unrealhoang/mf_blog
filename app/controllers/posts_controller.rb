@@ -8,8 +8,13 @@ class PostsController < ApplicationController
       @posts = Post.simple_search(@query, params[:page])
       add_breadcrumb "Search for \"#{@query}\"" 
     else
-      @posts = Post.non_top.paginate(:page => params[:page]).offset(3)
-      logger.debug @posts.select(:id).to_json
+      @posts = WillPaginate::Collection.create((params[:page] || "1").to_i, Post.per_page) do |pager|
+        result = Post.non_top.limit(pager.per_page).offset(pager.offset + 3)
+        # inject the result array into the paginated collection:
+        pager.replace(result)
+
+        pager.total_entries = Post.non_top.count - 3
+      end
 
       @top_articles = Post.top_articles
       @first_three = Post.non_top.limit(3)
