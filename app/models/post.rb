@@ -1,4 +1,5 @@
 class Post < ActiveRecord::Base
+  default_scope order('created_at DESC')
   scope :non_top, where(:is_top_article => false) 
   scope :popular, order('view_count DESC').limit(5)
 

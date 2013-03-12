@@ -18,8 +18,8 @@ ActiveAdmin.register Post do
   form do |f|
     f.inputs "Details" do
       f.input :title
-      f.input :category
-      f.input :author
+      f.input :category, :include_blank => false
+      f.input :author, :include_blank => false
       f.input :image
       f.input :is_top_article
       f.input :top_article_image
