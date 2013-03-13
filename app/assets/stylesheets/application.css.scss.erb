@@ -11,7 +11,7 @@
  * require_self
  *= require_directory .
  */
-@font-face { 
+ @font-face { 
   font-family: "SEGOEUIL";
   src: url('http://fontsforweb.com/public/fonts/1409/SEGOEUIL.eot');
   src: local("Segoe UI Light"), url('http://fontsforweb.com/public/fonts/1409/SEGOEUIL.woff') format("woff"), url('http://fontsforweb.com/public/fonts/1409/SEGOEUIL.ttf') format("truetype");
@@ -75,7 +75,23 @@ img {
     }
   }
 }
-
+.side-bar-head {
+  background: #ededed;
+  border-bottom: 1px solid #ccc;
+  border-top: 1px solid #ccc;
+  font-family: 'Lato', Helvetica, Arial, sans-serif;
+  text-align: center;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.9);
+  font-size: 17px;
+  font-weight: 900;
+  margin: 0 0 10px;
+  padding: 5px 5px 5px 10px;
+  text-transform: uppercase;
+  margin: 0 0 15px 0;
+}
+.side-bar-head a {
+  color: #f6612c;
+}
 .normal-thread {
 	padding-top: 10px;
   img {
@@ -149,102 +165,102 @@ img {
   //  display: inline;
   //  margin:5px;
   //}
-.footer {
-  text-align: center;
-  padding: 30px 0;
-  border-top: 1px solid #e5e5e5;
-  background-color: #f5f5f5;
-}
-.footer ul {
-  list-style: none;
-}
-.footer-links {
-  margin: 10px 0;
-}
-.footer-links li:first-child {
-  padding-left: 0;
-}
-.footer-links li {
-  display: inline;
-  padding: 0 2px;
-}
-.search-box {
-  float: right;
-  margin-top:-5px;
-  margin-right: -7px;
-
-}
-
-.carousel-indicators {
-  position: absolute;
-  top: 15px;
-  right: 15px;
-  z-index: 5;
-  margin: 0;
-  list-style: none;
-
-  li {
-    display: block;
-    float: left;
-    width: 10px;
-    height: 10px;
-    margin-left: 5px;
-    text-indent: -999px;
-    background-color: #ccc;
-    background-color: rgba(255,255,255,.25);
-    border-radius: 5px;
+  .footer {
+    text-align: center;
+    padding: 30px 0;
+    border-top: 1px solid #e5e5e5;
+    background-color: #f5f5f5;
   }
-  .active {
-    background-color: #fff;
+  .footer ul {
+    list-style: none;
   }
-}
+  .footer-links {
+    margin: 10px 0;
+  }
+  .footer-links li:first-child {
+    padding-left: 0;
+  }
+  .footer-links li {
+    display: inline;
+    padding: 0 2px;
+  }
+  .search-box {
+    float: right;
+    margin-top:-5px;
+    margin-right: -7px;
 
-.separator {
-  height: 30px;
-}
+  }
 
-#back-top {
-	position: fixed;
-	bottom: 30px;
-  right: 30px;
-}
+  .carousel-indicators {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    z-index: 5;
+    margin: 0;
+    list-style: none;
 
-#back-top a {
-	width: 54px;
-	display: block;
-	text-align: center;
-	font: 11px/100% Arial, Helvetica, sans-serif;
-	text-transform: uppercase;
-	text-decoration: none;
-	color: #bbb;
+    li {
+      display: block;
+      float: left;
+      width: 10px;
+      height: 10px;
+      margin-left: 5px;
+      text-indent: -999px;
+      background-color: #ccc;
+      background-color: rgba(255,255,255,.25);
+      border-radius: 5px;
+    }
+    .active {
+      background-color: #fff;
+    }
+  }
 
-	/* transition */
-	-webkit-transition: 1s;
-	-moz-transition: 1s;
-	transition: 1s;
-}
-#back-top a:hover {
-	color: #000;
-}
+  .separator {
+    height: 30px;
+  }
 
-/* arrow icon (span tag) */
-#back-top span {
-	width: 54px;
-	height: 54px;
-	display: block;
-	margin-bottom: 7px;
-	background: #ddd url(up-arrow.png) no-repeat center center;
+  #back-top {
+   position: fixed;
+   bottom: 30px;
+   right: 30px;
+ }
 
-	/* rounded corners */
-	-webkit-border-radius: 15px;
-	-moz-border-radius: 15px;
-	border-radius: 10px;
+ #back-top a {
+   width: 54px;
+   display: block;
+   text-align: center;
+   font: 11px/100% Arial, Helvetica, sans-serif;
+   text-transform: uppercase;
+   text-decoration: none;
+   color: #bbb;
 
-	/* transition */
-	-webkit-transition: 1s;
-	-moz-transition: 1s;
-	transition: 1s;
-}
-#back-top a:hover span {
-	background-color: #777;
-}
+   /* transition */
+   -webkit-transition: 1s;
+   -moz-transition: 1s;
+   transition: 1s;
+ }
+ #back-top a:hover {
+   color: #000;
+ }
+
+ /* arrow icon (span tag) */
+ #back-top span {
+   width: 54px;
+   height: 54px;
+   display: block;
+   margin-bottom: 7px;
+   background: #ddd url(up-arrow.png) no-repeat center center;
+
+   /* rounded corners */
+   -webkit-border-radius: 15px;
+   -moz-border-radius: 15px;
+   border-radius: 10px;
+
+   /* transition */
+   -webkit-transition: 1s;
+   -moz-transition: 1s;
+   transition: 1s;
+ }
+ #back-top a:hover span {
+   background-color: #777;
+ }
