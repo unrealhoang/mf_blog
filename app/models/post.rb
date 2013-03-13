@@ -1,7 +1,7 @@
 class Post < ActiveRecord::Base
   default_scope order('created_at DESC')
   scope :non_top, where(:is_top_article => false) 
-  scope :popular, order('view_count DESC').limit(5)
+  scope :popular, order('view_count DESC').order('created_at DESC').limit(5)
 
   attr_accessible :author, :content, :title, :author_id, :category_id, :is_top_article, :image, :tags, :top_article_image, :view_count
 
@@ -27,6 +27,10 @@ class Post < ActiveRecord::Base
   def self.top_articles
     result = Post.where(:is_top_article => true)
     result.empty? ? nil : result
+  end
+
+  def popular_posts_same_category
+    self.category.posts.unscoped.where("id != ?", self.id).popular
   end
 
 end
