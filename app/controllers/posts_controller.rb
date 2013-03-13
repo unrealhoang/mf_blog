@@ -36,6 +36,9 @@ class PostsController < ApplicationController
     @post.save!
 
     @popular_posts = @post.category.posts.unscoped.where("id != ?", @post.id).popular
+    logger.debug "[DEBUG]: #{@popular_posts.to_sql}"
+
+
 
     add_breadcrumb_for_category @post.category
     add_breadcrumb @post.title, post_path(@post)
