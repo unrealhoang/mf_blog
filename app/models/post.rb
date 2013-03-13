@@ -33,6 +33,32 @@ class Post < ActiveRecord::Base
     self.category.posts.unscoped.where("id != ?", self.id).popular
   end
 
+  def related_posts
+    Post.unscoped.where(
+    "id IN 
+      (
+        SELECT p.post_id FROM 
+        (
+          SELECT post_id, count(*) FROM posts_tags p WHERE tag_id IN
+            (SELECT tag_id FROM posts_tags WHERE post_id = ?)
+          GROUP BY post_id ORDER BY 2 DESC
+        ) p
+        WHERE p.post_id != ?
+
+        UNION
+
+        SELECT t.id FROM
+        (
+          SELECT id, (created_at - (SELECT created_at FROM posts WHERE id = ?)) AS datediff 
+          FROM posts WHERE category_id = ? 
+          ORDER BY datediff LIMIT 5
+        ) t
+        WHERE t.id != ?
+      )
+    ", self.id, self.id, self.category_id, self.id, self.id).limit(5)
+
+  end
+
 end
 
 
