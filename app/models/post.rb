@@ -34,8 +34,8 @@ class Post < ActiveRecord::Base
   end
 
   def related_posts
-    Post.unscoped.where
-    ("id IN 
+    Post.unscoped.where(
+    "id IN 
       (
         SELECT p.post_id FROM 
         (
@@ -47,10 +47,15 @@ class Post < ActiveRecord::Base
 
         UNION
 
-        SELECT post_id FROM posts WHERE category_id = ? 
-        ORDER BY (created_at - (SELECT created_at FROM posts WHERE post_id = ?)) LIMIT 5
-      )", self.id, self.id, self.category_id, self.id
-    )
+        SELECT t.id FROM
+        (
+          SELECT id, (created_at - (SELECT created_at FROM posts WHERE id = ?)) AS datediff 
+          FROM posts WHERE category_id = ? 
+          ORDER BY datediff LIMIT 5
+        ) t
+        WHERE t.id != ?
+      )
+    ", self.id, self.id, self.category_id, self.id, self.id).limit(5)
 
   end
 
