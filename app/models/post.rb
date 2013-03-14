@@ -51,11 +51,11 @@ class Post < ActiveRecord::Base
         (
           SELECT id, (created_at - (SELECT created_at FROM posts WHERE id = ?)) AS datediff 
           FROM posts WHERE category_id = ? 
-          ORDER BY datediff LIMIT 5
+          ORDER BY datediff LIMIT 4
         ) t
         WHERE t.id != ?
       )
-    ", self.id, self.id, self.category_id, self.id, self.id).limit(5)
+    ", self.id, self.id, self.id, self.category_id, self.id).limit(4)
 
   end
 

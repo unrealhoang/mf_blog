@@ -18,7 +18,7 @@
   / .entry-header
   .entry-content
     = post.content.html_safe
-  / .entry-content
+
   %footer.entry-meta
     This entry was posted in
     %a{:href => category_path(post.category), :rel => "category", :title => "View all posts in #{post.category.name}"}= post.category.name
@@ -43,7 +43,7 @@
         &nbsp;
         %i
           %a{:href => author.linkedin_url} #{author.linkedin} on Linkedin
+    .clearfix
     %hr/
-  / .span8
-  / = render :partial => "posts/article_related_posts"
+  = render :partial => "posts/article_related_posts" 
   / .entry-met

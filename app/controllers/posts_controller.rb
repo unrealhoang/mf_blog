@@ -36,6 +36,9 @@ class PostsController < ApplicationController
     @post.save!
 
     @popular_posts = @post.popular_posts_same_category
+    @related_posts = @post.related_posts.all
+
+    logger.info "[DEBUG] #{@related_posts}"
 
     add_breadcrumb_for_category @post.category
     add_breadcrumb @post.title, post_path(@post)

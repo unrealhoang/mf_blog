@@ -1,6 +1,2 @@
-- post = article_related_posts
-.span2
-  = link_to post_path(post) do
-    = image_tag post.image, :style => "height: 85px; width: 100%; border: 2px solid #dcdcd1; box-sizing: border-box"
-    %h4= post.title
-
+.row
+  = render :partial => "posts/article_related_post", :collection => @related_posts 
