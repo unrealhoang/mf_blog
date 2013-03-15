@@ -2,11 +2,15 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 .entry-tags {
-background: url(images/icon-tag.png) no-repeat 0 1px;
+background: url(<%= image_path "icon-tag.png" %>) no-repeat 0 1px;
 float: left;
 margin: 10px 0;
 padding: 0 0 0 21px;
 color: #222;
+}
+.tag-list {
+  list-style: none;
+  display: inline;
 }
 .top-articles {
   position: relative;
