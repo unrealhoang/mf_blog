@@ -8,7 +8,7 @@ class TagsController < ApplicationController
       format.html # index.html.erb
       format.json { render json: @tags }
     end
-  end
+  end 
 
   # GET /tags/1
   # GET /tags/1.json
