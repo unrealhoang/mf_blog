@@ -14,6 +14,8 @@ class TagsController < ApplicationController
   # GET /tags/1.json
   def show
     @tag = Tag.find(params[:id])
+    @first_three = @tag.posts.limit(3)
+    @popular_posts = @tag.posts.unscoped.popular
 
     respond_to do |format|
       format.html # show.html.erb
