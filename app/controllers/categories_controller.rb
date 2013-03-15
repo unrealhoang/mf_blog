@@ -17,8 +17,9 @@ class CategoriesController < ApplicationController
     add_breadcrumb_for_category @category
 
     @first_three = @category.posts.limit(3)
-    @posts = @category.posts.paginate(:page => params[:page]).offset(3)
     @popular_posts = @category.posts.unscoped.popular
+
+    @posts = custom_post_paginate(@category.posts, (params[:page] || "1").to_i)
 
     respond_to do |format|
       format.html # show.html.erb
