@@ -15,4 +15,14 @@ class ApplicationController < ActionController::Base
   def load_main_categories
     @main_categories = Category.where(:parent_category_id => nil)
   end
+
+  def custom_post_paginate(posts, cur_page)
+    WillPaginate::Collection.create(cur_page, Post.per_page) do |pager|
+        result = posts.limit(pager.per_page).offset(pager.offset + 3)
+        # inject the result array into the paginated collection:
+        pager.replace(result)
+
+        pager.total_entries = posts.count - 3
+      end
+  end
 end

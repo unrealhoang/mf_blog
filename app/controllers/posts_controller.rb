@@ -6,15 +6,8 @@ class PostsController < ApplicationController
     @query = params[:query]
     if @query
       @posts = Post.simple_search(@query, params[:page])
-      add_breadcrumb "Search for \"#{@query}\"" 
     else
-      @posts = WillPaginate::Collection.create((params[:page] || "1").to_i, Post.per_page) do |pager|
-        result = Post.non_top.limit(pager.per_page).offset(pager.offset + 3)
-        # inject the result array into the paginated collection:
-        pager.replace(result)
-
-        pager.total_entries = Post.non_top.count - 3
-      end
+      @posts = custom_post_paginate(Post.non_top, (params[:page] || "1").to_i)
 
       @top_articles = Post.top_articles
       @first_three = Post.non_top.limit(3)
@@ -37,11 +30,7 @@ class PostsController < ApplicationController
 
     @popular_posts = @post.popular_posts_same_category
     @related_posts = @post.related_posts.all
-
-    logger.info "[DEBUG] #{@related_posts}"
-
-    add_breadcrumb_for_category @post.category
-    add_breadcrumb @post.title, post_path(@post)
+    @tags = @post.tags
 
     respond_to do |format|
       format.html # show.html.erb
