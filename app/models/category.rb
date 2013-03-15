@@ -6,4 +6,8 @@ class Category < ActiveRecord::Base
   belongs_to :parent_category, :class_name => 'Category'
 
   has_many :posts
+
+  def to_param
+    "#{id}-#{name.mb_chars.normalize(:kd).gsub(/[^\x00-\x7F]/,'').parameterize}"
+  end
 end

@@ -11,6 +11,11 @@ class Post < ActiveRecord::Base
 
   self.per_page = 5
 
+
+  def to_param
+    "#{id}-#{title.mb_chars.normalize(:kd).gsub(/[^\x00-\x7F]/,'').parameterize}"
+  end
+
   def tags=(tag_names)
     tag_names = tag_names.split(',')
     self.tags.clear
