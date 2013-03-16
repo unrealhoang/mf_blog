@@ -8,6 +8,15 @@
         = javascript_include_tag "application"
         = csrf_meta_tags
         = yield(:head)
+      #fb-root
+      :javascript
+        (function(d, s, id) {
+          var js, fjs = d.getElementsByTagName(s)[0];
+          if (d.getElementById(id)) return;
+          js = d.createElement(s); js.id = id;
+          js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+          fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
   %body{:class => "#{controller_name} #{action_name}", 'data-controller' => "#{controller_name}", 'data-action' => "#{action_name}", :style => 'padding-top: 0px'}
     / nav bar here
     .navbar.navbar-fixed-top.navbar-inverse
