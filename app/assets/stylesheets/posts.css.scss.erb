@@ -4,13 +4,30 @@
 .entry-tags {
 background: url(<%= image_path "icon-tag.png" %>) no-repeat 0 1px;
 float: left;
+width: 100%;
 margin: 10px 0;
 padding: 0 0 0 21px;
 color: #222;
+  b{
+    float: left;
+    margin-right: 10px;
+  }
 }
 .tag-list {
   list-style: none;
   display: inline;
+
+  li {
+    float: left;
+    padding: 2px 5px;
+border-radius: 3px;
+background: #f9f9f9;
+  color: #666;
+box-shadow: inset 1px 1px 1px #999;
+border-bottom: 1px solid #f0f0f0;
+border-right: 1px solid #f0f0f0;
+margin: 0 3px;
+  }
 }
 .top-articles {
   position: relative;
