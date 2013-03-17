@@ -8,7 +8,7 @@ class ProfilesController < ApplicationController
       format.html # index.html.erb
       format.json { render json: @profiles }
     end
-  end
+  end 
 
   # GET /profiles/1
   # GET /profiles/1.json
