@@ -1,5 +1,5 @@
 .side-bar-head
   %a{:href => "#"} Tag Cloud
-- if @tags
+- if @tag_cloud
   %ul.tag-list
-    = render :partial => "posts/article_tag", :collection => @tags
+    = render :partial => "posts/article_tag", :collection => @tag_cloud

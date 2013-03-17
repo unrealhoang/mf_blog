@@ -2,6 +2,7 @@ class ApplicationController < ActionController::Base
   protect_from_forgery
   before_filter :load_main_categories
   before_filter :prepare_breadcrumb
+  before_filter :load_tag_cloud
 
   def prepare_breadcrumb
     add_breadcrumb "Home", :root_path
@@ -14,6 +15,10 @@ class ApplicationController < ActionController::Base
 
   def load_main_categories
     @main_categories = Category.where(:parent_category_id => nil)
+  end
+
+  def load_tag_cloud
+    @tag_cloud = Tag.all
   end
 
   def custom_post_paginate(posts, cur_page)
