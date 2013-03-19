@@ -18,12 +18,12 @@ input.nsbutton {width:20px; height:21px; text-indent:-9999px; overflow:hidden; b
   background: #ededed;
   width: 1030px;
   margin-left: -25px;
-  border: none;
+  border-bottom: 1px solid #dfdfdf;
 }
 .nsocial {float:right; position:relative; top:11px;}
 .nsocial a{margin-left:5px!important; margin-right:0!important;}
 .nsocial span {display:none;}
-.ntwitter, .nfb, .ngoogle, .nin, .nemail, .nrss {background:url(<%= image_path("social_sprite.png") %>) 0 -23px no-repeat; width:23px; height:22px; margin:30px 5px 0 0; display:inline-block;}
+.ntwitter, .nfb, .ngoogle, .nin, .nemail, .nrss {background:url(<%= image_path("social_sprite.png") %>) 0 -23px no-repeat; width:23px; height:22px; margin: 0 5px 0 0; display:inline-block;}
 .nfb {background-position:top left}
 .ntwitter {background-position:-24px -0;}
 .ngoogle {background-position:-71px  -0;}
@@ -46,16 +46,15 @@ input.nsbutton {width:20px; height:21px; text-indent:-9999px; overflow:hidden; b
   float: left;
   position: absolute;
   z-index: 5;
-  margin: -86px 0 0 0;
-  border-left: 1px solid #dddddd;
-  border-right: 1px solid #dddddd;
+  margin: -55px 0 0 0;
+
 }
-.snavH {height:85px;  /*box-shadow:0 0 10px 1px rgba(0, 0, 0, 0.10);*/}
+.snavH {height:54px;  /*box-shadow:0 0 10px 1px rgba(0, 0, 0, 0.10);*/ border-top: 1px solid #DFDFDF;}
 .navH {height:53px; position:relative; z-index:5;}
 .nav {width:980px; margin: 0; height:55px; position:relative;}
 .nav ul {margin:0 0 0 217px; padding:0; list-style:none; position:relative; float:left;}
 .nav li {float:left; height:54px; width:auto; border-left:1px solid #eee; border-right:1px solid #ccc;}
-.nav li a.navitem {display:block; background:#ddd; height:37px;/* text-shadow:1px 1px 1px #222;*/ width:auto; padding:17px 18px 0; color:#666666; margin:0; font-size:100%; font-weight:700; text-decoration:none; text-shadow:0 1px 0 rgba(255, 255, 255, 0.9); font-family:'Lato', Helvetica, Arial, sans-serif; position:relative; z-index:5;
+.nav li a.navitem {display:block; background:#ddd; height:37px;/* text-shadow:1px 1px 1px #222;*/ width:auto; padding:17px 18px 0; color:#666666; margin:0; font-size:120%; font-weight:700; text-decoration:none; text-shadow:0 1px 0 rgba(255, 255, 255, 0.9); font-family:'Lato', Helvetica, Arial, sans-serif; position:relative; z-index:5;
 transition:background .35s ease-in-out;
 -moz-transition:background .35s ease-in-out;
 -webkit-transition:background .35s ease-in-out;}

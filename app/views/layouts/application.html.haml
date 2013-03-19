@@ -21,7 +21,7 @@
     / nav bar here
     
     .site-container
-      .separator &nbsp;
+      .separator{:style => "height: 10px;"} &nbsp;
       = render "layouts/navigation";
       #main.container
         .row
@@ -34,19 +34,19 @@
           %a{:href => "#top"}
             %span>
             BACK TO TOP
-    %footer.footer
-      .container
-        %p
-          Designed and built with love by
-          = succeed "." do
-            %a{:href => "http://silverlining.vn", :target => "_blank"} @Silver Lining
-        %ul.footer-links
-          %li
-            %a{:href => "#"} Blog
-          %li.muted 
-          %li
-            %a{:href => contact_path} Contact
+      %footer.footer
+        .container
+          %p
+            Designed and built with love by
+            = succeed "." do
+              %a{:href => "http://silverlining.vn", :target => "_blank"} @Silver Lining
+          %ul.footer-links
+            %li
+              %a{:href => "#"} Blog
+            %li.muted 
+            %li
+              %a{:href => contact_path} Contact
 
-          %li.muted 
-          %li
-            %a{:href => "#"} About
+            %li.muted 
+            %li
+              %a{:href => "#"} About
