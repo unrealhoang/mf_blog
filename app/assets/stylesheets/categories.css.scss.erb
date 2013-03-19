@@ -1,0 +1,97 @@
+// Place all the styles related to the categories controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+.snav {
+  width: 980px;
+  margin: 0 auto;
+  font-size: .8em;
+  font-weight: 400;
+}
+.ns {display:none;}
+.nsearch {width:110px; padding:0 0 0 5px; border:1px solid #c7c7c7; border-top:1px solid #b4c1cb; box-shadow:inset 0 1px 2px rgba(0,0,0,0.08); background:#fff; margin-left:4px;}
+input.nsinput {width:60px; border:0; background:#fff; height:25px; color:#39434c; font-size:12px;margin-bottom: 0px;}
+input.nsinput:focus {outline:none;}
+input.nsbutton {width:20px; height:21px; text-indent:-9999px; overflow:hidden; background:url(<%= image_path("logo_sprite.01.png")%>) -153px 3px no-repeat; border:0; position:relative; top:4px; right:2px; cursor:pointer; float:right;}
+
+.headerH {
+  background:#ededed; /*height:110px;*/
+  background: #ededed;
+  width: 1030px;
+  margin-left: -25px;
+  border: none;
+}
+.nsocial {float:right; position:relative; top:11px;}
+.nsocial a{margin-left:5px!important; margin-right:0!important;}
+.nsocial span {display:none;}
+.ntwitter, .nfb, .ngoogle, .nin, .nemail, .nrss {background:url(<%= image_path("social_sprite.png") %>) 0 -23px no-repeat; width:23px; height:22px; margin:30px 5px 0 0; display:inline-block;}
+.nfb {background-position:top left}
+.ntwitter {background-position:-24px -0;}
+.ngoogle {background-position:-71px  -0;}
+.nin {background-position:-47px -0;}
+.nrss {background-position:-96px  -0;}
+.nemail {background-position:-120px  -0;}
+
+.nfb:hover {background-position:0 -23px;}
+.ntwitter:hover {background-position:-24px -23px;}
+.nin:hover {background-position:-47px -23px;}
+.ngoogle:hover {background-position:-71px -23px;}
+.nrss:hover {background-position:-96px 0; cursor:pointer;}
+.nemail:hover {background-position:-120px 0;}
+
+.Nlogo {
+  background: white url(/assets/Logo-17.png) no-repeat;
+  width: 217px;
+  height: 140px;
+  display: block;
+  float: left;
+  position: absolute;
+  z-index: 5;
+  margin: -86px 0 0 0;
+  border-left: 1px solid #dddddd;
+  border-right: 1px solid #dddddd;
+}
+.snavH {height:85px;  /*box-shadow:0 0 10px 1px rgba(0, 0, 0, 0.10);*/}
+.navH {height:53px; position:relative; z-index:5;}
+.nav {width:980px; margin: 0; height:55px; position:relative;}
+.nav ul {margin:0 0 0 217px; padding:0; list-style:none; position:relative; float:left;}
+.nav li {float:left; height:54px; width:auto; border-left:1px solid #eee; border-right:1px solid #ccc;}
+.nav li a.navitem {display:block; background:#ddd; height:37px;/* text-shadow:1px 1px 1px #222;*/ width:auto; padding:17px 18px 0; color:#666666; margin:0; font-size:100%; font-weight:700; text-decoration:none; text-shadow:0 1px 0 rgba(255, 255, 255, 0.9); font-family:'Lato', Helvetica, Arial, sans-serif; position:relative; z-index:5;
+transition:background .35s ease-in-out;
+-moz-transition:background .35s ease-in-out;
+-webkit-transition:background .35s ease-in-out;}
+/*.nav li.r {border:0; border-right:1px solid #d7d7d7;}
+.nav li.l {border:0; border-left:1px solid #e1e1e1;}*/
+.nav li a .arrow {width:15px; height:8px; background:url(<%= image_path("logo_sprite.01.png")%>) -97px 1px no-repeat; display:inline-block;}
+.nav li a.O .arrow {background-position:-131px 1px;}
+.nav li a.O {color:#fc491b;}
+.nav li a.navitem:hover, .nav li:hover a.navitem {background:#f6612c; text-shadow:none; color:#fff; height:37px; z-index:9999; position:relative; text-shadow:0 1px 0 rgba(229, 71, 14, 0.9);
+ transition:background .35s ease-in-out;
+ -moz-transition:background .35s ease-in-out;
+ -webkit-transition:background .35s ease-in-out;}
+ .nav li a.selected {background:#f6612c; text-shadow:none; color:#fff; height:37px; z-index:9999; position:relative; text-shadow:0 1px 0 rgba(229, 71, 14, 0.9);}
+ .nav li a:hover .arrow {background-position:-115px 1px;}
+
+ .navC {background:#EFEFEF; border:1px solid #DFDFDF; position:absolute; display:none; z-index:4;
+  box-shadow:0 2px 7px rgba(0, 0, 0, 0.7);
+  padding:10px 0 10px 10px;
+  width: 150px;
+  -moz-border-radius:0 0 3px 0; border-radius:0 0 3px 0; -webkit-border-radius:0 0 3px 0;
+}
+.navC a.cat {color:#2a2a2a; border:0; padding:5px 5px 5px 5px; display:block; font-weight:400; font-size:0.9em;}
+.navC a.cat:hover {color:#fff; background:#f6612c; text-decoration:none;}
+.nav li:hover .navC {display:block;}
+.navC img {width:125px;}
+.navC .cont {padding-right:5px;}
+.navC .cont a:hover {text-decoration:underline;}
+.navC .topics {margin:0 30px 0 0; float:left;width: 95%;}
+.navC .story {font-family:Arial, Helvetica, sans-serif;}
+.navC h3 a {color:#0078c9; font-family:'Lato', Helvetica, Arial, sans-serif; font-weight:900;}
+.navC h3 a:hover {color:#0078c9; text-decoration:underline;}
+
+.flt, .frt {float:left; height:auto; width:auto;}
+.frt {float:right;}
+.frt form{
+  margin: 0px;
+}
+
+.maindd {left:0;}
