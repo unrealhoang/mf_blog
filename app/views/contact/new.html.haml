@@ -3,7 +3,7 @@
     .title
     %p.about-content 
       = form_for @message, :url => contact_path do |form|
-        %h2.headline.pagetitle
+        %h2.pagetitle.headline{:style => "color: #f6612c;"}
           Contact Us
         %p
           We love to hear from you. Use the form below to contact us.
@@ -30,6 +30,10 @@
           .separator{:style => "height: 20px;"}
         %fieldset.actions
           = form.submit "Send"
+        .separator{:style => "height: 20px;"}
+        - if flash[:notice]
+          #notice.mail-sent-ok{:style => "color: #FFF;"}
+            = flash[:notice]
   .span4
     = render :partial => "posts/sidebar_fb_like_box"
     = render :partial => "posts/sidebar_tag_cloud"
