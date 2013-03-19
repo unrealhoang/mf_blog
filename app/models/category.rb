@@ -11,6 +11,12 @@ class Category < ActiveRecord::Base
     "#{id}-#{name.mb_chars.normalize(:kd).gsub(/[^\x00-\x7F]/,'').parameterize}"
   end
 
+  def posts
+    included_subs = [] + child_categories 
+    included_subs << self
+    Post.where(:category_id => included_subs)
+  end
+
   def self.hierachized_list
     top_category = where(:parent_category_id => nil).includes(:child_categories).all
     result = []

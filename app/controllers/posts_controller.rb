@@ -11,7 +11,7 @@ class PostsController < ApplicationController
 
       @top_articles = Post.top_articles
       @first_three = Post.non_top.limit(3)
-      @popular_posts = Post.unscoped.popular
+      @popular_posts = Post.popular
     end
 
     respond_to do |format|

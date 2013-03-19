@@ -14,7 +14,7 @@ class ApplicationController < ActionController::Base
   end
 
   def load_main_categories
-    @main_categories = Category.where(:parent_category_id => nil)
+    @main_categories = Category.where(:parent_category_id => nil).includes(:child_categories)
   end
 
   def load_tag_cloud
