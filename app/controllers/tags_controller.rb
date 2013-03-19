@@ -6,7 +6,7 @@ class TagsController < ApplicationController
     @first_three = @tag.posts.limit(3)
 
     @posts = custom_post_paginate(@tag.posts, (params[:page] || "1").to_i)
-    @popular_posts = @tag.posts.unscoped.popular
+    @popular_posts = @tag.posts.popular
 
     respond_to do |format|
       format.html # show.html.erb

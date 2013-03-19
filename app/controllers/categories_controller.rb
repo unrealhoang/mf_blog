@@ -14,10 +14,9 @@ class CategoriesController < ApplicationController
   # GET /categories/1.json
   def show
     @category = Category.find(params[:id])
-    add_breadcrumb_for_category @category
 
     @first_three = @category.posts.limit(3)
-    @popular_posts = @category.posts.unscoped.popular
+    @popular_posts = @category.posts.popular
 
     @posts = custom_post_paginate(@category.posts, (params[:page] || "1").to_i)
 
