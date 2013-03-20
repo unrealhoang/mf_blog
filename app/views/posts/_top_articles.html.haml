@@ -1,0 +1,12 @@
+.row
+  .span12.top-articles
+    #myCarousel.carousel.slide
+      %ol.carousel-indicators
+        - top_articles.each_with_index do |t, i|
+          %li{ :class => i == 0 ? "active" : nil, "data-slide-to" => i, "data-target" => "#myCarousel"}
+      / Carousel items
+      .carousel-inner
+        = render :partial => "posts/top_article", :collection => top_articles
+      / Carousel nav
+      %a.carousel-control.left{"data-slide" => "prev", :href => "#myCarousel"} ‹
+      %a.carousel-control.right{"data-slide" => "next", :href => "#myCarousel"} ›

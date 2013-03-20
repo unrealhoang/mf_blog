@@ -1,0 +1,39 @@
+.row
+  .span8
+    .title
+    %p.about-content 
+      = form_for @message, :url => contact_path do |form|
+        %h2.pagetitle.headline{:style => "color: #f6612c;"}
+          Contact Us
+        %p
+          We love to hear from you. Use the form below to contact us.
+        %fieldset.aelds
+          .field
+            .h13p
+              Your Name
+            = form.text_field :name
+          .separator{:style => "height: 20px;"}
+          .field
+            .h13p
+              Your Email
+            = form.text_field :email
+          .separator{:style => "height: 20px;"}
+          .field
+            .h13p
+              Subject
+            = form.text_field :subject
+          .separator{:style => "height: 20px;"}
+          .field
+            .h13p
+              Message
+            = form.text_area :body
+          .separator{:style => "height: 20px;"}
+        %fieldset.actions
+          = form.submit "Send"
+        .separator{:style => "height: 20px;"}
+        - if flash[:notice]
+          #notice.mail-sent-ok{:style => "color: #FFF;"}
+            = flash[:notice]
+  .span4
+    = render :partial => "posts/sidebar_fb_like_box"
+    = render :partial => "posts/sidebar_tag_cloud"

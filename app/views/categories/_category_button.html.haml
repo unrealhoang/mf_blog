@@ -1,12 +1,11 @@
 - category = category_button
-- has_child = category.child_category.length > 0
-%li{:class => has_child ? 'dropdown' : ''}
-  %a.dropdown-toggle{"data-toggle" => has_child ? "dropdown" : nil, :href => category_path(category)}
+- has_child = category.child_categories.length > 0
+%li.TopNav{:channelid => "1006", :filled => "false"}
+  %a.navitem.0{:href => category_path(category)}
     = category.name
-    %span{:class => has_child ? 'caret' : '' }
   - if has_child
-    %ul.dropdown-menu
-      - category.child_category.each do |c|
-        %li
-          %a{:href => category_path(c)}= c.name
-      / dropdown menu links
+    .navC.maindd
+      .topics
+        - category.child_categories.each do |c|
+          %a.cat{:href => category_path(c)}= c.name
+        / dropdown menu links

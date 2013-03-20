@@ -2,7 +2,7 @@
 - post = article_content
 %article#post-1
   %header.entry-header
-    %h1.entry-title= post.title
+    %h1.headline= post.title
     .entry-meta
       %span.sep Posted on
       %a{:href => category_path(post.category), :rel => "bookmark", :title => "2:56 pm"}
@@ -18,30 +18,33 @@
   / .entry-header
   .entry-content
     = post.content.html_safe
-  / .entry-content
+  
   %footer.entry-meta
     This entry was posted in
     %a{:href => category_path(post.category), :rel => "category", :title => "View all posts in #{post.category.name}"}= post.category.name
     by
     = succeed "." do
       %a{:href => profile_path(author)}= author.name
+    %hr/
     .article-author-container
-      %div
-        %img.img-profile-avatar{:alt => author.name, :src => author.avatar}
+      %img.img-profile-avatar.img-polaroid{:alt => author.name, :src => author.avatar}
       .text
         .name
-          %a.parsed{:href => "#", :rel => "author"}
+          %a.parsed{:href => profile_path(author), :rel => "author"}
             %h3= author.name
         %p
-          %a{:href => "#", :rel => "me"}
-          %strong= author.name
-          is a
-          %strong {author's job} 
-          = author.biography
+          %strong
+          = author.biography.html_safe
         %i
-          %a{:href => author.twitter}= author.twitter
+          %a{:href => "http://twitter.com/#{author.twitter}"} @#{author.twitter}
+        &nbsp;
         %i
-          %a{:href => author.facebook}= author.facebook
+          %a{:href => author.facebook_url} #{author.facebook} on Facebook
+        &nbsp;
         %i
-          %a{:href => author.linkedin}= author.linkedin
-  / .entry-meta
+          %a{:href => author.linkedin_url} #{author.linkedin} on Linkedin
+    .clearfix
+    %hr/
+  = render :partial => "posts/article_related_posts" 
+  / .entry-met
+  = render :partial => "posts/article_tags"

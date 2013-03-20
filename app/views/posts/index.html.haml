@@ -3,14 +3,20 @@
     %section.article-stream-search.span8
       Showing results for 
       %em= @query
-- elsif @top_article
-  = render :partial => "posts/top_article", :object => @top_article
-.row{:style => "margin-top: 40px"}
-  = render :partial => "posts/article_thumb_small", :collection => @first_three
+  .row{:style => "margin-top: 0px"}
+- else
+  - if @top_articles
+    = render :partial => "posts/top_articles", :object => @top_articles
+  .row{:style => "margin-top: 40px"}
+    = render :partial => "posts/article_thumb_small", :collection => @first_three
+
 .row{:style => "margin-top: 0px"}
-  .span8.offset2
-    %hr
+  - if !@query
+    .span8.offset2
+      %hr
   .span8
     = render :partial => "posts/articles_stream"
   .span4
     = render :partial => "posts/sidebar_posts"
+    = render :partial => "posts/sidebar_fb_like_box"
+    = render :partial => "posts/sidebar_tag_cloud"

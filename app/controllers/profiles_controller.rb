@@ -8,7 +8,7 @@ class ProfilesController < ApplicationController
       format.html # index.html.erb
       format.json { render json: @profiles }
     end
-  end
+  end 
 
   # GET /profiles/1
   # GET /profiles/1.json
@@ -17,6 +17,7 @@ class ProfilesController < ApplicationController
     add_breadcrumb "Author #{@profile.name}", profile_path(@profile)
 
     @posts = @profile.posts.paginate(:page => params[:page], :per_page => 5)
+    @popular_posts = @profile.posts.unscoped.popular
 
     respond_to do |format|
       format.html # show.html.erb

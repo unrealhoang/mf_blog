@@ -2,6 +2,7 @@ class ApplicationController < ActionController::Base
   protect_from_forgery
   before_filter :load_main_categories
   before_filter :prepare_breadcrumb
+  before_filter :load_tag_cloud
 
   def prepare_breadcrumb
     add_breadcrumb "Home", :root_path
@@ -13,6 +14,20 @@ class ApplicationController < ActionController::Base
   end
 
   def load_main_categories
-    @main_categories = Category.where(:parent_category_id => nil)
+    @main_categories = Category.where(:parent_category_id => nil).includes(:child_categories)
+  end
+
+  def load_tag_cloud
+    @tag_cloud = Tag.all
+  end
+
+  def custom_post_paginate(posts, cur_page)
+    WillPaginate::Collection.create(cur_page, Post.per_page) do |pager|
+        result = posts.limit(pager.per_page).offset(pager.offset + 3)
+        # inject the result array into the paginated collection:
+        pager.replace(result)
+
+        pager.total_entries = posts.count - 3
+      end
   end
 end

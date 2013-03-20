@@ -1,0 +1,117 @@
+// Place all the styles related to the posts controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+.entry-tags {
+background: url(<%= image_path "icon-tag.png" %>) no-repeat 0 1px;
+float: left;
+width: 100%;
+margin: 10px 0;
+padding: 0 0 0 21px;
+color: #222;
+  b{
+    float: left;
+    margin-right: 10px;
+  }
+}
+.tag-list {
+  list-style: none;
+  display: inline;
+
+  li {
+    float: left;
+    padding: 2px 5px;
+border-radius: 3px;
+background: #f9f9f9;
+  color: #666;
+box-shadow: inset 1px 1px 1px #999;
+border-bottom: 1px solid #f0f0f0;
+border-right: 1px solid #f0f0f0;
+margin: 0 3px;
+  }
+}
+.top-articles {
+  position: relative;
+  .title {
+    width: 65%;
+    top: 40px;
+    overflow: visible;
+    position: absolute;
+
+    .img-title-text {
+      h2 {
+        font-size: 34px;
+        color: black;
+        background-color: white;
+        padding: 2px 2px 2px 0;
+        display: inline;
+      }
+      a {
+        color: black;
+      }
+    }
+
+    .img-time-text {
+      color: #fff;
+      background:rgb(245, 20, 20);
+    }
+  }
+}
+
+.side-bar-head {
+  background: #ededed;
+  border-bottom: 1px solid #ccc;
+  border-top: 1px solid #ccc;
+  font-family: 'Lato', Helvetica, Arial, sans-serif;
+  text-align: center;
+  text-shadow: 0 1px 0 rgba(255, 255, 255, 0.9);
+  font-size: 17px;
+  font-weight: 900;
+  margin: 0 0 10px;
+  padding: 5px 5px 5px 10px;
+  text-transform: uppercase;
+  margin: 0 0 15px 0;
+  a {
+    color: rgb(123, 154, 201);
+  }
+}
+
+.normal-thread {
+  padding-top: 10px;
+  img {
+    width: 100%; 
+    height: 350px;
+    margin-top: 10px;
+    box-sizing: border-box;
+    border: 2px solid #dcdcd1
+  }
+  h4 {
+    margin-top: 10px;
+    margin-bottom: 5px;
+  }
+  .meta span:after {
+    content: '·';
+
+  }
+  .caption {
+    margin-bottom: 20px;
+  }
+}
+
+.sidebar-post {
+  clear: both;
+  img {
+    width: 100%;
+    height: 169px;
+  }
+  h6{
+    font-size: 16px;
+  }
+}
+
+.img-profile-avatar {
+  width: 240px; 
+  height: 180px; 
+  float: left;
+  display: inline; 
+  margin:10px;
+}

@@ -12,4 +12,6 @@
           %a{:href => category_path(normal_thread.category)}= normal_thread.category.name
         %em
           = normal_thread.created_at.strftime("%b %d %Y")
-  %p= strip_tags(normal_thread.content).truncate(600, :separator => ' ').html_safe
+  %p
+    = strip_tags(normal_thread.content).truncate(600, :separator => ' ').html_safe
+    %a{:href => post_path(normal_thread)} [Read More..]

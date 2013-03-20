@@ -8,29 +8,45 @@
         = javascript_include_tag "application"
         = csrf_meta_tags
         = yield(:head)
+      #fb-root
+      :javascript
+        (function(d, s, id) {
+          var js, fjs = d.getElementsByTagName(s)[0];
+          if (d.getElementById(id)) return;
+          js = d.createElement(s); js.id = id;
+          js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+          fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
   %body{:class => "#{controller_name} #{action_name}", 'data-controller' => "#{controller_name}", 'data-action' => "#{action_name}", :style => 'padding-top: 0px'}
     / nav bar here
-    .navbar.navbar-fixed-top.navbar-inverse
-      .navbar-inner
+    
+    .site-container
+      .separator{:style => "height: 10px;"} &nbsp;
+      = render "layouts/navigation";
+      #main.container
+        .row
+          .span8.offset2
+            %hr/
+
+        = yield
+        .separator &nbsp;
+        %p#back-top
+          %a{:href => "#top"}
+            %span>
+            BACK TO TOP
+      %footer.footer
         .container
-          / %a.brand{:href => root_path, :style => 'padding: 0px'}
-          /   %img{:src => image_path("logo.png"), :style => 'width: 120px'}
-          %ul.nav
-            / %li.divider-vertical
-            %li= link_to "Home", root_path
-            = render :partial => 'categories/category_button', :collection => @main_categories
-          = form_tag posts_path, :method => :get, :class => "navbar-search pull-right" do
-            %input.input-medium.search-query{:type => "text", :placeholder => "Search...", :name => "query"}
-          / %form.navbar-search.pull-right
-    #main.container
-      / header
-      .row.header
-        .span12{:style => "text-align: center"}
-          %h1= image_tag "logo2.png" 
+          %p
+            Designed and built with love by
+            = succeed "." do
+              %a{:href => "http://silverlining.vn", :target => "_blank"} @Silver Lining
+          %ul.footer-links
+            %li
+              %a{:href => "#"} Blog
+            %li.muted 
+            %li
+              %a{:href => contact_path} Contact
 
-      .row
-        .span8.offset2
-          %hr/
-
-      = yield
-
+            %li.muted 
+            %li
+              %a{:href => "#"} About

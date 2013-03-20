@@ -12,6 +12,26 @@ window.MF_BLOG =
         fjs.parentNode.insertBefore js, fjs
       ) document, "script", "facebook-jssdk"
 
+      $(document).ready ->
+        # hide #back-top first
+        $("#back-top").hide()
+        
+        # fade in #back-top
+        $ ->
+          $(window).scroll ->
+            if $(this).scrollTop() > 100
+              $("#back-top").fadeIn()
+            else
+              $("#back-top").fadeOut()
+          
+          # scroll body to 0px on click
+          $("#back-top a").click ->
+            $("body,html").animate
+              scrollTop: 0
+            , 800
+            false
+
+
 UTIL =
   exec: (controller, action) ->
     ns = MF_BLOG

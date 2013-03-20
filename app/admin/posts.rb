@@ -7,7 +7,6 @@ ActiveAdmin.register Post do
     column :author
     column :image
     column :is_top_article
-    column :top_article_image
     column :view_count
     column :content do |post|
       truncate(strip_tags(post.content).html_safe, :length => 200, :separator => ' ').html_safe
@@ -18,10 +17,10 @@ ActiveAdmin.register Post do
   form do |f|
     f.inputs "Details" do
       f.input :title
-      f.input :category
+      f.input :category, :include_blank => false
+      f.input :author, :include_blank => false
       f.input :image
       f.input :is_top_article
-      f.input :top_article_image
       f.input :tags, :as => :string, :input_html => { :value => f.object.tags.map { |t| t.name }.join(',') }, :hint => 
         f.template.content_tag(:div, "", :id => "tag-list-data", "data-tag-list" => Tag.select(:name).map { |t| t.name }.to_json )
     end
@@ -39,6 +38,10 @@ ActiveAdmin.register Post do
     end
   end
 
+  action_item :only => :show do
+    link_to "New Post", new_admin_post_path
+  end
+
   show do |post|
     attributes_table do 
       row :title
@@ -49,7 +52,6 @@ ActiveAdmin.register Post do
       row :category
       row :image
       row :is_top_article
-      row :top_article_image
       row :view_count
     end
 

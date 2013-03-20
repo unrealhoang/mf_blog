@@ -1,0 +1,6 @@
+- if !@tags.empty?
+  .entry-tags
+    %span>
+      %b Keywords:
+      %ul.tag-list
+        = render :partial => "posts/article_tag", :collection => @tags
