@@ -74,11 +74,11 @@ module MfBlog
     config.assets.version = '1.0'
 
     config.action_mailer.smtp_settings = {
-      :address              => "smtp.gmail.com",
+      :address              => "smtp.live.com",
       :port                 => 587,
-      :domain               => "mobifood.vn",
-      :user_name            => "hoang.luu@mobifood.vn",
-      :password             => "&gt;Unreal@$@1991",
+      :domain               => "steps.vn",
+      :user_name            => "team@steps.vn",
+      :password             => "rune02project",
       :authentication       => :plain,
       :enable_starttls_auto => true
     }
