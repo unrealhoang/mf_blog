@@ -66,5 +66,5 @@ MfBlog::Application.configure do
   # config.active_record.auto_explain_threshold_in_seconds = 0.5
 
   # Google analytic
-  GA.tracker = "UA-xxxxxx-x"
+  GA.tracker = "UA-39536052-1"
 end
