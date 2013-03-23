@@ -10,7 +10,7 @@
 .ns {display:none;}
 .nsearch {width:110px; padding:0 0 0 5px; border:1px solid #c7c7c7; border-top:1px solid #b4c1cb; box-shadow:inset 0 1px 2px rgba(0,0,0,0.08); background:#fff; margin-left:4px;}
 input.nsinput {width:60px; border:0; background:#fff; height:25px; color:#39434c; font-size:12px;margin-bottom: 0px;}
-input.nsinput:focus {outline:none;}
+input.nsinput:focus {outline: 0;}
 input.nsbutton {width:20px; height:21px; text-indent:-9999px; overflow:hidden; background:url(<%= image_path("logo_sprite.01.png")%>) -153px 3px no-repeat; border:0; position:relative; top:4px; right:2px; cursor:pointer; float:right;}
 
 .headerH {
@@ -39,20 +39,24 @@ input.nsbutton {width:20px; height:21px; text-indent:-9999px; overflow:hidden; b
 .nemail:hover {background-position:-120px 0;}
 
 .Nlogo {
-  background: white url(/assets/Logo-17.png) no-repeat;
-  width: 217px;
+  background: white url(/assets/Logo-17.png) center no-repeat;
+  width: 257px;
   height: 140px;
   display: block;
   float: left;
   position: absolute;
   z-index: 5;
-  margin: -55px 0 0 0;
+  margin: -65px 0 0 0;
 
+}
+.WLogo {
+
+  padding: 0 10px;
 }
 .snavH {height:54px;  /*box-shadow:0 0 10px 1px rgba(0, 0, 0, 0.10);*/ border-top: 1px solid #DFDFDF;}
 .navH {height:53px; position:relative; z-index:5;}
 .nav {width:980px; margin: 0; height:55px; position:relative;}
-.nav ul {margin:0 0 0 217px; padding:0; list-style:none; position:relative; float:left;}
+.nav ul {margin:0 0 0 257px; padding:0; list-style:none; position:relative; float:left;}
 .nav li {float:left; height:54px; width:auto; border-left:1px solid #eee; border-right:1px solid #ccc;}
 .nav li a.navitem {display:block; background:#ddd; height:37px;/* text-shadow:1px 1px 1px #222;*/ width:auto; padding:17px 18px 0; color:#666666; margin:0; font-size:120%; font-weight:700; text-decoration:none; text-shadow:0 1px 0 rgba(255, 255, 255, 0.9); font-family:'Lato', Helvetica, Arial, sans-serif; position:relative; z-index:5;
 transition:background .35s ease-in-out;
