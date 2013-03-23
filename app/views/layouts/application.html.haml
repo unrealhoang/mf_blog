@@ -17,6 +17,7 @@
           js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
           fjs.parentNode.insertBefore(js, fjs);
         }(document, 'script', 'facebook-jssdk'));
+    = analytics_init if Rails.env.production?
   %body{:class => "#{controller_name} #{action_name}", 'data-controller' => "#{controller_name}", 'data-action' => "#{action_name}", :style => 'padding-top: 0px'}
     / nav bar here
     
