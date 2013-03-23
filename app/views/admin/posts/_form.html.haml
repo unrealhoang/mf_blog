@@ -1,12 +1,26 @@
+- upload_data = S3Upload.upload_form_data
+
 = semantic_form_for [:admin, @post] do |f|
   = f.inputs "Details" do
     = f.input :title
-    = f.input :category
+    = f.input :category, :include_blank => false
+    = f.input :author, :include_blank => false
     = f.input :image
     = f.input :is_top_article
-    = label_tag :tag_input
-    = text_field_tag :tag_input
+    = f.input :tags, :as => :string, :input_html => { :value => f.object.tags.pluck(:name).join(',') }
+    = content_tag(:div, "", :id => "tag-list-data", "data-tag-list" => Tag.pluck(:name).to_json)
   = f.inputs "Content" do
     = f.input :content, :input_html => { :class => 'ckeditor', :style => "display: inline-block" }
   = f.actions
-end
+
+%form.direct-upload{:action => "https://#{ENV['S3_REGION']}.amazonaws.com/#{ENV['S3_BUCKET']}", :method => "POST", :enctype => "multipart/form-data"} 
+  %input{:type => :hidden, :name => :key, :value => upload_data[:key]}
+  %input{:type => :hidden, :name => "AWSAccessKeyId", :value => ENV['S3_ACCESS_KEY']}
+  %input{:type => :hidden, :name => :acl, :value => 'public-read'}
+  %input{:type => :hidden, :name => :policy, :value => upload_data[:policy]}
+  %input{:type => :hidden, :name => :signature, :value => upload_data[:signature]}
+  %input{:type => :hidden, :name => :success_action_status, :value => "201"}
+  %input{:type => :file, :name => :file }
+  / You can recognize some bootstrap markup here :)
+  .progress.progress-striped.active
+    .bar

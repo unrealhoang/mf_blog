@@ -2,6 +2,9 @@
 //= require jquery.tagit
 //= require ckeditor-jquery
 //= require ckeditor_config
+//= require jquery-fileupload/vendor/jquery.ui.widget
+//= require jquery-fileupload/jquery.fileupload
+//= require ./direct_upload
 //= require_self
 
 var CKEDITOR_BASEPATH = '/assets/ckeditor/';
@@ -14,6 +17,8 @@ $(document).ready(function() {
         availableTags: $('#tag-list-data').data('tag-list'),
         allowSpaces: true,
       });
+
+      handle_direct_upload();
     }
   }
 });
