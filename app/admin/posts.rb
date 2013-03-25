@@ -16,22 +16,6 @@ ActiveAdmin.register Post do
 
   form :partial => "form"
 
-  # form do |f|
-  #   f.inputs "Details" do
-  #     f.input :title
-  #     f.input :category, :include_blank => false
-  #     f.input :author, :include_blank => false
-  #     f.input :image
-  #     f.input :is_top_article
-  #     f.input :tags, :as => :string, :input_html => { :value => f.object.tags.map { |t| t.name }.join(',') }, :hint => 
-  #       f.template.content_tag(:div, "", :id => "tag-list-data", "data-tag-list" => Tag.select(:name).map { |t| t.name }.to_json )
-  #   end
-  #   f.inputs "Content" do
-  #     f.input :content, :input_html => { :class => 'ckeditor', :style => "display: inline-block" }
-  #   end
-  #   f.actions
-  # end
-
   controller do
     def create
       @post = Post.new(params[:post])

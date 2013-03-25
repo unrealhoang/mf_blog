@@ -1,5 +1,5 @@
-window.handle_direct_upload = ->
-  $(".direct-upload").each ->
+window.handle_direct_upload = (form_target, image_field_target) ->
+  $(form_target).each ->
     form = $(this)
     $(this).fileupload
       url: form.attr("action")
@@ -30,11 +30,12 @@ window.handle_direct_upload = ->
 
       fail: (e, data) ->
         console.log "fail"
+        alert "Failed to upload that file, please try again"
 
       success: (data) ->
         # Here we get the file url on s3 in an xml doc
         url = $(data).find("Location").text()
-        $("#post_image").val url # Update the real input in the other form
+        $(image_field_target).val url # Update the real input in the other form
         $("#preview-img").attr("src", url)
 
       done: (event, data) ->
