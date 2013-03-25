@@ -1,0 +1,28 @@
+- upload_data = S3Upload.upload_form_data
+
+= semantic_form_for [:admin, @profile] do |f|
+  = f.inputs "Profile" do
+    = f.input :name
+    = f.input :avatar, :input_html => { :style => "visibility: hidden" }, :hint => content_tag(:img, "", :id => "preview-img", :src => f.object.avatar)
+    = f.input :facebook
+    = f.input :facebook_url
+    = f.input :linkedin
+    = f.input :linkedin_url
+    = f.input :twitter
+  = f.inputs "Biography" do
+    = f.input :biography, :input_html => { :class => 'ckeditor', :style => "display: inline-block" }
+  = f.actions
+
+%form#profile-img-uploader.direct-upload{:action => "https://#{ENV['S3_REGION']}.amazonaws.com/#{ENV['S3_BUCKET']}", :method => "POST", 
+  :enctype => "multipart/form-data"} 
+  %input{:type => :hidden, :name => :key, :value => upload_data[:key]}
+  %input{:type => :hidden, :name => "AWSAccessKeyId", :value => ENV['S3_ACCESS_KEY']}
+  %input{:type => :hidden, :name => :acl, :value => 'public-read'}
+  %input{:type => :hidden, :name => :policy, :value => upload_data[:policy]}
+  %input{:type => :hidden, :name => :signature, :value => upload_data[:signature]}
+  %input{:type => :hidden, :name => :success_action_status, :value => "201"}
+  %input#content-type{:type => :hidden, :name => "Content-Type", :value => "image/jpeg"}
+  %input{:type => :file, :name => :file, :style => "float: left"}
+  / You can recognize some bootstrap markup here :)
+  .progress.progress-striped.active.clearfix
+    .bar

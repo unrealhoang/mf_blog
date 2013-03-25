@@ -21,7 +21,8 @@ class S3Upload
           { bucket: ENV['S3_BUCKET'] },
           { acl: 'public-read' },
           ["starts-with", "$key", "uploads/"],
-          { success_action_status: '201' }
+          { success_action_status: '201' },
+          ["starts-with", "$Content-Type", "image"],
         ]
       }.to_json
     ).gsub(/\n|\r/, '')
