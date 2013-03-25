@@ -74,17 +74,17 @@ module MfBlog
     config.assets.version = '1.0'
 
     config.action_mailer.smtp_settings = {
-      :address              => "smtp.live.com",
-      :port                 => 587,
-      :domain               => "steps.vn",
-      :user_name            => "team@steps.vn",
-      :password             => "rune02project",
+      :address              => ENV["MAIL_SMTP_ADDRESS"],
+      :port                 => ENV["MAIL_SMTP_PORT"],
+      :domain               => ENV["MAIL_SMTP_DOMAIN"],
+      :user_name            => ENV["MAIL_SMTP_USERNAME"],
+      :password             => ENV["MAIL_SMTP_PASSWORD"],
       :authentication       => :plain,
       :enable_starttls_auto => true
     }
 
     config.action_mailer.default_url_options = {
-      :host => "steps.vn"
+      :host => ENV["MAIL_DEFAUL_URL"]
     }
   end
 end
