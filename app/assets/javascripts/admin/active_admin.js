@@ -20,6 +20,8 @@ $(document).ready(function() {
         allowSpaces: true,
       });
 
+      $("#post-img-uploader").css("top", $("#post_image").position().top + "px");
+      $("#post-img-uploader").css("left", $("#post_image").position().left + "px");
       handle_direct_upload("#post-img-uploader", "#post_image");
     }
 
@@ -27,7 +29,9 @@ $(document).ready(function() {
 
     if (body_tag.hasClass('edit') || body_tag.hasClass('new')) {
       // profile#edit || profile#new
-      handle_direct_upload("#profile-img-uploader", "#profile_avatar")
+      $("#profile-img-uploader").css("top", $("#profile_avatar").position().top + "px");
+      $("#profile-img-uploader").css("left", $("#profile_avatar").position().left + "px");
+      handle_direct_upload("#profile-img-uploader", "#profile_avatar");
 
 
     }
