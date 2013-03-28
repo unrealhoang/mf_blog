@@ -1,6 +1,7 @@
 MfBlog::Application.routes.draw do
   get "about/show"
   get "about_us", :to => "about#show"
+  get "jobs", :to => "home#jobs"
 
   get 'contact' => 'contact#new', :as => 'contact'
   post 'contact' => 'contact#create', :as => 'contact'
