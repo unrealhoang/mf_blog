@@ -1,0 +1,7 @@
+.row
+  .span8
+    %p.about-content 
+      = @jobs.content.html_safe
+  .span4
+    = render :partial => "posts/sidebar_fb_like_box"
+    = render :partial => "posts/sidebar_tag_cloud"

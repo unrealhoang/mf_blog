@@ -14,3 +14,5 @@ puts 'user: ' << user.email
 puts 'STATIC PAGES'
 about_us = StaticPage.find_or_create_by_name :name => "about_us", :content => "Puts your about us content here"
 puts 'About us'
+
+jobs = StaticPage.find_or_create_by_name :name => "jobs", :content => "Puts your jobs description content here"
